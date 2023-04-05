@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLM | React with Webpack</title>
+
+    <!-- Pull in static files served from your Static directory or the internet -->
+    <!-- For Banners only-->
+    <!-- <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script> -->
+    <!-- <script src="./console-log-div.js"></script> -->
+    <script src="./veeva-library.js"></script>
+    <script>
+      function goToPage(page) {
+        console.log(`transition to the ${page}`);
+        com.veeva.clm.gotoSlide(`${page}.zip`, "");
+      }
+
+      function goToMaintena() {
+        console.log("transition to the Maintena");
+        com.veeva.clm.gotoSlide("MaintenaCLM.zip", "CLM5");
+      }
+
+      function goToNextSlide() {
+        console.log("next page");
+        com.veeva.clm.nextSlide();
+      }
+
+      function goToPrevSlide() {
+        console.log("prev page");
+        com.veeva.clm.prevSlide();
+      }
+    </script>
+  </head>
+
+  <body>
+    <div
+      id="app"
+      data-page="<%= htmlWebpackPlugin.options.current_page %>"
+    ></div>
+  </body>
+</html>
