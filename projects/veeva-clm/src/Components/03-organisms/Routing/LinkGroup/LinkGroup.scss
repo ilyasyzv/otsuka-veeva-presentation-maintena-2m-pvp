@@ -29,7 +29,7 @@
 
     &.active {
       & > a {
-        background: $emerald;
+        background: $gray;
         border-right: 5px solid $yellow;
         color: $white;
         font-weight: 900;
@@ -42,13 +42,13 @@
 
     &.schizophrenia {
       &.active a {
-        border-color: $orange;
+        border-color: $yellow;
       }
     }
 
     &.bipolar {
       &.active a {
-        border-color: $blue-navy;
+        border-color: $blue;
       }
     }
   }
@@ -65,7 +65,7 @@
       a {
         @include triangle;
 
-        color: $emerald;
+        color: $gray;
         font-weight: 700;
         text-decoration: underline;
         padding-left: 28px;

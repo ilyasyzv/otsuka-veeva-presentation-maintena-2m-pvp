@@ -51,7 +51,7 @@
           flex-grow: 1;
           display: flex;
           align-items: center;
-          background-color: $gray-whisper;
+          background-color: $gray;
           justify-content: center;
           position: relative;
 
@@ -62,21 +62,21 @@
             width: 5px;
             height: 5px;
             border-radius: 50%;
-            background-color: $blue-light;
+            background-color: $blue;
             z-index: 20;
           }
 
           &.active {
-            background-color: $blue-maya;
+            background-color: $blue;
           }
 
           &.selected {
             background: linear-gradient(
               270deg,
-              $gray-whisper 0%,
-              $gray-whisper 49%,
-              $blue-maya 50%,
-              $blue-maya 100%
+              $gray 0%,
+              $gray 49%,
+              $blue 50%,
+              $blue 100%
             );
 
             &::before {
@@ -89,7 +89,7 @@
               left: calc(50% - 24px);
               top: calc(50% - 24px);
               border-radius: 50%;
-              background-color: $blue-light;
+              background-color: $blue;
             }
 
             &::after {
@@ -119,7 +119,7 @@
             border-radius: 8px;
             right: var(--tooltip-right, -50%);
             padding: 4px 12px;
-            background-color: $butter-muffin;
+            background-color: $blue;
             font-weight: 700;
             font-size: 17px;
             line-height: 29px;
@@ -131,7 +131,7 @@
               height: 0;
               border-style: solid;
               border-width: 22px 22px 0 0;
-              border-color: $butter-muffin transparent transparent transparent;
+              border-color: $blue transparent transparent transparent;
               background-color: transparent;
               position: absolute;
               z-index: 100;

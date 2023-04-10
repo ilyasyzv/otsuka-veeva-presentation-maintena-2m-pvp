@@ -107,7 +107,7 @@ dist
 dist/
 node_modules/
 .sass-cache
-.idea
+.idea/
 *.iml
 *.DS_Store
 *.log
