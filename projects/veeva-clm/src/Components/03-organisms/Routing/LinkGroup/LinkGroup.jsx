@@ -53,8 +53,10 @@ export const LinkGroup = ({ linkGroup }) => {
 
   return (
     <li className={`${mainLinkClass} ${addClass || ''}`}>
-      <Link to={linkGroup.url}>{linkGroup.name}</Link>
-      {makeSublinks(linkGroup.children)}
+      <div className='main-nav__link__wrapper'>
+        <Link to={linkGroup.url}>{linkGroup.name}</Link>
+        {makeSublinks(linkGroup.children)}
+      </div>
     </li>
   );
 };

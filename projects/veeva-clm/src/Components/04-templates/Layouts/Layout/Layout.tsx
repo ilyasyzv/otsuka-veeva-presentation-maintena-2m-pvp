@@ -21,6 +21,7 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
     >
       <div className='page__wrapper'>
         <div className='left-pane'>
+          <span className="left-pane__pager"/>
           <Navbar />
         </div>
         <div className='right-pane'>{children}</div>
