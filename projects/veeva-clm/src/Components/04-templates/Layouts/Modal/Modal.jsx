@@ -26,6 +26,7 @@ export const Modal = ({
   isExpanded = false,
   withFooter = false,
   isSwitchPopup = false,
+  customClass = '',
 }) => {
   const [shouldShow, setShouldShow] = useState(false);
   const { modals, setModals } = useSharedModalManager();
@@ -48,7 +49,9 @@ export const Modal = ({
     </div>
   );
 
-  const modalOuterClass = classNames({
+  const modalOuterClass = classNames(
+    customClass,
+    {
     modal: true,
     'modal-background': !isExpanded || withFooter,
     'modal-expanded': isExpanded,
