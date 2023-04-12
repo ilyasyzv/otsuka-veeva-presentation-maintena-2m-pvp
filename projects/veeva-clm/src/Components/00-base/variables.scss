@@ -17,7 +17,9 @@ $green-500: #42711e;
 
 $gray-100: #BED4DB;
 $gray-500: #414042;
+$gray-700: #33333380;
 $gray-800: #333333;
+$gray-900: #00000029;
 
 $red-500: #E83443;
 
@@ -84,8 +86,8 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
     display: block;
     background-color: $blue-300;
     border-radius: 50%;
-    width: 3px;
-    height: 3px;
+    width: 4px;
+    height: 4px;
     position: relative;
     top: 11px;
     left: -12px;
