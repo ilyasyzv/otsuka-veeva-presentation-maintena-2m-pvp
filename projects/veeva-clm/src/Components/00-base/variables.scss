@@ -4,44 +4,46 @@ $font-size-base: 16px;
 
 // Colors
 $blue-100: #7DE1DE;
-$blue-200: #7DE1DE;
-$blue-201: #7DE1DE3D;
+$blue-200: #7DE1DE3D;
 $blue-205: #7DE1DED8;
 $blue-250: #7FDAF6;
 $blue-300: #00B6ED;
-$blue-400: #00B6ED;
-$blue-450: #39849E;
+$blue-400: #39849E;
 $blue-500: #0086A1;
 $blue-600: #005674;
 $blue-700: #00567473;
 
+$green-500: #42711e;
 
+$gray-100: #BED4DB;
+$gray-500: #414042;
 $gray-800: #333333;
+
 $red-500: #E83443;
+
 $yellow-200: #FFB200;
 $yellow-300: #FFB81C00;
 
-$gray-100: #BED4DB;
-$gray: #414042;
-
-$blue: $blue-600;
 $base: $gray-800;
+$blue: $blue-600;
 $black: #000;
 $white: #fff;
-$green: #42711e;
+$gray: $gray-500;
+$green: $green-500;
 $yellow: $yellow-200;
-
-
+$red: $red-500;
 
 // Colors array for loops in mixins
 $colors: (
+  "base": $base,
   "black": $black,
   "white": $white,
-  "primary": $gray,
+  "primary": $blue,
   "secondary": $gray,
-  "info": $gray,
-  "warning": $green,
-  "danger": $gray,
+  "info": $gray-100,
+  "success": $green,
+  "warning": $yellow,
+  "danger": $red,
 );
 
 // Shadows
