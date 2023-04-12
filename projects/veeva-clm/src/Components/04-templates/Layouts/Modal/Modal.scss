@@ -124,6 +124,29 @@
       width: 100%;
     }
   }
+
+  img {
+    max-width: 100%;
+  }
+
+  .footnote {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  &_understanding-panss {
+    &-image-1 {
+      width: 625px;
+    }
+    &-image-2 {
+      position: absolute;
+      right: 0;
+      width: 268px;
+    }
+    &-image-3 {
+      width: 625px;
+    }
+  }
 }
 
 .isi-modal-wrapper {

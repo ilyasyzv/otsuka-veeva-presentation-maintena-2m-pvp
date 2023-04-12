@@ -6,6 +6,8 @@ export default {
   component: Button,
 };
 
+const TemplateDefault = (args) => <Button {...args}/>;
+
 const Template = () => (
     <>
       <p>Default State:</p>
@@ -35,6 +37,11 @@ const TemplateС = () => (
 
 export const TypeA = Template.bind({});
 export const TypeC = TemplateС.bind({});
+
+export const Default = TemplateDefault.bind({});
+Default.args = {
+  text: 'Default',
+};
 
 export const TypeB = {
   args: {
