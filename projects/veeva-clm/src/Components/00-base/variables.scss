@@ -82,13 +82,13 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
   &::before {
     content: "";
     display: block;
-    background-color: $yellow;
+    background-color: $blue-300;
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
     position: relative;
     top: 11px;
-    left: -8px;
+    left: -12px;
   }
 }
 
@@ -115,6 +115,18 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
     position: relative;
     top: 11px;
     left: -8px;
+  }
+}
+@mixin rectangle {
+  &::before {
+    content: "";
+    display: block;
+    background-color: $blue-300;
+    width: 4px;
+    height: 2px;
+    position: relative;
+    top: 11px;
+    left: -9px;
   }
 }
 

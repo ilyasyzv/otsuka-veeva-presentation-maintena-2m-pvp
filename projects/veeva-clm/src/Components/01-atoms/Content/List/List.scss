@@ -3,6 +3,7 @@
 ul.list {
   list-style: none;
   padding-left: 10px;
+  max-width: 822px;
 
   sup {
     font-size: 10px;
@@ -13,23 +14,15 @@ ul.list {
     list-style: decimal;
   }
 
-  &.triangle li {
-    @include triangle;
-  }
-
   &.circle li {
     @include circle;
     @include list-marker-color;
   }
 
-  &.square li {
-    @include square;
+  &.rectangle li {
+    @include rectangle;
     @include list-marker-color;
-  }
-
-  &.square-small li {
-    @include square-small;
-    @include list-marker-color;
+    margin-top: -1px;
   }
 
   @for $i from 1 through 4 {
