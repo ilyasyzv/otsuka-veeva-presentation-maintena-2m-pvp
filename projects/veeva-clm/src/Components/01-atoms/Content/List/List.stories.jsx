@@ -60,8 +60,9 @@ const Template = () => (
                       text: (
                         <>
                           Patients continued on oral aripiprazole 10 mg to 20 mg
-                          for the first 14 days following the initial ABILIFY
-                          MAINTENA dose
+                          for the first 14 days following the initial
+                          <br />
+                          ABILIFY MAINTENA dose
                         </>
                       ),
                     },
