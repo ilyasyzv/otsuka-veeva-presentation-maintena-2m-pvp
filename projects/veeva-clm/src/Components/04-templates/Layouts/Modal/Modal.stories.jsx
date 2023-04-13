@@ -7,6 +7,7 @@ import UnderstandingPANSS1 from './images/Understanding-PANSS-1.png?format=webp'
 import UnderstandingPANSS2 from './images/Understanding-PANSS-2.png?format=webp';
 import UnderstandingPANSS3 from './images/Understanding-PANSS-3.png?format=webp';
 import UnderstandingCGIS1 from './images/Understanding-CGIS-1.png?format=webp';
+import FullRecurrenceDefinition1 from './images/FullRecurrenceDefinition-1.png?format=webp';
 
 export default {
   title: 'CLM/Templates/Modal',
@@ -99,6 +100,29 @@ UnderstandCGIS.args = {
         <p>CGI-S=Clinical Global Impression-Severity of Illness Scale.<br/>
           <strong>Reference: 1.</strong> Busner J, et al. Psychiatry (Edgmont).
           2007;4(7):28-37.</p>
+      </FootNote>
+  )
+};
+
+export const FullRecurrenceDefinition = Template.bind({});
+FullRecurrenceDefinition.args = {
+  ...Default.args,
+  customClass: `${blockName}_full-ecurrence-definition`,
+  link: <Button text='Full&nbsp;Recurrence Definition' custom='button__type-b'/>,
+  children: (
+      <>
+        <Header custom={'mb-29'} >Recurrence was defined as 1 or more of the following<sup>1</sup>:</Header>
+        <img className={`${blockName}_full-ecurrence-definition-image-1`} src={FullRecurrenceDefinition1} alt=""/>
+      </>
+  ),
+  withFooter: true,
+  footer: (
+      <FootNote>
+        <p>AE=adverse event; CGI-BP-S=Clinical Global Impression-Bipolar
+          Version-Severity; C-SSRS=Columbia-Suicide Severity Rating Scale;<br/>
+          MÅDRS=Montgomery-Åsberg Depression Rating Scale; YMRS=Young Mania Rating Scale.<br/>
+          <strong>Reference: 1.</strong> Calabrese JR, et al. J Clin Psychiatry.
+          2017;78(3):324-331.</p>
       </FootNote>
   )
 };
