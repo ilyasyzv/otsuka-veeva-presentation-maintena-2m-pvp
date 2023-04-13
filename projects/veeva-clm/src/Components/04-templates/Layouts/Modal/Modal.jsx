@@ -17,6 +17,7 @@ const useSharedModalManager = () => useBetween(useModalManager);
 const classNames = require('classnames');
 
 const LinkDefault = <p>Show Modal</p>;
+const FooterDefault = <p className={'footnote'}>Footer content</p>;
 
 export const Modal = ({
   id = null,
@@ -25,6 +26,7 @@ export const Modal = ({
   showPlus = false,
   isExpanded = false,
   withFooter = false,
+  footer = FooterDefault,
   isSwitchPopup = false,
   customClass = '',
 }) => {
@@ -44,9 +46,14 @@ export const Modal = ({
   });
 
   const simpleContent = (
-    <div className='modal-body' onClick={(e) => e.stopPropagation()}>
-      {children}
-    </div>
+    <>
+      <div className='modal-body' onClick={(e) => e.stopPropagation()}>
+        {children}
+      </div>
+      <div className='modal-footer' onClick={(e) => e.stopPropagation()}>
+        {footer}
+      </div>
+    </>
   );
 
   const modalOuterClass = classNames(

@@ -161,30 +161,28 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
 // Spacings like in Bootstrap
 @mixin spacing($short_var, $css_var) {
   @for $i from 0 through 100 {
-    @if $i % 5 == 0 or $i < 15 {
-      .#{$short_var}-#{$i} {
-        #{$css_var}: #{$i}px !important;
-      }
-      .#{$short_var}y-#{$i} {
-        #{$css_var}-top: #{$i}px !important;
-        #{$css_var}-bottom: #{$i}px !important;
-      }
-      .#{$short_var}x-#{$i} {
-        #{$css_var}-left: #{$i}px !important;
-        #{$css_var}-right: #{$i}px !important;
-      }
-      .#{$short_var}t-#{$i} {
-        #{$css_var}-top: #{$i}px !important;
-      }
-      .#{$short_var}b-#{$i} {
-        #{$css_var}-bottom: #{$i}px !important;
-      }
-      .#{$short_var}l-#{$i} {
-        #{$css_var}-left: #{$i}px !important;
-      }
-      .#{$short_var}r-#{$i} {
-        #{$css_var}-right: #{$i}px !important;
-      }
+    .#{$short_var}-#{$i} {
+      #{$css_var}: #{$i}px !important;
+    }
+    .#{$short_var}y-#{$i} {
+      #{$css_var}-top: #{$i}px !important;
+      #{$css_var}-bottom: #{$i}px !important;
+    }
+    .#{$short_var}x-#{$i} {
+      #{$css_var}-left: #{$i}px !important;
+      #{$css_var}-right: #{$i}px !important;
+    }
+    .#{$short_var}t-#{$i} {
+      #{$css_var}-top: #{$i}px !important;
+    }
+    .#{$short_var}b-#{$i} {
+      #{$css_var}-bottom: #{$i}px !important;
+    }
+    .#{$short_var}l-#{$i} {
+      #{$css_var}-left: #{$i}px !important;
+    }
+    .#{$short_var}r-#{$i} {
+      #{$css_var}-right: #{$i}px !important;
     }
   }
 }
