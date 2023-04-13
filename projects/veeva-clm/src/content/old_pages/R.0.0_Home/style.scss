@@ -2,5 +2,27 @@
 
 .page--R_0_0_Home {
 
-
+.secondary-header {
+  width: 634px;
+  font-weight: normal;
+}
+  .underline{
+    width: 607px
+  }
+  .trademark{
+    width: 350px;
+  }
+  .sign-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .logo-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .footer-txt {
+    font-weight: bold;
+  }
 }
