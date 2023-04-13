@@ -101,42 +101,4 @@
       }
     }
   }
-
-  //&__sublink {
-  //  display: flex;
-  //  align-items: center;
-  //  padding: 13.5px 0;
-  //  font-size: 14px;
-  //  line-height: 14px;
-  //  list-style: none;
-  //
-  //  &.current {
-  //    a {
-  //      @include triangle;
-  //
-  //      color: $gray;
-  //      font-weight: 700;
-  //      text-decoration: underline;
-  //      padding-left: 28px;
-  //
-  //      &::before {
-  //        border-width: 0.6em 0 0.6em 0.9em;
-  //        top: 0;
-  //      }
-  //    }
-  //  }
-  //
-  //  a {
-  //    align-items: center;
-  //    color: $base;
-  //    display: flex;
-  //    font-size: 14px;
-  //    font-weight: 500;
-  //    font-style: normal;
-  //    letter-spacing: 0;
-  //    padding-left: 40px;
-  //    text-align: left;
-  //    text-decoration: none;
-  //  }
-  //}
 }
