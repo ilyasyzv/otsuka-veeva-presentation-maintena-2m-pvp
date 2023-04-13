@@ -10,30 +10,30 @@ export const mainMenu = {
   data: [
     {
       name: 'Executive Summary',
-      url: '/R.1.0_Executive_summary',
+      url: '/A.1.0_Executive_summary',
     },
     {
       name: 'Schizophrenia & Bipolar I Disorder Overview',
-      url: '/R.2.0_AAD_overview',
+      url: '/A.2.1.X_S_Overview',
       children: [],
     },
     {
       name: 'Clinical Profile for ABILIFY ASIMTUFII®',
-      url: '/R.3.0_Efficacy',
+      url: '/A.3.0_Clinical_profile',
       children: [],
     },
     {
       name: 'Economic Value of ABILIFY ASIMTUFII®',
-      url: '/R.4.1_Adverse_reactions',
+      url: '/A.4.0_Economic_value',
       children: [],
     },
     {
       name: 'Otsuka Patient Support™',
-      url: '/R.5.0_Dosing',
+      url: '/A.5.X_Patients_support',
     },
     {
       name: 'Appendix',
-      url: '/R.6.0_Saving_and_coverage',
+      url: '/A.6.1.X_Appendix_Safety',
       children: [],
     },
   ],
@@ -43,11 +43,11 @@ export const bottomMenu = {
   data: [
     {
       name: 'ISI',
-      url: '/R.1.0_Executive_summary',
+      url: '/A.7.0_ISI',
     },
     {
       name: 'PI',
-      url: '/R.2.0_AAD_overview',
+      url: '/A.7.0_ISI', // Replace after creating page.
       children: [],
     }
   ]
@@ -60,8 +60,8 @@ export const Navbar = () => {
   return (
     <div className='navigation'>
       <div className='navigation__head'>
-        <Link to='R.0.0_Home' custom='navigation__homepage-link'></Link>
-        <Link to='R.0.0_Home'><img src={HomeIcon.src} alt="home icon" className/></Link>
+        <Link to='/A.0.Home' custom='navigation__homepage-link'></Link>
+        <Link to='/A.0.Home'><img src={HomeIcon.src} alt="home icon" className/></Link>
         <span className={isHomepage}></span>
       </div>
       <ul className='main-nav'>
