@@ -14,7 +14,7 @@ export const mainMenu = {
     },
     {
       name: 'Schizophrenia & Bipolar I Disorder Overview',
-      url: '/A.2.1.X_S_Overview',
+      url: '/A.2.1.1_S_Overview',
       children: [],
     },
     {
@@ -29,11 +29,11 @@ export const mainMenu = {
     },
     {
       name: 'Otsuka Patient Support™',
-      url: '/A.5.X_Patients_support',
+      url: '/A.5.1_Patients_support_providers',
     },
     {
       name: 'Appendix',
-      url: '/A.6.1.X_Appendix_Safety',
+      url: '/A.6.1.1_Appendix_Safety',
       children: [],
     },
   ],
