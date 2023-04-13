@@ -39,4 +39,9 @@ h3.heading {
   font-size: 16px;
   line-height: 18px;
   color: $blue-500;
+
+  sup {
+    font-size: 9px;
+    line-height: normal;
+  }
 }

@@ -8,6 +8,7 @@ $blue-200: #7DE1DE3D;
 $blue-205: #7DE1DED8;
 $blue-250: #7FDAF6;
 $blue-300: #00B6ED;
+$blue-350: #41A4BA;
 $blue-400: #39849E;
 $blue-500: #0086A1;
 $blue-600: #005674;
@@ -16,8 +17,11 @@ $blue-700: #00567473;
 $green-500: #42711e;
 
 $gray-100: #BED4DB;
+$gray-200: #F0F0F0;
 $gray-500: #414042;
+$gray-700: #33333380;
 $gray-800: #333333;
+$gray-900: #00000029;
 
 $red-500: #E83443;
 
@@ -84,8 +88,8 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
     display: block;
     background-color: $blue-300;
     border-radius: 50%;
-    width: 3px;
-    height: 3px;
+    width: 4px;
+    height: 4px;
     position: relative;
     top: 11px;
     left: -12px;
@@ -159,30 +163,28 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
 // Spacings like in Bootstrap
 @mixin spacing($short_var, $css_var) {
   @for $i from 0 through 100 {
-    @if $i % 5 == 0 or $i < 15 {
-      .#{$short_var}-#{$i} {
-        #{$css_var}: #{$i}px !important;
-      }
-      .#{$short_var}y-#{$i} {
-        #{$css_var}-top: #{$i}px !important;
-        #{$css_var}-bottom: #{$i}px !important;
-      }
-      .#{$short_var}x-#{$i} {
-        #{$css_var}-left: #{$i}px !important;
-        #{$css_var}-right: #{$i}px !important;
-      }
-      .#{$short_var}t-#{$i} {
-        #{$css_var}-top: #{$i}px !important;
-      }
-      .#{$short_var}b-#{$i} {
-        #{$css_var}-bottom: #{$i}px !important;
-      }
-      .#{$short_var}l-#{$i} {
-        #{$css_var}-left: #{$i}px !important;
-      }
-      .#{$short_var}r-#{$i} {
-        #{$css_var}-right: #{$i}px !important;
-      }
+    .#{$short_var}-#{$i} {
+      #{$css_var}: #{$i}px !important;
+    }
+    .#{$short_var}y-#{$i} {
+      #{$css_var}-top: #{$i}px !important;
+      #{$css_var}-bottom: #{$i}px !important;
+    }
+    .#{$short_var}x-#{$i} {
+      #{$css_var}-left: #{$i}px !important;
+      #{$css_var}-right: #{$i}px !important;
+    }
+    .#{$short_var}t-#{$i} {
+      #{$css_var}-top: #{$i}px !important;
+    }
+    .#{$short_var}b-#{$i} {
+      #{$css_var}-bottom: #{$i}px !important;
+    }
+    .#{$short_var}l-#{$i} {
+      #{$css_var}-left: #{$i}px !important;
+    }
+    .#{$short_var}r-#{$i} {
+      #{$css_var}-right: #{$i}px !important;
     }
   }
 }
