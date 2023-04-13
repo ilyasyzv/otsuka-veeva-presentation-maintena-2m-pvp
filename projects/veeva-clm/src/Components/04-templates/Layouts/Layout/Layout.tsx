@@ -26,8 +26,6 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
         </div>
         <div className='right-pane'>{children}</div>
         <NavArrows />
-        <img className='icon-start' src={StartIcon.src} alt="end icon"/>
-        <img className='icon-end' src={EndIcon.src} alt="end icon"/>
       </div>
     </div>
   )

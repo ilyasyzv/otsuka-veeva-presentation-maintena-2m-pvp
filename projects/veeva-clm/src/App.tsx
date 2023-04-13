@@ -48,7 +48,7 @@ function App({ tab }: AppProps) {
         <PageContext.Provider value={[currentPage, setCurrentPage]}>
           <Layout>
             <Route path='/01_Launch_screen' component={() => <Page component={A_0_Home} />} />
-            <Route path='/A.0.Home' component={() => <Page component={A_0_Home} />} />
+            <Route path='/A.0.Home' component={() => <Page background='b' component={A_0_Home} />} />
             <Route path='/A.1.0_Executive_summary' component={() => <Page component={A_1_0_Executive_summary} />} />
             <Route path='/A.2.1.1_S_Overview' component={() => <Page component={A_2_1_1_S_Overview} />} />
             <Route path='/A.2.1.2_S_Overview' component={() => <Page component={A_2_1_2_S_Overview} />} />
@@ -59,7 +59,7 @@ function App({ tab }: AppProps) {
             <Route path='/A.2.3.1_LAIs' component={() => <Page component={A_2_3_1_LAIs} />} />
             <Route path='/A.2.3.2_LAIs' component={() => <Page component={A_2_3_2_LAIs} />} />
             <Route path='/A.2.4_Summary' component={() => <Page component={A_2_4_Summary} />} />
-            <Route path='/A.3.0_Clinical_profile' component={() => <Page component={A_3_0_Clinical_profile} />} />
+            <Route path='/A.3.0_Clinical_profile' component={() => <Page background='a' component={A_3_0_Clinical_profile} />} />
             <Route path='/A.3.1_Clinical_overview' component={() => <Page component={A_3_1_Clinical_overview} />} />
             <Route path='/A.3.2.1_Efficacy' component={() => <Page component={A_3_2_1_Efficacy} />} />
             <Route path='/A.3.2.2_Efficacy' component={() => <Page component={A_3_2_2_Efficacy} />} />
@@ -73,7 +73,7 @@ function App({ tab }: AppProps) {
             <Route path='/A.4.0_Economic_value' component={() => <Page component={A_4_0_Economic_value} />} />
             <Route path='/A.5.1_Patients_support_providers' component={() => <Page component={A_5_1_Patients_support_providers} />} />
             <Route path='/A.5.2_Patients_support_providers' component={() => <Page component={A_5_2_Patients_support_providers} />} />
-            <Route path='/A.6.1.1_Appendix_Safety' component={() => <Page component={A_6_1_1_Appendix_Safety} />} />
+            <Route path='/A.6.1.1_Appendix_Safety' component={() => <Page background='a' component={A_6_1_1_Appendix_Safety} />} />
             <Route path='/A.6.1.2_Appendix_Safety' component={() => <Page component={A_6_1_2_Appendix_Safety} />} />
             <Route path='/A.6.2_Apendix_MOA' component={() => <Page component={A_6_2_Apendix_MOA} />} />
             <Route path='/A.6.3.X_Apendix_Safety' component={() => <Page component={A_6_3_X_Apendix_Safety} />} />
