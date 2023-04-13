@@ -106,8 +106,17 @@
     }
   }
 
+  .modal-header,
   .modal-footer {
     display: none;
+  }
+
+  &-with-header {
+    .modal-wrapper {
+      .modal-header {
+        display: block;
+      }
+    }
   }
 
   &-with-footer {
