@@ -33,7 +33,7 @@
     &.active {
       .main-nav__link__wrapper a {
         font-weight: bold;
-        padding: 20px 0 0px 5px;
+        padding: 20px 0 0 5px;
 
         &:after {
           content: "";
@@ -46,7 +46,46 @@
       }
 
       ul {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0;
+        right: 112px;
+        padding: 0;
+        border-bottom: 2px solid $blue-300;
+        z-index: 10;
+
+        li.main-nav__sublink {
+          padding: 0 39px;
+          list-style: none;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: $blue-600;
+            font-weight: 400;
+            width: auto;
+            height: 45px;
+            padding: 7px 0;
+            margin: 0;
+            border: none;
+
+            &::after {
+              display: none;
+            }
+          }
+
+          &.current {
+            a {
+              font-weight: 700;
+            }
+          }
+        }
       }
     }
 
@@ -63,41 +102,41 @@
     }
   }
 
-  &__sublink {
-    display: flex;
-    align-items: center;
-    padding: 13.5px 0;
-    font-size: 14px;
-    line-height: 14px;
-    list-style: none;
-
-    &.current {
-      a {
-        @include triangle;
-
-        color: $gray;
-        font-weight: 700;
-        text-decoration: underline;
-        padding-left: 28px;
-
-        &::before {
-          border-width: 0.6em 0 0.6em 0.9em;
-          top: 0;
-        }
-      }
-    }
-
-    a {
-      align-items: center;
-      color: $base;
-      display: flex;
-      font-size: 14px;
-      font-weight: 500;
-      font-style: normal;
-      letter-spacing: 0;
-      padding-left: 40px;
-      text-align: left;
-      text-decoration: none;
-    }
-  }
+  //&__sublink {
+  //  display: flex;
+  //  align-items: center;
+  //  padding: 13.5px 0;
+  //  font-size: 14px;
+  //  line-height: 14px;
+  //  list-style: none;
+  //
+  //  &.current {
+  //    a {
+  //      @include triangle;
+  //
+  //      color: $gray;
+  //      font-weight: 700;
+  //      text-decoration: underline;
+  //      padding-left: 28px;
+  //
+  //      &::before {
+  //        border-width: 0.6em 0 0.6em 0.9em;
+  //        top: 0;
+  //      }
+  //    }
+  //  }
+  //
+  //  a {
+  //    align-items: center;
+  //    color: $base;
+  //    display: flex;
+  //    font-size: 14px;
+  //    font-weight: 500;
+  //    font-style: normal;
+  //    letter-spacing: 0;
+  //    padding-left: 40px;
+  //    text-align: left;
+  //    text-decoration: none;
+  //  }
+  //}
 }

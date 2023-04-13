@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { PageContext } from '@/context/PageContext';
 
 export const Link = ({ custom, to, children }) => {
-  const [context, setContext] = useContext(PageContext);
+  const { changePage } = useContext(PageContext);
 
   const preventReload = (event) => {
     event.preventDefault();
@@ -23,7 +23,7 @@ export const Link = ({ custom, to, children }) => {
       const navigationEvent = new PopStateEvent('navigate');
       window.dispatchEvent(navigationEvent);
 
-      setContext(preparedPageName);
+      changePage(preparedPageName);
       // @todo this should be removed in future it redirect to page instead of
       // showing page.
       // window.location.replace(`veeva-vision/${preparedPageName}/index.html`);

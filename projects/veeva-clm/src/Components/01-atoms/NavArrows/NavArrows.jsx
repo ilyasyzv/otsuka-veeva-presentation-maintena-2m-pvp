@@ -1,7 +1,5 @@
 import React from 'react';
 import './NavArrows.scss';
-import ArrowPrev from './img/arrow_prev.png?format=webp';
-import ArrowNext from './img/arrow_next.png?format=webp';
 
 export const NavArrows = () => {
   const moveToNext = () => {
@@ -15,11 +13,15 @@ export const NavArrows = () => {
   };
 
   return (
-  <div className='arrows-nav'>
-    <img src={ArrowPrev} onClick={moveToPrev} className='arrows-nav__prev'/> |
-    <img src={ArrowNext} onClick={moveToNext} className='arrows-nav__next'/>
-  </div>
-  )
+    <div className='arrows-nav'>
+      <button type='button' onClick={moveToPrev} className='arrows-nav__prev'>
+        Prev
+      </button>
+      <button type='button' onClick={moveToNext} className='arrows-nav__next'>
+        Next
+      </button>
+    </div>
+  );
 };
 
 export default NavArrows;
