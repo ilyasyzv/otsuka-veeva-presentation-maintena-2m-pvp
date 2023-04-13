@@ -38,7 +38,7 @@ function App({ tab }: AppProps) {
         <PageContext.Provider value={[currentPage, setCurrentPage]}>
           <Layout>
             <Route path='/01_Launch_screen' component={() => <Page component={A_0_Home} />} />
-            <Route path='/A.0.Home' component={() => <Page component={A_0_Home} />} />
+            <Route path='/A.0.Home' component={() => <Page background='b' component={A_0_Home} />} />
             <Route path='/A.1.0_Executive_summary' component={() => <Page component={A_1_0_Executive_summary} />} />
             <Route path='/A.2.1.X_S_Overview' component={() => <Page component={A_2_1_X_S_Overview} />} />
             <Route path='/A.2.1.1_S_Overview' component={() => <Page component={A_2_1_1_S_Overview} />} />
@@ -47,14 +47,14 @@ function App({ tab }: AppProps) {
             <Route path='/A.2.2.X_B_Overview' component={() => <Page component={A_2_2_X_B_Overview} />} />
             <Route path='/A.2.3.X_LAIs' component={() => <Page component={A_2_3_X_LAIs} />} />
             <Route path='/A.2.4_Summary' component={() => <Page component={A_2_4_Summary} />} />
-            <Route path='/A.3.0_Clinical_profile' component={() => <Page component={A_3_0_Clinical_profile} />} />
+            <Route path='/A.3.0_Clinical_profile' component={() => <Page background='a' component={A_3_0_Clinical_profile} />} />
             <Route path='/A.3.1_Clinical_overview' component={() => <Page component={A_3_1_Clinical_overview} />} />
             <Route path='/A.3.2.X_Efficacy' component={() => <Page component={A_3_2_X_Efficacy} />} />
             <Route path='/A.3.4_Dosing' component={() => <Page component={A_3_4_Dosing} />} />
             <Route path='/A.3.5.X_Additional' component={() => <Page component={A_3_5_X_Additional} />} />
             <Route path='/A.4.0_Economic_value' component={() => <Page component={A_4_0_Economic_value} />} />
             <Route path='/A.5.X_Patients_support' component={() => <Page component={A_5_X_Patients_support} />} />
-            <Route path='/A.6.1.X_Appendix_Safety' component={() => <Page component={A_6_1_X_Appendix_Safety} />} />
+            <Route path='/A.6.1.X_Appendix_Safety' component={() => <Page background='a' component={A_6_1_X_Appendix_Safety} />} />
             <Route path='/A.6.2_Apendix_MOA' component={() => <Page component={A_6_2_Apendix_MOA} />} />
             <Route path='/A.6.3.X_Apendix_Safety' component={() => <Page component={A_6_3_X_Apendix_Safety} />} />
             <Route path='/A.7.0_ISI' component={() => <Page component={A_7_0_ISI} />} />

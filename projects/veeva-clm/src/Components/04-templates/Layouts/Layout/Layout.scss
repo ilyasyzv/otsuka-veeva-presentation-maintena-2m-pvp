@@ -13,9 +13,11 @@
     height: 100%;
 
     .left-pane {
-      width: 108px;
+      position: relative;
+      width: 102px;
       height: 100%;
       overflow: auto;
+      z-index: 10;
     }
 
     .left-pane__pager {
@@ -52,7 +54,7 @@
     }
 
     .right-pane {
-      width: 901px;
+      width: 922px;
       height: 100%;
       position: relative;
 
