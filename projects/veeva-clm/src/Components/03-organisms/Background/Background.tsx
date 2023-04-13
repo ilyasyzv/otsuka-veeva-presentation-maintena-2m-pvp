@@ -9,7 +9,11 @@ export type TBackground = {
 };
 
 const Background = ({ type, children }: TBackground) => {
-  return <div className={`content-background ${type}`}>{children}</div>;
+  return (
+    <div className={`content-background ${type}`}>
+      <div className='content'>{children}</div>
+    </div>
+  );
 };
 
 export default Background;
