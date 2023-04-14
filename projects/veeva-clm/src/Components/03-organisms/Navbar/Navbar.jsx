@@ -49,29 +49,37 @@ export const bottomMenu = {
       name: 'PI',
       url: '/A.7.0_ISI', // Replace after creating page.
       children: [],
-    }
-  ]
+    },
+  ],
 };
 
 export const Navbar = () => {
   const [currentPage] = useContext(PageContext);
-  const isHomepage = currentPage == '01_Launch_screen' || currentPage == 'R.0.0_Home' ? 'navigation__homepage--active' : 'navigation__homepage';
+  const isHomepage =
+    currentPage == '01_Launch_screen' || currentPage == 'R.0.0_Home'
+      ? 'navigation__homepage--active'
+      : 'navigation__homepage';
 
   return (
     <div className='navigation'>
       <div className='navigation__head'>
-        <Link to='/A.0.Home' custom='navigation__homepage-link'></Link>
-        <Link to='/A.0.Home'><img src={HomeIcon.src} alt="home icon" className/></Link>
-        <span className={isHomepage}></span>
+        <Link to='/A.0.Home' custom='navigation__homepage-link' />
+        <Link to='/A.0.Home'>
+          <img src={HomeIcon} alt='home icon' className />
+        </Link>
+        <span className={isHomepage} />
       </div>
       <ul className='main-nav'>
         {mainMenu.data.map((link, i) => (
-            <LinkGroup linkGroup={link} key={i} />
+          <LinkGroup linkGroup={link} key={i} />
         ))}
       </ul>
       <ul className='main-bottom-nav'>
         {bottomMenu.data.map((link, i) => (
-          <><LinkGroup linkGroup={link} key={i} /><span className='main-bottom-nav__splitter'></span></>
+          <>
+            <LinkGroup linkGroup={link} key={i} />
+            <span className='main-bottom-nav__splitter' />
+          </>
         ))}
       </ul>
     </div>
