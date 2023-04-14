@@ -1,0 +1,15 @@
+@import "@base/variables";
+
+.safetyInfo {
+  max-width: 830.5px;
+  
+  p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+
+    a {
+      color: $blue-500;
+    }
+  }
+}
