@@ -12,7 +12,13 @@ export default {
 const content = () => <div>Place components here</div>;
 
 const Template = () => {
-  return <AppStorybook path='A.3.0_Clinical_profile' components={content} />;
+  return (
+    <AppStorybook
+      path='A.3.0_Clinical_profile'
+      background='a'
+      components={content}
+    />
+  );
 };
 
 export const A_3_0_Clinical_profile = Template.bind({});

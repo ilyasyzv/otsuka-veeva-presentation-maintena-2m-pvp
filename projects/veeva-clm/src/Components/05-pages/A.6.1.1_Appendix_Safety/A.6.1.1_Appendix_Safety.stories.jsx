@@ -12,7 +12,13 @@ export default {
 const content = () => <div>Place components here</div>;
 
 const Template = () => {
-  return <AppStorybook path='A.6.1.1_Appendix_Safety' components={content} />;
+  return (
+    <AppStorybook
+      path='A.6.1.1_Appendix_Safety'
+      background='a'
+      components={content}
+    />
+  );
 };
 
 export const A_6_1_1_Appendix_Safety = Template.bind({});
