@@ -13,6 +13,7 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
+  excludeStories: ['A_0_Home_content'],
 };
 
 const content = () => (

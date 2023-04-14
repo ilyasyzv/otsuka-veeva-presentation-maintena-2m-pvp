@@ -1,12 +1,12 @@
-import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 
 export default {
-  title: 'CLM/Pages/A.2',
+  title: 'CLM/Pages',
   component: 'A.2.4_Summary',
   parameters: {
     layout: 'fullscreen',
   },
+  excludeStories: ['A_2_4_Summary_content'],
 };
 
 const content = () => <div>Place components here</div>;
@@ -16,3 +16,4 @@ const Template = () => {
 };
 
 export const A_2_4_Summary = Template.bind({});
+export const A_2_4_Summary_content = content.bind({});
