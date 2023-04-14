@@ -624,7 +624,7 @@ StudyDesignScroll1.args = {
   ...Default.args,
   customClass: `${blockName}_study-design`,
   withHeader: true,
-  link: <Button text='Study design' custom='button__type-b' />,
+  link: <Button text='Study Design' custom='button__type-b' />,
   header: <Header custom='mb-18'>Study design</Header>,
   children: (
     <>
@@ -913,7 +913,7 @@ StudyDesignScroll2.args = {
   ...Default.args,
   customClass: `${blockName}_study-design`,
   withHeader: true,
-  link: <Button text='Study design' custom='button__type-b' />,
+  link: <Button text='Study Design' custom='button__type-b' />,
   header: <Header custom='mb-18'>Study design</Header>,
   children: (
     <>
