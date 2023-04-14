@@ -1,10 +1,7 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 
-import {
-  StudyDesign,
-  UnderstandPANSS,
-} from '@templates/Layouts/Modal/Modal.stories';
+import { UnderstandPANSS } from '@templates/Layouts/Modal/Modal.stories';
 import { Default as ButtonDefault } from '@atoms/Content/Button/Button.stories';
 
 export default {
@@ -19,7 +16,6 @@ export default {
 const content = () => (
   <div>
     <UnderstandPANSS {...UnderstandPANSS.args} />
-    <StudyDesign {...StudyDesign.args} />
     <ButtonDefault {...ButtonDefault.args} />
   </div>
 );
