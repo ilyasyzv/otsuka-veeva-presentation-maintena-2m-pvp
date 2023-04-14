@@ -28,3 +28,4 @@ const Template = () => {
 };
 
 export const A_0_Home = Template.bind({});
+export const A_0_Home_content = content.bind({});
