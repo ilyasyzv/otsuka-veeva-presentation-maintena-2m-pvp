@@ -14,6 +14,10 @@
   &[class*="-bg-color-"] {
     padding: 4px 14px;
   }
+
+  sup {
+    line-height: normal;
+  }
 }
 
 h1.heading {
@@ -32,6 +36,8 @@ h2.heading {
   font-size: 24px;
   line-height: 29px;
   color: $gray-800;
+
+
 }
 
 h3.heading {
@@ -42,6 +48,5 @@ h3.heading {
 
   sup {
     font-size: 9px;
-    line-height: normal;
   }
 }
