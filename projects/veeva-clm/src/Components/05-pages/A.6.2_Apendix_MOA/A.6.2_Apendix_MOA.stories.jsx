@@ -1,12 +1,12 @@
-import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 
 export default {
-  title: 'CLM/Pages/A.6',
-  component: 'A.6.2_Apendix_MOAy',
+  title: 'CLM/Pages',
+  component: 'A.6.2_Apendix_MOA',
   parameters: {
     layout: 'fullscreen',
   },
+  excludeStories: ['A_6_2_Apendix_MOA_content'],
 };
 
 const content = () => <div>Place components here</div>;
@@ -16,3 +16,4 @@ const Template = () => {
 };
 
 export const A_6_2_Apendix_MOA = Template.bind({});
+export const A_6_2_Apendix_MOA_content = content.bind({});

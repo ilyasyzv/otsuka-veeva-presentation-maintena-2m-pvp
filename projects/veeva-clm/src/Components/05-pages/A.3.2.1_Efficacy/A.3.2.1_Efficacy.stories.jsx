@@ -1,12 +1,12 @@
-import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 
 export default {
-  title: 'CLM/Pages/A.3/A.3.2',
+  title: 'CLM/Pages',
   component: 'A.3.2.1_Efficacy',
   parameters: {
     layout: 'fullscreen',
   },
+  excludeStories: ['A_3_2_1_Efficacy_content'],
 };
 
 const content = () => <div>Place components here</div>;
@@ -16,3 +16,4 @@ const Template = () => {
 };
 
 export const A_3_2_1_Efficacy = Template.bind({});
+export const A_3_2_1_Efficacy_content = content.bind({});

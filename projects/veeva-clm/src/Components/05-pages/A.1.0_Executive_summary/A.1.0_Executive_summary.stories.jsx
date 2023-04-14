@@ -1,4 +1,3 @@
-import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 
 export default {
@@ -7,6 +6,7 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
+  excludeStories: ['A_1_0_Executive_summary_content'],
 };
 
 const content = () => <div>Place components here</div>;
@@ -16,3 +16,4 @@ const Template = () => {
 };
 
 export const A_1_0_Executive_summary = Template.bind({});
+export const A_1_0_Executive_summary_content = content.bind({});
