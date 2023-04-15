@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
+
 import { PageContext } from '@/context/PageContext';
+
 import Link from '../Link/Link';
 import './LinkGroup.scss';
 
