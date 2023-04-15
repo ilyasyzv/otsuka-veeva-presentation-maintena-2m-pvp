@@ -105,9 +105,9 @@ export const bottomMenu = {
 };
 
 export const Navbar = () => {
-  const { currentPage } = useContext(PageContext);
+  const [currentPage] = useContext(PageContext);
   const isHomepage =
-    currentPage === '01_Launch_screen' || currentPage === 'A.0.Home'
+    currentPage === '01_Launch_screen' || currentPage === 'R.0.0_Home'
       ? 'navigation__homepage--active'
       : 'navigation__homepage';
 

@@ -28,7 +28,7 @@ export const CollapsibleElement = ({ title, children, isOpen, onToggle }) => {
         <span className='primary'>{primary}</span>
         &nbsp;<span>{secondary}</span>
       </div>
-      {isOpen && <div className='content'>{children}</div>}
+      {isOpen && <div className='element-content'>{children}</div>}
     </div>
   );
 };
