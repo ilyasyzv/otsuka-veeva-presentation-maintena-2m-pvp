@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
-import Navbar from '@/Components/03-organisms/Navbar/Navbar';
+import Navbar, { mainMenu } from '@organisms/Navbar/Navbar';
 import NavArrows from '@/Components/01-atoms/NavArrows/NavArrows';
 import { PageContext } from '@/context/PageContext';
 import UpperNavBar from '@organisms/UpperNavBar/UpperNavBar';
-import { mainMenu } from '@organisms/Navbar/Navbar';
 
 import './Layout.scss';
 

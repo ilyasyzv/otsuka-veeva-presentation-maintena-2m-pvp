@@ -53,7 +53,7 @@ export const Route = ({ path, exact = false, component, ...props }) => {
   return currentPath === preparedPath ||
     currentPage === preparedPath ||
     `${currentPath}/index.html` === preparedPath
-    ? component
+    ? component()
     : null;
 };
 
