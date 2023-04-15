@@ -7,7 +7,7 @@ import { mainMenu } from '@organisms/Navbar/Navbar';
 
 import './Layout.scss';
 
-const Layout = ({ children = <>Loading</> }) => {
+export const Layout = ({ children = <>Loading</> }) => {
   const { currentPage } = useContext(PageContext);
   const filterLink = (link) => {
     if (link?.url?.includes(currentPage) || false) {

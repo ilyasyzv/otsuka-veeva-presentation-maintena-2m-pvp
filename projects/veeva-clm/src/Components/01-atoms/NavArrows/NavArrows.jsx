@@ -45,7 +45,6 @@ export const NavArrows = () => {
     } else {
       const prevPosition = currentPosition == 0 ? links.length - 1 : currentPosition - 1;
       const preparedPageName = links[prevPosition].url.replace('/', '');
-      console.log(preparedPageName);
       navigateLocal(changePage, preparedPageName);
     }
   };
