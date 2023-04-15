@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React, { Fragment, useContext } from 'react';
+
 import { LinkGroup } from '@organisms/Routing/LinkGroup/LinkGroup';
-import HomeIcon from './img/home-icon.png?format=webp';
 import './Navbar.scss';
 import Link from '@organisms/Routing/Link/Link';
 import { PageContext } from '@/context/PageContext';
@@ -15,12 +15,50 @@ export const mainMenu = {
     {
       name: 'Schizophrenia & Bipolar I Disorder Overview',
       url: '/A.2.1.1_S_Overview',
-      children: [],
+      children: [
+        {
+          name: 'Schizophrenia Overview',
+          url: '/A.2.1.1_S_Overview',
+        },
+        {
+          name: 'Bipolar I Overview',
+          url: '/A.2.2.1_B_Overview',
+        },
+        {
+          name: 'LAIs',
+          url: '/A.2.3.1_LAIs',
+        },
+        {
+          name: 'Summary',
+          url: '/A.2.4_Summary',
+        },
+      ],
     },
     {
       name: 'Clinical Profile for ABILIFY ASIMTUFII®',
-      url: '/A.3.0_Clinical_profile',
-      children: [],
+      url: '/A.3.1.1_Overview',
+      children: [
+        {
+          name: 'Overview',
+          url: '/A.3.1.1_Overview',
+        },
+        {
+          name: 'PK Study',
+          url: '/A.3.2.1_Strudy',
+        },
+        {
+          name: 'Safety Data',
+          url: '/A.3.3.1_Safety',
+        },
+        {
+          name: 'Dosing & Administration',
+          url: '/A.3.4.1_Dosing',
+        },
+        {
+          name: 'ABILIFY MAINTENA® Pivotal Studies',
+          url: '/A.3.5.1_Additional',
+        },
+      ],
     },
     {
       name: 'Economic Value of ABILIFY ASIMTUFII®',
@@ -34,7 +72,20 @@ export const mainMenu = {
     {
       name: 'Appendix',
       url: '/A.6.1.1_Appendix_Safety',
-      children: [],
+      children: [
+        {
+          name: 'ABILIFY MAINTENA Real-world Evidence',
+          url: '/A.6.1.1_Appendix_Safety',
+        },
+        {
+          name: 'MOA',
+          url: '/A.6.2.1_Apendix_MOA',
+        },
+        {
+          name: 'ABILIFY MAINTENA Safety Profile',
+          url: '/A.6.3.1_Appendix_Safety',
+        },
+      ],
     },
   ],
 };
@@ -56,30 +107,27 @@ export const bottomMenu = {
 export const Navbar = () => {
   const [currentPage] = useContext(PageContext);
   const isHomepage =
-    currentPage == '01_Launch_screen' || currentPage == 'R.0.0_Home'
+    currentPage === '01_Launch_screen' || currentPage === 'R.0.0_Home'
       ? 'navigation__homepage--active'
       : 'navigation__homepage';
 
   return (
     <div className='navigation'>
       <div className='navigation__head'>
-        <Link to='/A.0.Home' custom='navigation__homepage-link' />
-        <Link to='/A.0.Home'>
-          <img src={HomeIcon} alt='home icon' className />
-        </Link>
+        <Link to='A.0.Home' custom='navigation__homepage-link' />
         <span className={isHomepage} />
       </div>
       <ul className='main-nav'>
         {mainMenu.data.map((link, i) => (
-          <LinkGroup linkGroup={link} key={i} />
+          <LinkGroup linkGroup={link} key={link.url} />
         ))}
       </ul>
       <ul className='main-bottom-nav'>
         {bottomMenu.data.map((link, i) => (
-          <>
-            <LinkGroup linkGroup={link} key={i} />
+          <Fragment key={link.url}>
+            <LinkGroup linkGroup={link} />
             <span className='main-bottom-nav__splitter' />
-          </>
+          </Fragment>
         ))}
       </ul>
     </div>
