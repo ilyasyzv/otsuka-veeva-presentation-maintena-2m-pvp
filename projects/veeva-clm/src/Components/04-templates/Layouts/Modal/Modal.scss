@@ -4,7 +4,7 @@
   display: block;
   width: 28px;
   height: 28px;
-  background: url("../../../../assets/misc/modal/open_modal.svg");
+  background: url("@assets/misc/modal/open_modal.svg");
   background-size: 28px 28px;
   position: absolute;
   top: 15px;
@@ -67,7 +67,7 @@
     display: block;
     width: 32px;
     height: 32px;
-    background: $white url("../../../../assets/misc/modal/icon-modal-close.svg");
+    background: $white url("@assets/misc/modal/icon-modal-close.svg");
     background-size: 32px 32px;
     border-radius: 100px;
     position: absolute;
