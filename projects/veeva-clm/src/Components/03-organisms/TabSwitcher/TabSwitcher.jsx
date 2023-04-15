@@ -3,10 +3,10 @@ import './TabSwitcher.scss';
 
 export default function TabSwitcher({ tabs }) {
   const [selectedId, setSelectedId] = useState(tabs[0].id);
-  const selectedTab = tabs.find(tab => tab.id === selectedId);
+  const selectedTab = tabs.find((tab) => tab.id === selectedId);
   return (
-    <div className="tab_switcher">
-      <div className="tab_switcher__header">
+    <div className='tab_switcher'>
+      <div className='tab_switcher__header'>
         {tabs.map(tab => (
           <button
             className={selectedId === tab.id ? 'active' : ''}
@@ -14,12 +14,12 @@ export default function TabSwitcher({ tabs }) {
             onClick={() => setSelectedId(tab.id)}
           >
             <span>{tab.header}</span>
-            <div></div>
+            <div />
           </button>
         ))}
       </div>
       <hr />
-      <div className="tab_switcher__body" key={selectedId}>
+      <div className='tab_switcher__body' key={selectedId}>
         {selectedTab.content}
       </div>
     </div>

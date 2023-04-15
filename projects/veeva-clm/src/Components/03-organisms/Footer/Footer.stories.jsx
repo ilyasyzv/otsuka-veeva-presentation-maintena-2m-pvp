@@ -1,7 +1,7 @@
 import React from 'react';
 import { Footer } from './Footer';
-import AsimtufiiLogo from '../../../assets/asimtufii-logo.png'
-import MaintenaLogo from '../../../assets/maintena-logo.png'
+import AsimtufiiLogo from '@assets/asimtufii-logo.png';
+import MaintenaLogo from '@assets/maintena-logo.png';
 
 export default {
   title: 'CLM/Organisms/Footer',

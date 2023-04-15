@@ -3,9 +3,9 @@ import Lottie from 'react-lottie-player';
 import Link from '@organisms/Routing/Link/Link';
 import Paragraph from '@atoms/Content/Paragraph/Paragraph';
 import './style.scss';
-import minusIcon from '../../../assets/icons/minus.svg';
-import plusIcon from '../../../assets/icons/plus.svg';
-import lottieJson from '../../../assets/lottie-animation/sun-animation.json';
+import minusIcon from '@assets/icons/minus.svg';
+import plusIcon from '@assets/icons/plus.svg';
+import lottieJson from '@assets/lottie-animation/sun-animation.json';
 
 const initialSteps = [
   {

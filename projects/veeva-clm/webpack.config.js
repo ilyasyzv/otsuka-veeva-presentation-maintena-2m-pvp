@@ -51,6 +51,7 @@ module.exports = (_env, argv) => {
         '@organisms': path.join(rootFolder, 'src/Components/03-organisms'),
         '@templates': path.join(rootFolder, 'src/Components/04-templates'),
         '@pages': path.join(rootFolder, 'src/Components/05-pages'),
+        '@assets': path.join(rootFolder, 'src/assets'),
       },
     },
     entry: preparedEntries,

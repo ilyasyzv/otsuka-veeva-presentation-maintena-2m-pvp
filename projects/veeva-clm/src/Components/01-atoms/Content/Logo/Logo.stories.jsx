@@ -1,6 +1,6 @@
 import React from 'react';
 import { Logo } from './Logo';
-import AsimtufiiLogo from '../../../../assets/asimtufii-logo.png'
+import AsimtufiiLogo from '@/assets/asimtufii-logo.png'
 
 export default {
   title: 'CLM/Atoms/Logo',
