@@ -9,6 +9,7 @@ import {
 import { SplitScreen } from '@templates/Layouts/Grid/TwoColumns';
 import Chart1 from './img/LAIs.png?format=webp';
 import './style.scss';
+import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
 export default {
   title: 'CLM/Pages',
@@ -42,6 +43,36 @@ const content = () => (
       left={modalOne}
       right={modalTwo}
     />
+    <Footer
+      custom='mt-11'
+      footnotes={[
+        {
+          supLeft: '*',
+          innerText: 'Medication adherence was measured by the proportion of days covered in the 1 year immediately post-index. The adjusted mean proportion of days covered was higher in LAI users than in oral users.'
+          ,
+          supRight: '2'
+        },
+        {
+          innerText: 'CI=confidence interval; HR=hazard ratio.'
+        }
+      ]}
+      references={[
+        {
+          text: <span>Zolezzi M, et al. <em>Neuropsychiatr Dis Treat.</em> 2021;17:1917-1926.</span>
+        },
+        {
+          text: <span>Greene M, et al. <em>J Med Econ.</em> 2018;21(2):127-134.</span>
+        },
+        {
+          text: <span>Lafeuille M-H, et al. <em>BMC Psychiatry.</em> 2013;13:221.</span>
+        }
+      ]}
+      distance={'54.5px'}
+      safetyInfo={[
+        {
+          text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. '
+        }
+      ]} />
   </>
 );
 
