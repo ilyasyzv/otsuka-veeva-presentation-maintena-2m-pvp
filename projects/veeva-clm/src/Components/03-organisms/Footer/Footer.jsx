@@ -7,11 +7,12 @@ import { Logo } from '@/Components/01-atoms/Content/Logo/Logo';
 
 const classNames = require('classnames');
 
-export const Footer = ({ footnotes, references, distance, safetyInfo, image }) => {
-  const customClass = image && 'logo' || '';
+export const Footer = ({ custom, footnotes, references, distance, safetyInfo, image }) => {
+  const customClass = custom || '';
+  const logoClass = image && 'logo' || '';
 
   return (
-    <footer className={classNames('footer', customClass)}>
+    <footer className={classNames('footer', customClass, logoClass)}>
       <div>
         { footnotes && <FootNote footnotes={ footnotes } /> }
         { references && <References references={ references } /> }

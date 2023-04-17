@@ -4,6 +4,7 @@ import { AppStorybook } from '@pages/AppStorybook';
 import { Header } from '@atoms/Content/Header/Header';
 import B_Overview from './img/B_Overview.png?format=webp';
 import './style.scss';
+import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
 export default {
   title: 'CLM/Pages',
@@ -23,6 +24,25 @@ const content = () => (
       ~2.3% of US adults<sup>1-3</sup>
     </Header>
     <img className={`${baseClass}-chart-1`} src={B_Overview} alt='' />
+    <Footer
+      custom='mt-71'
+      references={[
+        {
+          text: <span>American Psychiatric Association. <em>Diagnostic and Statistical Manual of Mental Disorders.</em> 5th ed. Washington, DC: American Psychiatric Association; 2013.</span>
+        },
+        {
+          text: <span>Grande I, et al. <em>Lancet.</em> 2016;387(10027):1561-1572.</span>
+        },
+        {
+          text: 'Treatment Advocacy Center. Available at: https://www.treatmentadvocacycenter.org/evidence-and-research/fast-facts. Accessed January 31, 2023.'
+        }
+      ]}
+      distance={'24.5px'}
+      safetyInfo={[
+        {
+          text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. '
+        }
+      ]} />
   </>
 );
 
