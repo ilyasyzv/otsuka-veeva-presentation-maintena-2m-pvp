@@ -30,6 +30,8 @@ $red-500: #E83443;
 $yellow-200: #FFB200;
 $yellow-300: #FFB81C00;
 
+$pink-100: #FF00C4;
+
 $base: $gray-800;
 $blue: $blue-600;
 $black: #000;
@@ -208,6 +210,14 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
     }
     .#{$short_var}r-#{$i} {
       #{$css_var}-right: #{$i}px !important;
+    }
+  }
+}
+
+@mixin position($short_var, $css_var) {
+  @for $i from 0 through 100 {
+    .#{$short_var}-#{$i} {
+      #{$css_var}: #{$i}px !important;
     }
   }
 }

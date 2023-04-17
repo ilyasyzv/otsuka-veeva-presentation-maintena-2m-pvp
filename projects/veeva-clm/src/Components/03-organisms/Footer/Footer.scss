@@ -1,0 +1,11 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    max-width: 859px;
+
+    &.logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}

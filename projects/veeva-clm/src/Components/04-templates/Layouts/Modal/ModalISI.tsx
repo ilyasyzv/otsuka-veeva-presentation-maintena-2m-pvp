@@ -93,7 +93,7 @@ const ModalISI = ({ openByDefault }: TModalISI) => {
                     thumbSize={43}
                     style={{ height: '510px' }}
                   >
-                    <div className='isi'>
+                    <div className='modal-isi'>
                       <ISIContent />
                     </div>
                   </Scrollbars>

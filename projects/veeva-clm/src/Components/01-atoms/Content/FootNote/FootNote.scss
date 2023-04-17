@@ -1,6 +1,11 @@
 .footnote {
-  font-size: 12px;
-  line-height: 12px;
+  max-width: 822px;
+  font-size: 11px;
+  line-height: 13px;
+
+  ul, ol {
+    list-style: none;
+  }
 
   p {
     margin: 0;
@@ -8,7 +13,10 @@
 
   sup {
     font-size: 8px;
-    line-height: normal;
+  }
+
+  sub {
+    font-size: 6px;
   }
 
   &-small {
@@ -16,7 +24,12 @@
     line-height: 8px;
   }
 
-  sup {
-    font-size: 10px;
+  .transform {
+    transform: translate(2px, 0);
+  }
+
+  .lineHeight {
+    line-height: 7px;
+    transform: translate(2, -5px);
   }
 }

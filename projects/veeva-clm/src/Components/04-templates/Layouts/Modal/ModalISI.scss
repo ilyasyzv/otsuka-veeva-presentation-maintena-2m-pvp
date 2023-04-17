@@ -45,9 +45,6 @@
       }
 
       .custom-scrollbar {
-        margin-right: -26px;
-        width: auto !important;
-
         & > div {
           &:first-child {
             padding-right: 50px;
@@ -68,7 +65,7 @@
         }
       }
 
-      .isi {
+      .modal-isi {
         p {
           margin-bottom: 9px;
           line-height: 18px;
@@ -89,7 +86,7 @@
           color: $blue-500;
         }
 
-        .footer {
+        .modal-isi-footer {
           margin-top: 260px;
 
           p {
@@ -130,7 +127,7 @@
     }
 
     .page-0 {
-      padding-right: 30px;
+      padding-right: 55px;
 
       .modal-actions {
         .button-continue {

@@ -4,7 +4,7 @@ import Navbar from '@/Components/03-organisms/Navbar/Navbar';
 import NavArrows from '@/Components/01-atoms/NavArrows/NavArrows';
 import { ISIModalContext } from '@/context/ISIModalContext';
 import ModalISI from '@/Components/04-templates/Layouts/Modal/ModalISI';
-import PageContext from '../../../../context/PageContext';
+import { PageContext } from '@/context/PageContext';
 
 type LayoutProps = {
   pageid?: string;
@@ -12,7 +12,7 @@ type LayoutProps = {
 };
 
 export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
-  const [currentPage] = useContext<string>(PageContext);
+  const { currentPage } = useContext<string>(PageContext);
   const { isShowISIModal } = useContext(ISIModalContext);
 
   return (
@@ -30,9 +30,7 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
           <NavArrows />
         </div>
       </div>
-      {isShowISIModal && (
-        <ModalISI openByDefault>{Number(isShowISIModal)}</ModalISI>
-      )}
+      {isShowISIModal && <ModalISI openByDefault />}
     </>
   );
 };
