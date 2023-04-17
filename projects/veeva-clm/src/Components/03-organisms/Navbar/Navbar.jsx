@@ -18,7 +18,7 @@ export const mainMenu = {
       children: [
         {
           name: 'Schizophrenia Overview',
-          url: '/A.2.1.1_S_Overview',
+          url: '/A.2.1.2_S_Overview',
         },
         {
           name: 'Bipolar I Overview',
