@@ -190,3 +190,11 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
     }
   }
 }
+
+@mixin position($short_var, $css_var) {
+  @for $i from 0 through 100 {
+    .#{$short_var}-#{$i} {
+      #{$css_var}: #{$i}px !important;
+    }
+  }
+}

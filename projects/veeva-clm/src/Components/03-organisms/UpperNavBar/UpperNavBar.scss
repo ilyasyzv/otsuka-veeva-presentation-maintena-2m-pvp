@@ -1,0 +1,51 @@
+@import "@base/variables";
+
+.upper_nav_bar {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  max-height: 64px;
+  top: 0;
+  right: 112px;
+  z-index: 100;
+  background: transparent;
+  border-bottom: 1px solid $blue-300;
+
+  .main-nav {
+  
+    &__link {
+  
+      & .main-nav__link__wrapper a {
+        max-width: 144px;
+        margin: 8px 30px 8px 0;
+        color: $blue-500;
+        padding: 0 0 0 5px;
+      }
+
+      &.active {
+
+        .main-nav__link__wrapper a {
+          color: $blue-600;
+          padding: 0 0 0 5px;
+  
+          &:after {
+            content: '';
+            position: absolute;
+            top: 39px;
+            height: 10px;
+            width: 95px;
+            border-radius: 0 0 10px 10px;
+            background-color: $blue-300;
+          }
+        }
+      }
+    }
+  }
+}
+
+.upper_nav_bar__submenu {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+  margin: 0 0 0 15px;
+}

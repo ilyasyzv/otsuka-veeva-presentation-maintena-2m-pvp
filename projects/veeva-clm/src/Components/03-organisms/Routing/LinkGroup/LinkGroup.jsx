@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
+
 import { PageContext } from '@/context/PageContext';
+
 import Link from '../Link/Link';
 import './LinkGroup.scss';
 
 const classNames = require('classnames');
 
 export const LinkGroup = ({ linkGroup }) => {
-  const [currentPage] = useContext(PageContext);
+  const { currentPage } = useContext(PageContext);
 
   const linksGroup = () => {
     const urls = [linkGroup.url.replace('/', '')];
@@ -23,21 +25,21 @@ export const LinkGroup = ({ linkGroup }) => {
 
   const isCurrent = (url) => url.replace('/', '') === currentPage;
 
-  const makeSublinks = (children) => {
+  const makeSubLinks = (children) => {
     if (!children) {
       return null;
     }
 
     return (
       <ul>
-        {children.map((sublink, i) => (
+        {children.map((subLink) => (
           <li
-            key={i}
+            key={subLink.url}
             className={`main-nav__sublink ${
-              isCurrent(sublink.url) ? 'current' : ''
+              isCurrent(subLink.url) ? 'current' : ''
             }`}
           >
-            <Link to={sublink.url}>{sublink.name}</Link>
+            <Link to={subLink.url}>{subLink.name}</Link>
           </li>
         ))}
       </ul>
@@ -55,7 +57,7 @@ export const LinkGroup = ({ linkGroup }) => {
     <li className={`${mainLinkClass} ${addClass || ''}`}>
       <div className='main-nav__link__wrapper'>
         <Link to={linkGroup.url}>{linkGroup.name}</Link>
-        {makeSublinks(linkGroup.children)}
+        {makeSubLinks(linkGroup.children)}
       </div>
     </li>
   );

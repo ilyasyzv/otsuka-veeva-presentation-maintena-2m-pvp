@@ -41,7 +41,7 @@
       content: "";
       height: 20px;
       width: 15px;
-      background: url("../../../assets/icons/button/icon-arrow-right-basic-blue.svg") no-repeat;
+      background: url("@assets/icons/button/icon-arrow-right-basic-blue.svg") no-repeat;
       background-size: contain;
       position: absolute;
       left: 14px;
@@ -61,7 +61,7 @@
     }
   }
 
-  .content {
+  .element-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
