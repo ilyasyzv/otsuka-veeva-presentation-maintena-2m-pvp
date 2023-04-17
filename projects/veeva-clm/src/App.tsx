@@ -16,7 +16,9 @@ import A_2_2_3_B_Overview from '@/content/pages/A.2.2.3_B_Overview/index.mdx';
 import A_2_3_1_LAIs from '@/content/pages/A.2.3.1_LAIs/index.mdx';
 import A_2_3_2_LAIs from '@/content/pages/A.2.3.2_LAIs/index.mdx';
 import A_2_4_Summary from '@/content/pages/A.2.4_Summary/index.mdx';
+import A_3_0_Clinical_profile from '@/content/pages/A.3.0_Clinical_profile/index.mdx';
 import A_3_1_1_Overview from '@/content/pages/A.3.1.1_Overview/index.mdx';
+import A_3_1_Clinical_overview from '@/content/pages/A.3.1_Clinical_overview/index.mdx';
 import A_3_2_1_Study from '@/content/pages/A.3.2.1_Study/index.mdx';
 import A_3_2_2_Study from '@/content/pages/A.3.2.2_Study/index.mdx';
 import A_3_2_3_Study from '@/content/pages/A.3.2.3_Study/index.mdx';
@@ -62,6 +64,7 @@ function App({ tab }: AppProps) {
             <Route path='/A.2.3.2_LAIs' component={() => <Page component={A_2_3_2_LAIs} />} />
             <Route path='/A.2.4_Summary' component={() => <Page component={A_2_4_Summary} />} />
             <Route path='/A.3.1.1_Overview' component={() => <Page component={A_3_1_1_Overview} />} />
+            <Route path='/A.3.1_Clinical_overview' component={() => <Page component={A_3_1_Clinical_overview} />} />
             <Route path='/A.3.2.1_Study' component={() => <Page component={A_3_2_1_Study} />} />
             <Route path='/A.3.2.2_Study' component={() => <Page component={A_3_2_2_Study} />} />
             <Route path='/A.3.2.3_Study' component={() => <Page component={A_3_2_3_Study} />} />
