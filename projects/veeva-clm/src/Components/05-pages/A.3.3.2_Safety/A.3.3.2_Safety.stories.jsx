@@ -73,7 +73,7 @@ const content = () => (
 );
 
 const Template = () => {
-  return <AppStorybook path='A.3.2.2_Efficacy' components={content} />;
+  return <AppStorybook path='A.3.3.2_Safety' components={content} />;
 };
 
 export const A_3_3_2_Safety = Template.bind({});
