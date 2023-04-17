@@ -73,7 +73,7 @@ const content = () => (
     {/*  </p> */}
     {/* </div> */}
     <Footer
-      custom='mt-69'
+      custom='bottom-20'
       safetyInfo={[
         {
           text: <span>Please see <a href="/">FULL PRESCRIBING INFORMATION</a> including BOXED WARNING available in this presentation.</span>

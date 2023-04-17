@@ -44,7 +44,7 @@ const content = () => (
       right={modalTwo}
     />
     <Footer
-      custom='mt-11'
+      custom='bottom-3'
       footnotes={[
         {
           supLeft: '*',

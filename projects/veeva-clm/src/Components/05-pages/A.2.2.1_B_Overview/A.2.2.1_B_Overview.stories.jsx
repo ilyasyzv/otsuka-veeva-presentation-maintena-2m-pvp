@@ -25,7 +25,7 @@ const content = () => (
     </Header>
     <img className={`${baseClass}-chart-1`} src={B_Overview} alt='' />
     <Footer
-      custom='mt-71'
+      custom='bottom-7'
       references={[
         {
           text: <span>American Psychiatric Association. <em>Diagnostic and Statistical Manual of Mental Disorders.</em> 5th ed. Washington, DC: American Psychiatric Association; 2013.</span>

@@ -27,7 +27,7 @@ const content = () => (
     <img className={`${baseClass}-chart-1 mb-46`} src={Chart1} alt='' />
     <img className={`${baseClass}-chart-2`} src={Chart2} alt='' />
     <Footer
-      custom='mt-80'
+      custom='bottom-5'
       footnotes={[
         {
           innerText: 'FGA-LAI=first-generation antipsychotic long-acting injectable; LAI=long-acting injectable; SGA-LAI=second-generation antipsychotic long-acting injectable.'
