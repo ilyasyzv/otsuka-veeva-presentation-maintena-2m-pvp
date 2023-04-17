@@ -47,7 +47,7 @@ function App({ tab }: AppProps) {
   return (
     <ErrorBoundary>
       <Suspense fallback={<h1>Loading application...</h1>}>
-        <PageProvider>
+        <PageProvider currPage={currentPage}>
           <Layout>
             <Route path='/01_Launch_screen' component={() => <Page component={A_0_Home} />} />
             <Route path='/A.0.Home' component={() => <Page background='b' component={A_0_Home} />} />

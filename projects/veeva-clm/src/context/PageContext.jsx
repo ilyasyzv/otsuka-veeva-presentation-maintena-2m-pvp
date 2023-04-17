@@ -4,8 +4,8 @@ const defaultPage = '01_Launch_screen';
 
 const PageContext = createContext(defaultPage);
 
-const PageProvider = ({ children }) => {
-  const [currentPage, setCurrentPage] = useState(defaultPage);
+const PageProvider = ({ children, currPage = defaultPage }) => {
+  const [currentPage, setCurrentPage] = useState(currPage);
 
   const changePage = (page) => {
     setCurrentPage(page);
