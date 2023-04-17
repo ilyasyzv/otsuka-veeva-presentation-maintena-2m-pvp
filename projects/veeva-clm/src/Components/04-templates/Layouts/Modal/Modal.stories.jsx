@@ -257,7 +257,7 @@ export const StudyDesignSup = Template.bind({});
 StudyDesignSup.args = {
   ...Default.args,
   customClass: `${blockName}_study-design`,
-  link: <Button text='Study design' custom='button__type-b' />,
+  link: <Button text='Study Design' custom='button__type-b' />,
   children: (
     <>
       <Header custom='mb-26'>
@@ -355,7 +355,7 @@ export const StudyDesign1 = Template.bind({});
 StudyDesign1.args = {
   ...Default.args,
   customClass: `${blockName}_study-design`,
-  link: <Button text='Study design' custom='button__type-b' />,
+  link: <Button text='Study Design' custom='button__type-b' />,
   children: (
     <>
       <Header custom='mb-18'>Study design</Header>
@@ -465,7 +465,7 @@ export const StudyDesign2 = Template.bind({});
 StudyDesign2.args = {
   ...Default.args,
   customClass: `${blockName}_study-design`,
-  link: <Button text='Study design' custom='button__type-b' />,
+  link: <Button text='Study Design' custom='button__type-b' />,
   children: (
     <>
       <Header custom='mb-18'>Study design</Header>
