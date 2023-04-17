@@ -3,8 +3,8 @@ import './CollapsibleGroup.scss';
 
 const classNames = require('classnames');
 
-export const CollapsibleGroup = ({ children }) => {
-  const [openItem, setOpenItem] = useState(null);
+export const CollapsibleGroup = ({ children, openItemIndex = 0 }) => {
+  const [openItem, setOpenItem] = useState(openItemIndex);
   const handleElementClick = (index) => {
     setOpenItem(openItem === index ? null : index);
   };

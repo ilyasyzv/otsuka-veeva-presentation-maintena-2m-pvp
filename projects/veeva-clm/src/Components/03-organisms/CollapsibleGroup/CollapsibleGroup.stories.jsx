@@ -8,24 +8,25 @@ export default {
   component: CollapsibleGroup,
 };
 
+const items = [
+  {
+    title: {
+      primary: 'Primary endpoint:',
+      secondary: 'Mean change in PANSS total score from baseline* to Week 10',
+    },
+    image: <img src={DiagramPrimary} alt='DiagramPrimary' width='760' />,
+  },
+  {
+    title: {
+      primary: 'Key secondary endpoint:',
+      secondary:
+        'Mean change in CGI-S score from baseline to endpoint at Week 12',
+    },
+    image: <img src={DiagramSecondary} alt='DiagramSecondary' width='760' />,
+  },
+];
+
 const Template = () => {
-  const items = [
-    {
-      title: {
-        primary: 'Primary endpoint:',
-        secondary: 'Mean change in PANSS total score from baseline* to Week 10',
-      },
-      image: <img src={DiagramPrimary} alt='DiagramPrimary' width='760' />,
-    },
-    {
-      title: {
-        primary: 'Key secondary endpoint:',
-        secondary:
-          'Mean change in CGI-S score from baseline to endpoint at Week 12',
-      },
-      image: <img src={DiagramSecondary} alt='DiagramSecondary' width='760' />,
-    },
-  ];
   return (
     <CollapsibleGroup>
       {items.map((item) => (
@@ -34,4 +35,15 @@ const Template = () => {
     </CollapsibleGroup>
   );
 };
+
+const TemplateOne = () => {
+  return (
+    <CollapsibleGroup openItemIndex={1}>
+      {items.map((item) => (
+        <CollapsibleElement title={item.title}>{item.image}</CollapsibleElement>
+      ))}
+    </CollapsibleGroup>
+  );
+};
 export const Default = Template.bind({});
+export const DefaultOne = TemplateOne.bind({});

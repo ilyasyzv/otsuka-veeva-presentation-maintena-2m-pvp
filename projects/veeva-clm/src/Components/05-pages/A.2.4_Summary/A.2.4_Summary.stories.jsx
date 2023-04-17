@@ -1,3 +1,4 @@
+import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 
 export default {
