@@ -44,7 +44,7 @@ export const mainMenu = {
         },
         {
           name: 'PK Study',
-          url: '/A.3.2.1_Strudy',
+          url: '/A.3.2.1_Study',
         },
         {
           name: 'Safety Data',
