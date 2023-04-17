@@ -4,105 +4,7 @@ import { LinkGroup } from '@organisms/Routing/LinkGroup/LinkGroup';
 import './Navbar.scss';
 import Link from '@organisms/Routing/Link/Link';
 import { PageContext } from '@/context/PageContext';
-
-export const mainMenu = {
-  type: 'main',
-  data: [
-    {
-      name: 'Executive Summary',
-      url: '/A.1.0_Executive_summary',
-    },
-    {
-      name: 'Schizophrenia & Bipolar I Disorder Overview',
-      url: '/A.2.1.1_S_Overview',
-      children: [
-        {
-          name: 'Schizophrenia Overview',
-          url: '/A.2.1.1_S_Overview',
-        },
-        {
-          name: 'Bipolar I Overview',
-          url: '/A.2.2.1_B_Overview',
-        },
-        {
-          name: 'LAIs',
-          url: '/A.2.3.1_LAIs',
-        },
-        {
-          name: 'Summary',
-          url: '/A.2.4_Summary',
-        },
-      ],
-    },
-    {
-      name: 'Clinical Profile for ABILIFY ASIMTUFII®',
-      url: '/A.3.1.1_Overview',
-      children: [
-        {
-          name: 'Overview',
-          url: '/A.3.1.1_Overview',
-        },
-        {
-          name: 'PK Study',
-          url: '/A.3.2.1_Efficacy',
-        },
-        {
-          name: 'Safety Data',
-          url: '/A.3.3.1_Safety',
-        },
-        {
-          name: 'Dosing & Administration',
-          url: '/A.3.4_Dosing',
-        },
-        {
-          name: 'ABILIFY MAINTENA® Pivotal Studies',
-          url: '/A.3.5.1_Additional',
-        },
-      ],
-    },
-    {
-      name: 'Economic Value of ABILIFY ASIMTUFII®',
-      url: '/A.4.0_Economic_value',
-      children: [],
-    },
-    {
-      name: 'Otsuka Patient Support™',
-      url: '/A.5.1_Patients_support_providers',
-    },
-    {
-      name: 'Appendix',
-      url: '/A.6.1.1_Appendix_Safety',
-      children: [
-        {
-          name: 'ABILIFY MAINTENA Real-world Evidence',
-          url: '/A.6.1.1_Appendix_Safety',
-        },
-        {
-          name: 'MOA',
-          url: '/A.6.2_Apendix_MOA',
-        },
-        {
-          name: 'ABILIFY MAINTENA Safety Profile',
-          url: '/A.6.3.X_Appendix_Safety',
-        },
-      ],
-    },
-  ],
-};
-
-export const bottomMenu = {
-  data: [
-    {
-      name: 'ISI',
-      url: '/A.7.0_ISI',
-    },
-    {
-      name: 'PI',
-      url: '/A.7.0_ISI', // Replace after creating page.
-      children: [],
-    },
-  ],
-};
+import { mainMenu, bottomMenu, flapMenu } from '@/utils/processNavigation';
 
 export const Navbar = () => {
   const { currentPage } = useContext(PageContext);
@@ -110,6 +12,7 @@ export const Navbar = () => {
     currentPage === '01_Launch_screen' || currentPage === 'A.0.Home'
       ? 'navigation__homepage--active'
       : 'navigation__homepage';
+  const links = flapMenu(mainMenu.data, 0);
 
   return (
     <div className='navigation'>
@@ -118,7 +21,7 @@ export const Navbar = () => {
         <span className={isHomepage} />
       </div>
       <ul className='main-nav'>
-        {mainMenu.data.map((link, i) => (
+        {links.map((link, i) => (
           <LinkGroup linkGroup={link} key={link.url} />
         ))}
       </ul>

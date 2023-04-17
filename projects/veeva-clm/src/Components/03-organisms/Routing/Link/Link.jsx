@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { PageContext } from '@/context/PageContext';
-import UpperSubNavBar from '@atoms/UpperSubNavBar/UpperSubNavBar';
 
 export const navigateLocal = (changePage, preparedPageName) => {
   window.history.pushState({}, '', preparedPageName);
@@ -42,7 +41,6 @@ export const Link = ({ custom, to, children }) => {
   return (
     <a className={custom} href={to} onClick={preventReload}>
       {children}
-      <UpperSubNavBar />
     </a>
   );
 };
