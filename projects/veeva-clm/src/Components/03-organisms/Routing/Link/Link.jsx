@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
 import { PageContext } from '@/context/PageContext';
 import UpperSubNavBar from '@atoms/UpperSubNavBar/UpperSubNavBar';
+import { ISIModalContext } from '@/context/ISIModalContext';
+
+const lsISIModalKey = 'isi_modal';
 
 export const navigateLocal = (changePage, preparedPageName) => {
   window.history.pushState({}, '', preparedPageName);
@@ -23,9 +26,21 @@ export const navigateVeeva = (preparedPageName) => {
 
 export const Link = ({ custom, to, children }) => {
   const { changePage } = useContext(PageContext);
+  const { showModalHandler } = useContext(ISIModalContext);
+
+  const showISIModal = () => {
+    const lsISIModal = sessionStorage.getItem(lsISIModalKey);
+    console.log(!lsISIModal);
+    if (!lsISIModal) {
+      showModalHandler(true);
+    }
+  };
 
   const preventReload = (event) => {
     event.preventDefault();
+
+    showISIModal();
+
     // Remove first and last slash
     const preparedPageName = to.replace(/^\/|\/$/g, '');
 
