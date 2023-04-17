@@ -1,4 +1,4 @@
-@import "@base/variables";
+@import '@base/variables';
 
 .heading {
   padding: 0;
@@ -9,10 +9,6 @@
     &-bg-color {
       @include bg-color;
     }
-  }
-
-  &[class*="-bg-color-"] {
-    padding: 4px 14px;
   }
 }
 

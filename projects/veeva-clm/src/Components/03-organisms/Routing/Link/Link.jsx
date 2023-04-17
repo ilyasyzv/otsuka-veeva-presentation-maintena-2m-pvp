@@ -1,11 +1,25 @@
 import React, { useContext } from 'react';
 import { PageContext } from '@/context/PageContext';
+import { ISIModalContext } from '@/context/ISIModalContext';
+
+const lsISIModalKey = 'isi_modal';
 
 export const Link = ({ custom, to, children }) => {
   const [context, setContext] = useContext(PageContext);
+  const { showModalHandler } = useContext(ISIModalContext);
+
+  const showISIModal = () => {
+    const lsISIModal = sessionStorage.getItem(lsISIModalKey);
+    if (!lsISIModal) {
+      showModalHandler(true);
+    }
+  };
 
   const preventReload = (event) => {
     event.preventDefault();
+
+    showISIModal();
+
     // Remove first and last slash
     const preparedPageName = to.replace(/^\/|\/$/g, '');
 

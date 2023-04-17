@@ -3,6 +3,7 @@ $font-open-sans: "Gandhi Sans", sans-serif;
 $font-size-base: 16px;
 
 // Colors
+$blue-50: #D1F2FC;
 $blue-100: #7DE1DE;
 $blue-200: #7DE1DE3D;
 $blue-205: #7DE1DED8;
@@ -18,6 +19,7 @@ $green-500: #42711e;
 
 $gray-100: #BED4DB;
 $gray-200: #F0F0F0;
+$gray-300: #D8D8D8;
 $gray-500: #414042;
 $gray-700: #33333380;
 $gray-800: #333333;
@@ -48,6 +50,27 @@ $colors: (
   "success": $green,
   "warning": $yellow,
   "danger": $red,
+  "blue-50": $blue-50,
+  "blue-100": $blue-100,
+  "blue-200": $blue-200,
+  "blue-205": $blue-205,
+  "blue-250": $blue-250,
+  "blue-300": $blue-300,
+  "blue-350": $blue-350,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-600": $blue-600,
+  "blue-700": $blue-700,
+  "green-500": $green-500,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-500": $gray-500,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+  "red-500": $red-500,
+  "yellow-200": $yellow-200,
+  "yellow-300": $yellow-300,
 );
 
 // Shadows

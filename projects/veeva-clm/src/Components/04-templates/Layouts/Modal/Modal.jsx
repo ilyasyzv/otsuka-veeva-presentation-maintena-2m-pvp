@@ -24,6 +24,7 @@ export const Modal = ({
   id = null,
   link = LinkDefault,
   children,
+  openByDefault = false,
   showPlus = false,
   isExpanded = false,
   withHeader = false,
@@ -33,7 +34,7 @@ export const Modal = ({
   isSwitchPopup = false,
   customClass = '',
 }) => {
-  const [shouldShow, setShouldShow] = useState(false);
+  const [shouldShow, setShouldShow] = useState(openByDefault);
   const { modals, setModals } = useSharedModalManager();
   modals.push({ link, setShouldShow });
   setModals(modals);
