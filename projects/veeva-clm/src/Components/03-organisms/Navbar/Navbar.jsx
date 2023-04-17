@@ -18,7 +18,7 @@ export const mainMenu = {
       children: [
         {
           name: 'Schizophrenia Overview',
-          url: '/A.2.1.2_S_Overview',
+          url: '/A.2.1.1_S_Overview',
         },
         {
           name: 'Bipolar I Overview',
@@ -44,7 +44,7 @@ export const mainMenu = {
         },
         {
           name: 'PK Study',
-          url: '/A.3.2.1_Study',
+          url: '/A.3.2.1_Efficacy',
         },
         {
           name: 'Safety Data',
@@ -52,7 +52,7 @@ export const mainMenu = {
         },
         {
           name: 'Dosing & Administration',
-          url: '/A.3.4.1_Dosing',
+          url: '/A.3.4_Dosing',
         },
         {
           name: 'ABILIFY MAINTENA® Pivotal Studies',
@@ -79,11 +79,11 @@ export const mainMenu = {
         },
         {
           name: 'MOA',
-          url: '/A.6.2.1_Apendix_MOA',
+          url: '/A.6.2_Apendix_MOA',
         },
         {
           name: 'ABILIFY MAINTENA Safety Profile',
-          url: '/A.6.3.1_Appendix_Safety',
+          url: '/A.6.3.X_Appendix_Safety',
         },
       ],
     },
@@ -107,7 +107,7 @@ export const bottomMenu = {
 export const Navbar = () => {
   const { currentPage } = useContext(PageContext);
   const isHomepage =
-    currentPage === '01_Launch_screen' || currentPage === 'R.0.0_Home'
+    currentPage === '01_Launch_screen' || currentPage === 'A.0.Home'
       ? 'navigation__homepage--active'
       : 'navigation__homepage';
 
