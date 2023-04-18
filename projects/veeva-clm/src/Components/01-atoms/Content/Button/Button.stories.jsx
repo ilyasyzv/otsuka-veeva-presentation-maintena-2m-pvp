@@ -32,6 +32,8 @@ const TemplateС = () => (
       <Button text='Long-term Study: Schizophrenia' custom={'button__type-c button__type-c-large button__type-c-large-blue'}/>
       <p className={'mt-20 mb-5'}>Large Gray:</p>
       <Button text='Long-term Study: Bipolar I Disorder' custom={'button__type-c button__type-c-large button__type-c-large-gray'}/>
+      <p className={'mt-20 mb-5'}>Large Dark:</p>
+      <Button text='Long-term Study: Bipolar I Disorder' custom={'button__type-c button__type-c-large button__type-c-large-dark'}/>
     </>
 );
 

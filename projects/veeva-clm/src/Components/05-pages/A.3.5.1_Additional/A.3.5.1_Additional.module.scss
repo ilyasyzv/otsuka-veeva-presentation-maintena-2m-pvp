@@ -2,15 +2,31 @@
   :global {
     h1 {
       margin-bottom: 85px;
-      font-size: 29px;
+      font-size: 32px;
     }
 
-    .card {
+    .button {
+      justify-content: center;
+      text-decoration: none;
+
+      .button__text {
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+
+        sup {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .additional-card {
       background-image: url('imgs/A.3.5.1_Additional_card.png');
       background-size: 100%;
       background-repeat: no-repeat;
       padding-top: 43px;
-      margin: 0 31px 10px 0;
+      width: 837px;
+      margin: 0 31px 15px 0;
 
       h2 {
         text-align: center;
@@ -19,6 +35,10 @@
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;
+
+        sub {
+          font-size: 10px;
+        }
       }
     }
 
@@ -37,7 +57,9 @@
       &-row-center {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        width: 100%;
+        border: none;
+        justify-content: center;
       }
     }
   }

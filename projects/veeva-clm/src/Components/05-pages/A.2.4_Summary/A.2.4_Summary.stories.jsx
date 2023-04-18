@@ -16,4 +16,3 @@ const Template = () => {
 };
 
 export const A_2_4_Summary = Template.bind({});
-export const A_2_4_Summary_content = content.bind({});
