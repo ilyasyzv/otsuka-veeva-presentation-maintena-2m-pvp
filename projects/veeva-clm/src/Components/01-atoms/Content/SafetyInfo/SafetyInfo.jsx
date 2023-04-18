@@ -1,13 +1,15 @@
 import React from 'react';
-import './SafetyInfo.scss'
+import './SafetyInfo.scss';
 
-export const SafetyInfo = ({ distance, safetyInfo }) => {
+const classNames = require('classnames');
+
+export const SafetyInfo = ({ custom, safetyInfo }) => {
+  const customClass = custom || '';
+
   return (
-    <div style={{ marginTop: distance }} className='safetyInfo'>
+    <div className={classNames('safetyInfo', customClass)}>
       {safetyInfo.map((info, index) => (
-        <p key={ index }>
-          { info.text }
-        </p>
+        <p key={index}>{info.text}</p>
       ))}
     </div>
   );

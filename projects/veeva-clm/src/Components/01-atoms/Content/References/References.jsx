@@ -1,21 +1,23 @@
 import React from 'react';
-import './References.scss'
+import './References.scss';
 
 const classNames = require('classnames');
 
-export const References = ({ references }) => {
+export const References = ({ custom, references }) => {
+  const customClass = custom || '';
+
   return (
-    <div className='references'>
+    <div className={classNames('references', customClass)}>
       <strong>{references.length > 1 ? 'References: ' : 'Reference: '}</strong>
       {references.map((ref, index) => {
-        const customClass = ref.url && 'file' || '';
-        
+        const fileClass = (ref.url && 'file') || '';
+
         return (
           <span key={index}>
             <strong>{index + 1}. </strong>
-            <span className={classNames(customClass)}>{ ref.text }</span>{' '}
+            <span className={classNames(fileClass)}>{ref.text}</span>{' '}
           </span>
-        )
+        );
       })}
     </div>
   );
