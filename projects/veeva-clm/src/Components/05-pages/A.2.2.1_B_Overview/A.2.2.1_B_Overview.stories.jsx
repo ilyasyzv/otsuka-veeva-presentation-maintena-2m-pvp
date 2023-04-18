@@ -26,23 +26,38 @@ const content = () => (
     <img className={`${baseClass}-chart-1`} src={B_Overview} alt='' />
     <Footer
       custom='bottom-7'
-      references={[
-        {
-          text: <span>American Psychiatric Association. <em>Diagnostic and Statistical Manual of Mental Disorders.</em> 5th ed. Washington, DC: American Psychiatric Association; 2013.</span>
-        },
-        {
-          text: <span>Grande I, et al. <em>Lancet.</em> 2016;387(10027):1561-1572.</span>
-        },
-        {
-          text: 'Treatment Advocacy Center. Available at: https://www.treatmentadvocacycenter.org/evidence-and-research/fast-facts. Accessed January 31, 2023.'
-        }
-      ]}
-      distance={'24.5px'}
-      safetyInfo={[
-        {
-          text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. '
-        }
-      ]} />
+      references={{
+        data: [
+          {
+            text: (
+              <span>
+                American Psychiatric Association.{' '}
+                <em>Diagnostic and Statistical Manual of Mental Disorders.</em>{' '}
+                5th ed. Washington, DC: American Psychiatric Association; 2013.
+              </span>
+            ),
+          },
+          {
+            text: (
+              <span>
+                Grande I, et al. <em>Lancet.</em> 2016;387(10027):1561-1572.
+              </span>
+            ),
+          },
+          {
+            text: 'Treatment Advocacy Center. Available at: https://www.treatmentadvocacycenter.org/evidence-and-research/fast-facts. Accessed January 31, 2023.',
+          },
+        ],
+      }}
+      safetyInfo={{
+        custom: 'mt-26',
+        data: [
+          {
+            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+          },
+        ],
+      }}
+    />
   </>
 );
 

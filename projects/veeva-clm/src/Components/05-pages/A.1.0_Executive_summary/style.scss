@@ -1,0 +1,9 @@
+@import "@base/variables";
+.page--A_1_0_Executive_summary {
+  &-img-1 {
+    margin-left: -15px;
+  }
+  .footer .references > span + span {
+    display: block;
+  }
+}

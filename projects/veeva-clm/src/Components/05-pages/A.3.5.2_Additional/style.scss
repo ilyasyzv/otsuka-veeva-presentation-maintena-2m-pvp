@@ -1,5 +1,5 @@
 @import "@base/variables";
-.page--a352_additional {
+.page--A_3_5_2_Additional {
   .modal-link-wrapper {
     &:first-of-type {
       position: absolute;
@@ -10,6 +10,12 @@
       position: absolute;
       right: 45px;
       bottom: 79px;
+    }
+  }
+
+  .footnote__list {
+    li:first-child {
+      max-width: 630px;
     }
   }
 }

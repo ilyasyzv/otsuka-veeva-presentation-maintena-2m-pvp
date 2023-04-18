@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { PageContext } from '@/context/PageContext';
-import UpperSubNavBar from '@atoms/UpperSubNavBar/UpperSubNavBar';
 import { ISIModalContext } from '@/context/ISIModalContext';
 
 const lsISIModalKey = 'isi_modal';
@@ -57,7 +56,6 @@ export const Link = ({ custom, to, children }) => {
   return (
     <a className={custom} href={to} onClick={preventReload}>
       {children}
-      <UpperSubNavBar />
     </a>
   );
 };

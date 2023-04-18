@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import './Layout.scss';
 import Navbar from '@/Components/03-organisms/Navbar/Navbar';
 import NavArrows from '@/Components/01-atoms/NavArrows/NavArrows';
+import UpperNavBar from '@/Components/03-organisms/UpperNavBar/UpperNavBar';
+import { findSubMenu, mainMenu } from '@/utils/processNavigation';
 import { ISIModalContext } from '@/context/ISIModalContext';
 import ModalISI from '@/Components/04-templates/Layouts/Modal/ModalISI';
 import { PageContext } from '@/context/PageContext';
@@ -14,6 +16,7 @@ type LayoutProps = {
 export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
   const { currentPage } = useContext<string>(PageContext);
   const { isShowISIModal } = useContext(ISIModalContext);
+  const subMenu = findSubMenu(currentPage, mainMenu.data, 0);
 
   return (
     <>
@@ -27,6 +30,7 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
             <Navbar />
           </div>
           <div className='right-pane'>{children}</div>
+          {subMenu && <UpperNavBar tabs={subMenu} />}
           <NavArrows />
         </div>
       </div>
