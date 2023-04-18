@@ -148,6 +148,17 @@
         background-color: $gray-100;
         border-color: $blue-600;
       }
+
+      &-dark {
+        background-color: $blue-400;
+        border-color: $white;
+        color: $white;
+
+        .button__text {
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
     }
   }
 }
