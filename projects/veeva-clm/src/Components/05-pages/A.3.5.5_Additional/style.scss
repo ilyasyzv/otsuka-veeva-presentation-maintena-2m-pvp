@@ -1,0 +1,32 @@
+@import "@base/variables";
+.page--a355_additional {
+  .modal-link-wrapper {
+    &:nth-child(1n) {
+      position: absolute;
+      right: 204px;
+      bottom: 103px;
+    }
+    &:nth-child(2n) {
+      position: absolute;
+      right: 204px;
+      bottom: 49px;
+    }
+    &:nth-child(3n) {
+      position: absolute;
+      right: 29px;
+      bottom: 103px;
+    }
+  }
+  .placebo {
+    width: 29%;
+  }
+  .graphic {
+    width: 67.5%;
+  }
+  .list {
+    width: 56%;
+    font-size: 14px;
+    word-spacing: 1px;
+    line-height: 1;
+  }
+}
