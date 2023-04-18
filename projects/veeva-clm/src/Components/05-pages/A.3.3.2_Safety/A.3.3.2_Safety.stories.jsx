@@ -74,6 +74,7 @@ const content = () => (
       )}
     />
     <Footer
+      custom='mb-5'
       footnotes={{
         data: [
           {
@@ -114,7 +115,7 @@ const content = () => (
         ],
       }}
       safetyInfo={{
-        custom: 'mt-15',
+        custom: 'mt-10',
         data: [
           {
             text: (
