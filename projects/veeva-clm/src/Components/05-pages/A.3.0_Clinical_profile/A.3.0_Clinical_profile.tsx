@@ -4,7 +4,7 @@ import styles from './A.3.0_Clinical_profile.module.scss';
 import logo from './imgs/Abilify_Asimtufii_Logo_Lockup_R_RGB.png';
 import Link from '@/Components/03-organisms/Routing/Link/Link';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
-import AsimtufiiLogo from '@/assets/asimtufii-logo.png';
+
 const PageContent = () => {
   return (<div className={styles.page}>
       <Header type="h1">
