@@ -41,4 +41,3 @@ const Template = () => {
 
 export const A_3_5_1_Additional = Template.bind({});
 export const A_3_5_1_Additional_content = content.bind({});
-;

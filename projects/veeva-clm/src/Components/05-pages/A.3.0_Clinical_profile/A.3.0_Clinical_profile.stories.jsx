@@ -6,8 +6,8 @@ export default {
   title: "CLM/Pages/A.3",
   component: "A.3.0_Clinical_profile",
   parameters: {
-    layout: 'fullscreen',
-  },
+    layout: "fullscreen"
+  }
 };
 
 const Template = () => {
