@@ -1,4 +1,10 @@
+import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
+import './style.scss';
+
+import { Header } from '@atoms/Content/Header/Header';
+import MaintenaLogo from '@/assets/maintena-logo.png';
+import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
 export default {
   title: 'CLM/Pages',
@@ -8,6 +14,8 @@ export default {
   },
   excludeStories: ['A_3_5_1_Additional_content'],
 };
+
+const baseClass = 'page--A_3_5_1_Additional';
 
 const content = () => <div>Place components here</div>;
 

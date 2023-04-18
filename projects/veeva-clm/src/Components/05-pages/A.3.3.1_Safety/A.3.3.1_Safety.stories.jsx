@@ -5,29 +5,36 @@ import Header from '@/Components/01-atoms/Content/Header/Header';
 import ProlactinTableImg from '@/Components/05-pages/A.3.3.2_Safety/img/ProlactinTable.png?format=webp';
 import { Button } from '@/Components/01-atoms/Content/Button/button';
 
-import './A.3.3.2_Safety.scss';
+import './A.3.3.1_Safety.scss';
 import List from '@/Components/01-atoms/Content/List/List';
 import MaintenaLogo from '@/assets/maintena-logo.png';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
 export default {
   title: 'CLM/Pages',
-  component: 'A.3.3.2_Safety',
+  component: 'A.3.3.1_Safety',
   parameters: {
     layout: 'fullscreen',
   },
-  excludeStories: ['A_3_3_2_Safety_content'],
+  excludeStories: ['A_3_3_1_Safety_content'],
 };
 
-const blockName = 'A-3-3-2_Safety';
+const blockName = 'A-3-3-1_Safety';
 const classNames = require('classnames');
 
 const content = () => (
   <div className={`${blockName}_wrapper`}>
     <Header custom='mb-3'>
-      Prolactin and extrapyramidal symptom-related <br /> events in patients
-      with schizophrenia receiving <br /> ABILIFY MAINTENA<sup>®</sup>
-      (aripiprazole)<sup>1,2</sup>
+      The safety profile of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) was
+      <br />
+      based on the 12-week study of patients living with
+      <br /> schizophrenia treated with ABILIFY MAINTENA<sup>®</sup>{' '}
+      (aripiprazole)
+    </Header>
+    <Header type='h3' custom='mb-3 text-center'>
+      Adverse reactions in ≥2% of ABILIFY MAINTENA–treated adult patients with
+      schizophrenia
+      <br /> in a 12-week, double-blind, placebo-controlled study
     </Header>
     <List
       content={{
@@ -59,52 +66,13 @@ const content = () => (
       alt='prolactin table'
       className={classNames(`${blockName}-img`, 'mb-5')}
     />
-    <Button
-      text={
-        <>
-          ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) Safety
-        </>
-      }
-      custom={classNames(
-        `${blockName}-btn`,
-        'button__type-c',
-        ' button__type-c-large',
-      )}
-    />
     <Footer
       footnotes={{
         data: [
           {
-            innerText:
-              'Note: n=number of patients with event; N=number of patients treated.',
-            supRight: '2',
-          },
-          {
             supLeft: '*',
-            innerText: 'ABILIFY MAINTENA N=99, placebo N=66.',
-            supRight: '2',
-          },
-          {
-            supLeft: '†',
             innerText:
-              'Incidence for ABILIFY MAINTENA vs placebo in female subjects (6.3% vs 13.8%) and male subjects (1.8% vs 10.8%).',
-            supRight: '2',
-          },
-          {
-            innerText: 'EPS=extrapyramidal symptoms; SD=standard deviation.',
-          },
-        ],
-      }}
-      references={{
-        custom: 'mt-5',
-        data: [
-          {
-            text: (
-              <span>
-                Kane JM, et al. <em>J Clin Psychiatry.</em>{' '}
-                2014;75(11):1254-1260.
-              </span>
-            ),
+              'Table excludes adverse reactions that had an incidence equal to or less than placebo.',
           },
         ],
       }}
@@ -133,8 +101,8 @@ const content = () => (
 );
 
 const Template = () => {
-  return <AppStorybook path='A.3.3.2_Safety' components={content} />;
+  return <AppStorybook path='A.3.3.1_Safety' components={content} />;
 };
 
-export const A_3_3_2_Safety = Template.bind({});
-export const A_3_3_2_Safety_content = content.bind({});
+export const A_3_3_1_Safety = Template.bind({});
+export const A_3_3_1_Safety_content = content.bind({});
