@@ -28,6 +28,37 @@ const content = () => (
       alt='cost distribution'
       className={classNames(`${blockName}-img`, 'mb-20')}
     />
+    <Footer
+      footnotes={{
+        data: [
+          {
+            supLeft: '*',
+            innerText:
+              'The difference between costs incurred by individuals living with and without schizophrenia (estimated based on prevalence in 2019).',
+          },
+        ],
+      }}
+      references={{
+        data: [
+          {
+            text: (
+              <span>
+                Kadakia A, et al. <em>J Clin Psychiatry.</em>{' '}
+                2022;83(6):22m14458.
+              </span>
+            ),
+          },
+        ],
+      }}
+      safetyInfo={{
+        custom: 'mt-30',
+        data: [
+          {
+            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+          },
+        ],
+      }}
+    />
     {/* <Footer */}
     {/*  footnotes=' The difference between costs incurred by individuals living with and */}
     {/*  without schizophrenia (estimated based on prevalence in 2019).' */}
