@@ -1,3 +1,4 @@
+import React from "react";
 import { AppStorybook } from '@pages/AppStorybook';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 import styles from './A.4.0_Economic_value.module.scss';
