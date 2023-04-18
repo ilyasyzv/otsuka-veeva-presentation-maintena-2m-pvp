@@ -14,11 +14,12 @@ export const FootNote = ({ custom, footnotes }) => {
       {footnotes && (
         <ul className='footnote__list'>
           {footnotes.map((footnote, index) => {
-            const supLeftClass = footnote.supLeft && 'transform' || ''
+            const supLeftClass = (footnote.supLeft || footnote.supLeftBig) && 'transform' || ''
             const supRightClass = footnote.supRight && 'lineHeight' || ''
 
             return (
               <li className={classNames(supLeftClass, supRightClass)} key={ index }>
+                { footnote.supLeftBig && <SupLeft big text={ footnote.supLeftBig } /> }
                 { footnote.supLeft && <SupLeft text={ footnote.supLeft } /> }
                 { footnote.innerText }
                 { footnote.supRight && <sup>{ footnote.supRight }</sup> }

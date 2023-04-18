@@ -5,6 +5,11 @@
 
   ul, ol {
     list-style: none;
+
+    li {
+      position: relative;
+      display: initial;
+    }
   }
 
   p {
@@ -13,6 +18,16 @@
 
   sup {
     font-size: 8px;
+
+    &.sup-left {
+      &.big {
+        position: absolute;
+        right: 100%;
+        top: 0;
+        font-size: 11px;
+        line-height: 1;
+      }
+    }
   }
 
   sub {
