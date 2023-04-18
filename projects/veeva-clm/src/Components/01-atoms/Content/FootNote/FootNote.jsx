@@ -1,8 +1,6 @@
 import React from 'react';
 import './FootNote.scss';
 import SupLeft from '../SupLeft/SupLeft';
-import { References } from '../References/References';
-import { SafetyInfo } from '../SafetyInfo/SafetyInfo';
 
 const classNames = require('classnames');
 
