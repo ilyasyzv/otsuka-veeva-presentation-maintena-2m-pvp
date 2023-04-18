@@ -15,6 +15,10 @@
 .modal {
   width: 1024px;
   height: 768px;
+  sub {
+    line-height: normal;
+    font-size: 18px;
+  }
 
   &-expanded {
     position: fixed;
@@ -146,7 +150,7 @@
 
       .modal-footer {
         display: block;
-        padding-top: 10px;
+        padding-top: 50px;
       }
     }
   }
@@ -180,11 +184,18 @@
       width: 625px;
     }
   }
+  &_understanding-panss + {
+    ul {
+      margin-bottom: 15px;
+    }
+  }
+
 
   &_understanding-cgis {
     &-image-1 {
       width: 865px;
     }
+
   }
 
   &_baseline-characteristics {
@@ -206,15 +217,26 @@
     }
   }
 
-  &_study-design {
-&__strong{
-  color: $blue-600;
-}
+  &_separate-analysis {
+    &-img {
+      width: 950px;
+      position: absolute;
+      left:24px;
+      bottom: 28px;
+    }
+
   }
-}
+
+  &_study-design {
+    &__strong {
+      color: $blue-600;
+      }
+    }
+  }
 
 .isi-modal-wrapper {
   .modal-wrapper {
     padding-top: 70px;
   }
+
 }
