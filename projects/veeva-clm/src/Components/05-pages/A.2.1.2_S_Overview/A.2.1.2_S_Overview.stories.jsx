@@ -23,17 +23,15 @@ const content = () => (
   <div className={`${blockName}_wrapper`}>
     <Header custom='mb-18'>
       In schizophrenia, relapses and nonadherence are common and lead to higher
-      costs of care <sup>1-3</sup>
+      costs of care<sup>1-3</sup>
     </Header>
     <Header type='h3' custom='mb-10'>
-      Patients with schizophrenia experience relapsing episodes of psychosis
-      <sup>1-3</sup>
+      Patients with schizophrenia experience relapsing episodes<sup>1</sup>
     </Header>
     <img src={SchizophreniaImg1} alt='' className='mb-40' />
     <Header type='h3' custom='mb-6'>
       Fewer than 50% of patients took their antipsychotic medication 80% or more
-      of the time
-      <sup>*2</sup>
+      of the time*<sup>2</sup>
     </Header>
     <p className={`${blockName}-text`}>
       Those who were not adherent to antipsychotic treatment had nearly:
@@ -44,9 +42,13 @@ const content = () => (
       footnotes={{
         data: [
           {
-            supLeft: '*',
-            innerText:
-              'Thirty-three studies assessed patient adherence to oral antipsychotic medications.',
+            supLeftBig: '*',
+            innerText: (
+              <>
+                Thirty-three studies assessed patient adherence to oral
+                antipsychotic medications.<sup>2</sup>
+              </>
+            ),
           },
         ],
       }}

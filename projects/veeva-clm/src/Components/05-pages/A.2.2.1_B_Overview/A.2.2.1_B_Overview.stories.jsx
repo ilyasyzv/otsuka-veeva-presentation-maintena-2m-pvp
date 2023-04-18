@@ -20,8 +20,9 @@ const baseClass = 'page--A_2_2_1_B_Overview';
 const content = () => (
   <>
     <Header custom='mb-22'>
-      Bipolar I disorder (BP-I) is a recurrent episodic mood disorder affecting
-      ~2.3% of US adults<sup>1-3</sup>
+      Bipolar I disorder (BP-I) is a recurrent episodic mood
+      <br />
+      disorder affecting ~2.3% of US adults<sup>1-3</sup>
     </Header>
     <img className={`${baseClass}-chart-1`} src={B_Overview} alt='' />
     <Footer
@@ -45,7 +46,7 @@ const content = () => (
             ),
           },
           {
-            text: 'Treatment Advocacy Center. Available at: https://www.treatmentadvocacycenter.org/evidence-and-research/fast-facts. Accessed January 31, 2023.',
+            text: 'Treatment Advocacy Center. https://www.treatmentadvocacycenter.org/evidence-and-research/fast-facts. Accessed January 31, 2023.',
           },
         ],
       }}
