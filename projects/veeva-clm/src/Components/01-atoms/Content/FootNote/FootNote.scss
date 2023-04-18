@@ -8,7 +8,6 @@
 
     li {
       position: relative;
-      display: initial;
     }
   }
 
@@ -18,15 +17,11 @@
 
   sup {
     font-size: 8px;
+    bottom: 0.5em;
 
-    &.sup-left {
-      &.big {
-        position: absolute;
-        right: 100%;
-        top: 0;
-        font-size: 11px;
-        line-height: 1;
-      }
+    &.big {
+      font-size: 11px;
+      bottom: 0.2em;
     }
   }
 
@@ -39,11 +34,7 @@
     line-height: 8px;
   }
 
-  .transform {
-    transform: translate(3px, 0);
-  }
-
   .lineHeight {
-    transform: translate(3px, -4px);
+    transform: translate(0, -4px);
   }
 }
