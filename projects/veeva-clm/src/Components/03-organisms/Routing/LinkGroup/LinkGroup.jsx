@@ -1,13 +1,15 @@
 import React, { useContext } from 'react';
 
 import { PageContext } from '@/context/PageContext';
+import UpperSubNavBar from '@atoms/UpperSubNavBar/UpperSubNavBar';
+import { findPathInMenu, flapMenu, mainMenu } from '@/utils/processNavigation';
 
 import Link from '../Link/Link';
 import './LinkGroup.scss';
 
 const classNames = require('classnames');
 
-export const LinkGroup = ({ linkGroup }) => {
+export const LinkGroup = ({ linkGroup, parentNav = false }) => {
   const { currentPage } = useContext(PageContext);
 
   const linksGroup = () => {
@@ -21,29 +23,12 @@ export const LinkGroup = ({ linkGroup }) => {
     return urls;
   };
 
-  const isActive = () => linksGroup().includes(currentPage);
-
-  const isCurrent = (url) => url.replace('/', '') === currentPage;
-
-  const makeSubLinks = (children) => {
-    if (!children) {
-      return null;
+  const isActive = () => {
+    if (parentNav) {
+      const { parent } = findPathInMenu(currentPage, mainMenu.data);
+      return linkGroup.url.includes(parent);
     }
-
-    return (
-      <ul>
-        {children.map((subLink) => (
-          <li
-            key={subLink.url}
-            className={`main-nav__sublink ${
-              isCurrent(subLink.url) ? 'current' : ''
-            }`}
-          >
-            <Link to={subLink.url}>{subLink.name}</Link>
-          </li>
-        ))}
-      </ul>
-    );
+    return linksGroup().includes(currentPage);
   };
 
   const { addClass } = linkGroup;
@@ -57,7 +42,7 @@ export const LinkGroup = ({ linkGroup }) => {
     <li className={`${mainLinkClass} ${addClass || ''}`}>
       <div className='main-nav__link__wrapper'>
         <Link to={linkGroup.url}>{linkGroup.name}</Link>
-        {makeSubLinks(linkGroup.children)}
+        <UpperSubNavBar link={linkGroup.url} />
       </div>
     </li>
   );
