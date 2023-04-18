@@ -29,7 +29,6 @@ export const Link = ({ custom, to, children }) => {
 
   const showISIModal = () => {
     const lsISIModal = sessionStorage.getItem(lsISIModalKey);
-    console.log(!lsISIModal);
     if (!lsISIModal) {
       showModalHandler(true);
     }
