@@ -7,6 +7,8 @@ import { Button } from '@/Components/01-atoms/Content/Button/button';
 
 import './A.3.3.2_Safety.scss';
 import List from '@/Components/01-atoms/Content/List/List';
+import MaintenaLogo from '@/assets/maintena-logo.png';
+import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
 export default {
   title: 'CLM/Pages',
@@ -25,7 +27,7 @@ const content = () => (
     <Header custom='mb-3'>
       Prolactin and extrapyramidal symptom-related <br /> events in patients
       with schizophrenia receiving <br /> ABILIFY MAINTENA<sup>®</sup>
-      (aripiprazole)
+      (aripiprazole)<sup>1,2</sup>
     </Header>
     <List
       content={{
@@ -68,6 +70,64 @@ const content = () => (
         'button__type-c',
         ' button__type-c-large',
       )}
+    />
+    <Footer
+      footnotes={{
+        data: [
+          {
+            innerText:
+              'Note: n=number of patients with event; N=number of patients treated.',
+            supRight: '2',
+          },
+          {
+            supLeft: '*',
+            innerText: 'ABILIFY MAINTENA N=99, placebo N=66.',
+            supRight: '2',
+          },
+          {
+            supLeft: '†',
+            innerText:
+              'Incidence for ABILIFY MAINTENA vs placebo in female subjects (6.3% vs 13.8%) and male subjects (1.8% vs 10.8%).',
+            supRight: '2',
+          },
+          {
+            innerText: 'EPS=extrapyramidal symptoms; SD=standard deviation.',
+          },
+        ],
+      }}
+      references={{
+        custom: 'mt-5',
+        data: [
+          {
+            text: (
+              <span>
+                Kane JM, et al. <em>J Clin Psychiatry.</em>{' '}
+                2014;75(11):1254-1260.
+              </span>
+            ),
+          },
+        ],
+      }}
+      safetyInfo={{
+        custom: 'mt-15',
+        data: [
+          {
+            text: (
+              <span>
+                Please see{' '}
+                <a href='/' className='blue-500'>
+                  IMPORTANT SAFETY INFORMATION
+                </a>{' '}
+                in this presentation.
+              </span>
+            ),
+          },
+          {
+            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+          },
+        ],
+      }}
+      image={<img src={MaintenaLogo} alt='maintena-logo' width='140.2' />}
     />
   </div>
 );
