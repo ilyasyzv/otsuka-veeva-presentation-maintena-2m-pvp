@@ -1,10 +1,11 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 import './style.scss';
-
+import Link from '@/Components/03-organisms/Routing/Link/Link';
 import { Header } from '@atoms/Content/Header/Header';
 import MaintenaLogo from '@/assets/maintena-logo.png';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import PageContent from './A.3.5.1_Additional';
 
 export default {
   title: "CLM/Pages",
@@ -12,7 +13,6 @@ export default {
   parameters: {
     layout: "fullscreen"
   },
-  excludeStories: ["A_3_5_1_Additional_content"]
 };
 const baseClass = 'page--A_3_5_1_Additional';
 const content = () => (<div>
@@ -44,8 +44,7 @@ const content = () => (<div>
 );
 
 const Template = () => {
-  return <AppStorybook path="A.3.5.1_Additional" components={content} />;
+  return <AppStorybook path="A.3.5.1_Additional" components={PageContent} />;
 };
 
 export const A_3_5_1_Additional = Template.bind({});
-export const A_3_5_1_Additional_content = content.bind({});

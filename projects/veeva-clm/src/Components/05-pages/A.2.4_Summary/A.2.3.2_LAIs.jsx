@@ -10,7 +10,7 @@ const PageContent = () => (<div className={styles.page}>
       resource
       utilization and costs
     </Header>
-    <img src={imageTable} alt={'Table'} className={'pageImg'}/>
+    <img src={imageTable} alt={'Table'} className={'pageImg'} />
   </div>
 );
 

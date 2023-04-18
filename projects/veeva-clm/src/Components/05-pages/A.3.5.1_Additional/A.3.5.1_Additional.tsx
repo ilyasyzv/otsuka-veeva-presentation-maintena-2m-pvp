@@ -14,7 +14,7 @@ const PageContent = () => (
       and
       safety of<br/> ABILIFY MAINTENA® (aripiprazole)</Header>
     
-    <div className={'card'}>
+    <div className={'additional-card'}>
       <Header type="h2">ABILIFY MAINTENA Efficacy in Schizophrenia and Bipolar I
         Disorder</Header>
       <div className={'buttons-group'}>
