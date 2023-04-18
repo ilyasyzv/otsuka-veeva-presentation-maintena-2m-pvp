@@ -93,7 +93,7 @@ module.exports = (_env, argv) => {
             '/A.2.3.1_LAIs/index.html',
             '/A.2.3.2_LAIs/index.html',
             '/A.2.4_Summary/index.html',
-            '/A.3.1.1_Overview/index.html',
+            '/A.3.0_Clinical_profile/index.html',
             '/A.3.2.1_Efficacy/index.html',
             '/A.3.2.2_Efficacy/index.html',
             '/A.3.2.3_Efficacy/index.html',

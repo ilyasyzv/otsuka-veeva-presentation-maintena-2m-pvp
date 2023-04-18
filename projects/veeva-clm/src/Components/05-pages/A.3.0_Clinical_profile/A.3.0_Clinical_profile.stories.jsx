@@ -3,7 +3,7 @@ import { AppStorybook } from '@pages/AppStorybook';
 import PageContent from './A.3.0_Clinical_profile';
 
 export default {
-  title: 'CLM/Pages/A.3',
+  title: 'CLM/Pages',
   component: 'A.3.0_Clinical_profile',
   parameters: {
     layout: 'fullscreen',
@@ -13,8 +13,8 @@ export default {
 const Template = () => {
   return (
     <AppStorybook
-      path="A.3.0_Clinical_profile"
-      background="a"
+      path='A.3.0_Clinical_profile'
+      background='a'
       components={PageContent}
     />
   );
