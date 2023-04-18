@@ -2,7 +2,7 @@ import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 
-import ProlactinTableImg from '@/Components/05-pages/A.3.3.2_Safety/img/ProlactinTable.png?format=webp';
+import SafetyTableImg from '@/Components/05-pages/A.3.3.1_Safety/img/SafetyTable.png?format=webp';
 import { Button } from '@/Components/01-atoms/Content/Button/button';
 
 import './A.3.3.1_Safety.scss';
@@ -24,45 +24,20 @@ const classNames = require('classnames');
 
 const content = () => (
   <div className={`${blockName}_wrapper`}>
-    <Header custom='mb-3'>
+    <Header custom='mb-8'>
       The safety profile of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) was
       <br />
       based on the 12-week study of patients living with
       <br /> schizophrenia treated with ABILIFY MAINTENA<sup>®</sup>{' '}
       (aripiprazole)
     </Header>
-    <Header type='h3' custom='mb-3 text-center'>
+    <Header type='h3' custom='mb-8 text-center'>
       Adverse reactions in ≥2% of ABILIFY MAINTENA–treated adult patients with
       schizophrenia
       <br /> in a 12-week, double-blind, placebo-controlled study
     </Header>
-    <List
-      content={{
-        columns: 'columns-1',
-        type: 'circle',
-        custom: 'mb-5',
-        data: [
-          {
-            text: (
-              <>
-                Prolactin levels and extrapyramidal symptoms<sup>1</sup>
-              </>
-            ),
-          },
-          {
-            text: (
-              <>
-                Prolactin levels and incidence of an extrapyramidal
-                symptom–related event among patients with schizophrenia
-                receiving ABILIFY MAINTENA vs those taking placebo<sup>1</sup>
-              </>
-            ),
-          },
-        ],
-      }}
-    />
     <img
-      src={ProlactinTableImg}
+      src={SafetyTableImg}
       alt='prolactin table'
       className={classNames(`${blockName}-img`, 'mb-5')}
     />
@@ -77,7 +52,7 @@ const content = () => (
         ],
       }}
       safetyInfo={{
-        custom: 'mt-15',
+        custom: 'mt-6',
         data: [
           {
             text: (
