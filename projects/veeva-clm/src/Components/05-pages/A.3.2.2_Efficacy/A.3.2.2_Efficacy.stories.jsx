@@ -22,61 +22,71 @@ const classNames = require('classnames');
 
 const content = () => (
   <div className={`${blockName}_wrapper`}>
-    <Header custom={classNames(`${blockName}-header`, 'mb-15')}>
+    <Header custom={classNames(`${blockName}-header`, 'mb-20')}>
       ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) and <br />
       ABILIFY MAINTENA
       <sup>®</sup> (aripiprazole) showed similar
-      <br /> aripiprazole concentrations<sup>1</sup>
+      <br /> aripiprazole concentrations
     </Header>
-    <img src={TableImg} alt='ratio table' className='mb-50' />
-    <img src={TableBannerImg} alt='banner' className='mb-20' />
+    <img src={TableImg} alt='ratio table' className='mb-40' />
+    <img
+      src={TableBannerImg}
+      alt='banner'
+      className='mb-20'
+      style={{
+        marginLeft: '-20px',
+        width: 'calc(100% + 20px)',
+        maxWidth: 'none',
+      }}
+    />
     <Footer
+      custom='mb-5'
       footnotes={{
         data: [
           {
-            supLeft: '*',
+            supLeftBig: '*',
             innerText: (
-              <span>
-                AUC<sup>0-56</sup> following the fourth administration of
-                ABILIFY ASIMTUFII 960 mg or the sum of AUC<sup>0-28</sup>{' '}
+              <>
+                AUC<sub>0-56</sub> following the fourth administration of
+                ABILIFY ASIMTUFII 960 mg or the sum of AUC<sub>0-28</sub>
                 following the seventh and eighth administrations of ABILIFY
                 MAINTENA 400 mg.
-              </span>
+              </>
             ),
           },
           {
             supLeft: '†',
             innerText: (
-              <span>
+              <>
                 Aripiprazole plasma concentrations following the fourth
-                administration of ABILIFY ASIMTUFII 960 mg (C<sup>56</sup>) or
+                administration of ABILIFY ASIMTUFII 960 mg (C<sub>56</sub>) or
                 the eighth administration of ABILIFY MAINTENA 400 mg (C
-                <sup>28</sup>).
-              </span>
+                <sub>28</sub>).
+              </>
             ),
           },
           {
             supLeft: '‡',
             innerText: (
-              <span>
+              <>
                 ABILIFY ASIMTUFII 960 mg (n=34), ABILIFY MAINTENA 400 mg (n=32).
-              </span>
+              </>
             ),
           },
           {
             supLeft: '§',
             innerText: (
-              <span>
+              <>
                 ABILIFY ASIMTUFII 960 mg (n=96), ABILIFY MAINTENA 400 mg (n=82).
-              </span>
+              </>
             ),
           },
           {
             innerText: (
-              <span>
+              <>
                 AUC=area under curve; C=concentration; CI=confidence interval; C
-                <sup>max</sup>=maximum concentration.
-              </span>
+                <sub>max</sub>=maximum concentration.
+              </>
             ),
           },
         ],

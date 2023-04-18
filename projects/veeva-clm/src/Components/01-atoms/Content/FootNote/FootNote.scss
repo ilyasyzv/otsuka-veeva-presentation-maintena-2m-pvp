@@ -8,6 +8,7 @@
 
     li {
       position: relative;
+      line-height: 15px;
     }
   }
 
@@ -15,26 +16,31 @@
     margin: 0;
   }
 
+  sup,
+  sub {
+    vertical-align: baseline;
+    position: relative;
+  }
+
   sup {
     font-size: 8px;
-    bottom: 0.5em;
 
     &.big {
       font-size: 11px;
-      bottom: 0.2em;
     }
+  }
+
+  sup:not(.sup-left) {
+    top: -0.4em;
   }
 
   sub {
     font-size: 6px;
+    top: 0.4em;
   }
 
   &-small {
     font-size: 8px;
     line-height: 8px;
-  }
-
-  .lineHeight {
-    transform: translate(0, -4px);
   }
 }
