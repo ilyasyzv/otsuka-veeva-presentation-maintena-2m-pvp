@@ -3,9 +3,11 @@ import { AppStorybook } from '@pages/AppStorybook';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 
 import MetabolicTableImg from '@/Components/05-pages/A.3.3.3_Safety/img/MetabolicTable.png?format=webp';
+import MaintenaLogo from '@assets/maintena-logo.png';
 
 import './A.3.3.3_Safety.scss';
 import List from '@/Components/01-atoms/Content/List/List';
+import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
 export default {
   title: 'CLM/Pages',
@@ -31,6 +33,36 @@ const content = () => (
       src={MetabolicTableImg}
       alt='prolactin table'
       className={classNames(`${blockName}-img`, 'mb-5')}
+    />
+    <Footer
+      footnotes={{
+        data: [
+          {
+            innerText:
+              'HDL=high-density lipoprotein; LDL=low-density lipoprotein.',
+          },
+        ],
+      }}
+      safetyInfo={{
+        custom: 'mt-9',
+        data: [
+          {
+            text: (
+              <span>
+                Please see{' '}
+                <a href='/' className='blue-500'>
+                  IMPORTANT SAFETY INFORMATION
+                </a>{' '}
+                in this presentation.
+              </span>
+            ),
+          },
+          {
+            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+          },
+        ],
+      }}
+      image={<img src={MaintenaLogo} alt='maintena-logo' width='140.2' />}
     />
   </div>
 );
