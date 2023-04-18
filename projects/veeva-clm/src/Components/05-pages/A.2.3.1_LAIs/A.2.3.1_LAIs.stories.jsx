@@ -3,8 +3,8 @@ import { AppStorybook } from '@pages/AppStorybook';
 
 import { Header } from '@atoms/Content/Header/Header';
 import {
-  StudyDesignScroll1,
-  StudyDesignScroll2,
+  StudyDesignLAIs1,
+  StudyDesignLAIs2,
 } from '@templates/Layouts/Modal/Modal.stories';
 import { SplitScreen } from '@templates/Layouts/Grid/TwoColumns';
 import Chart1 from './img/LAIs.png?format=webp';
@@ -22,8 +22,8 @@ export default {
 
 const baseClass = 'page--A_2_3_1_LAIs';
 
-const modalOne = () => <StudyDesignScroll1 {...StudyDesignScroll1.args} />;
-const modalTwo = () => <StudyDesignScroll2 {...StudyDesignScroll2.args} />;
+const modalOne = () => <StudyDesignLAIs1 {...StudyDesignLAIs1.args} />;
+const modalTwo = () => <StudyDesignLAIs2 {...StudyDesignLAIs2.args} />;
 
 const content = () => (
   <>

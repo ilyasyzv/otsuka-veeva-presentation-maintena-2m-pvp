@@ -1,3 +1,11 @@
+import React from 'react';
+import { AppStorybook } from '@pages/AppStorybook';
+import './style.scss';
+
+import { Header } from '@atoms/Content/Header/Header';
+import MaintenaLogo from '@/assets/maintena-logo.png';
+import { Footer } from '@/Components/03-organisms/Footer/Footer';
+
 export default {
   title: "CLM/Pages",
   component: "A.3.5.1_Additional",
@@ -6,7 +14,7 @@ export default {
   },
   excludeStories: ["A_3_5_1_Additional_content"]
 };
-
+const baseClass = 'page--A_3_5_1_Additional';
 const content = () => (<div>
     <Header type="h1">The clinical profile of ABILIFY
       ASIMTUFII<sup>®</sup> (aripiprazole) in the treatment of schizophrenia and

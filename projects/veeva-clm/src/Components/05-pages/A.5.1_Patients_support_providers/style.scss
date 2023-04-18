@@ -1,0 +1,23 @@
+@import "@base/variables";
+.page--A_5_1_Patients_support_providers {
+  .page__wrapper {
+    .right-pane{
+      .support {
+        max-width: 70%;
+        margin: auto;
+        display: block;
+        padding-right: 53px;
+      }
+      .background-grey {
+        background: #EFEFEF;
+        border-radius: 25px;
+        width: 94%;
+        padding: 10px;
+
+        .paragraph {
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
