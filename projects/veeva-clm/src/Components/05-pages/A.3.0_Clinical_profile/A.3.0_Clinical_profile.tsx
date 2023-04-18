@@ -3,7 +3,8 @@ import React from 'react';
 import styles from './A.3.0_Clinical_profile.module.scss';
 import logo from './imgs/Abilify_Asimtufii_Logo_Lockup_R_RGB.png';
 import Link from '@/Components/03-organisms/Routing/Link/Link';
-
+import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import AsimtufiiLogo from '@/assets/asimtufii-logo.png';
 const PageContent = () => {
   return (<div className={styles.page}>
       <Header type="h1">
@@ -55,8 +56,39 @@ const PageContent = () => {
             <div className={'button__text'}>ABILIFY MAINTENA<br/>RWE</div>
           </Link>
         </div>
-        <img src={logo} className={styles.logo} />
+        <img src={logo} className={'page-logo'}/>
       </div>
+      <Footer
+        footnotes={{
+          data: [
+            {
+              innerText: (
+                <span>
+                PK=pharmacokinetic; RWE=real-world evidence.
+              </span>
+              ),
+            },
+          ],
+        }}
+        safetyInfo={{
+          custom: 'mt-5',
+          data: [
+            {
+              text: (
+                <span>
+                Please see{' '}
+                  <a href='/' className='blue-500'>
+                  IMPORTANT SAFETY INFORMATION
+                </a>{' '}, including BOXED WARNING available in this presentation.
+              </span>
+              ),
+            },
+            {
+              text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+            },
+          ],
+        }}
+      />
     
     </div>
   );

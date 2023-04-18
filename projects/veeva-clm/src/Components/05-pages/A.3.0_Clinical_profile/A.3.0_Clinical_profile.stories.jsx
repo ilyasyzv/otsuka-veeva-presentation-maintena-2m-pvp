@@ -1,13 +1,13 @@
-import React from "react";
-import { AppStorybook } from "@pages/AppStorybook";
-import PageContent from "./A.3.0_Clinical_profile";
+import React from 'react';
+import { AppStorybook } from '@pages/AppStorybook';
+import PageContent from './A.3.0_Clinical_profile';
 
 export default {
-  title: "CLM/Pages/A.3",
-  component: "A.3.0_Clinical_profile",
+  title: 'CLM/Pages/A.3',
+  component: 'A.3.0_Clinical_profile',
   parameters: {
-    layout: "fullscreen"
-  }
+    layout: 'fullscreen',
+  },
 };
 
 const Template = () => {

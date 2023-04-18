@@ -1,17 +1,15 @@
 .page {
-  .logo {
-    //background-image: url('imgs/Abilify_Asimtufii_Logo_Lockup_R_RGB.png');
-    position: absolute;
-    bottom: 168px;
-    right: 31px;
-    width: 250px;
-    height: auto;
-  }
-
-
+  height: 625px;
+  position: relative;
   :global {
+    .page-logo {
+      position: absolute;
+      bottom: 100px;
+      right: 31px;
+      width: 250px;
+      height: auto;
+    }
     .button {
-
       justify-content: center;
       text-decoration: none;
 
