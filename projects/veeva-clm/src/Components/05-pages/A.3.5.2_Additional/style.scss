@@ -12,4 +12,10 @@
       bottom: 79px;
     }
   }
+
+  .footnote__list {
+    li:first-child {
+      max-width: 630px;
+    }
+  }
 }
