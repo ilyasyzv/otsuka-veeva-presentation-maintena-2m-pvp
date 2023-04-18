@@ -17,6 +17,7 @@ const PageContent = () => (<div className={styles.page}>
       footnotes={{
         data: [
           {
+            supLeft: '*',
             innerText: 'These studies do not differentiate between bipolar disorders.',
           }, {
             innerText: 'FDA=US Food and Drug Administration; LAI=long-acting injectable.',
