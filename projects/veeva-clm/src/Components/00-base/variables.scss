@@ -152,11 +152,12 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
     content: "";
     display: block;
     background-color: $blue-300;
-    width: 4px;
+    width: 6px;
     height: 2px;
     position: relative;
     top: 11px;
     left: -9px;
+    border-radius: 0;
   }
 }
 
