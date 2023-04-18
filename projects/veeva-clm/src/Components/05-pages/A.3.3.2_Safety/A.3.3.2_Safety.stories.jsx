@@ -24,10 +24,12 @@ const classNames = require('classnames');
 
 const content = () => (
   <div className={`${blockName}_wrapper`}>
-    <Header custom='mb-3'>
-      Prolactin and extrapyramidal symptom-related <br /> events in patients
-      with schizophrenia receiving <br /> ABILIFY MAINTENA<sup>®</sup>
-      (aripiprazole)<sup>1,2</sup>
+    <Header custom='mb-0'>
+      Prolactin and extrapyramidal symptom-related
+      <br />
+      events in patients with schizophrenia receiving
+      <br />
+      ABILIFY MAINTENA<sup>®</sup> (aripiprazole)<sup>1,2</sup>
     </Header>
     <List
       content={{
@@ -80,7 +82,7 @@ const content = () => (
             supRight: '2',
           },
           {
-            supLeft: '*',
+            supLeftBig: '*',
             innerText: 'ABILIFY MAINTENA N=99, placebo N=66.',
             supRight: '2',
           },
@@ -105,6 +107,9 @@ const content = () => (
                 2014;75(11):1254-1260.
               </span>
             ),
+          },
+          {
+            text: '[Data on file. Otsuka].',
           },
         ],
       }}
