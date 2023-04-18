@@ -74,20 +74,28 @@ const content = () => (
     {/* </div> */}
     <Footer
       custom='bottom-20'
-      safetyInfo={[
-        {
-          text: <span>Please see <a href="/">FULL PRESCRIBING INFORMATION</a> including BOXED WARNING available in this presentation.</span>
-        },
-        {
-          text: 'WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH DEMENTIA-RELATED PSYCHOSIS'
-        },
-        {
-          text: 'Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at increased risk of death (1.6 to 1.7 times) compared to placebo-treated patients. ABILIFY MAINTENA is not approved for the treatment of patients with dementia-related psychosis.'
-        },
-        {
-          text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. '
-        },
-      ]} />
+      safetyInfo={{
+        data: [
+          {
+            text: (
+              <span>
+                Please see <a href='/'>FULL PRESCRIBING INFORMATION</a>{' '}
+                including BOXED WARNING available in this presentation.
+              </span>
+            ),
+          },
+          {
+            text: 'WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH DEMENTIA-RELATED PSYCHOSIS',
+          },
+          {
+            text: 'Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at increased risk of death (1.6 to 1.7 times) compared to placebo-treated patients. ABILIFY MAINTENA is not approved for the treatment of patients with dementia-related psychosis.',
+          },
+          {
+            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+          },
+        ],
+      }}
+    />
   </div>
 );
 

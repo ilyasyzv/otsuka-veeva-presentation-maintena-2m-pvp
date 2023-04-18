@@ -41,29 +41,51 @@ const content = () => (
     <img src={SchizophreniaImg2} alt='' className={`${blockName}-img2`} />
     <Footer
       custom='mt-120'
-      footnotes={[
-        {
-          supLeft: '*',
-          innerText: 'Thirty-three studies assessed patient adherence to oral antipsychotic medications.'
-        }
-      ]}
-      references={[
-        {
-          text: <span>Ascher-Svanum H, et al. <em>BMC Psychiatry.</em> 2010:10:2.</span>
-        },
-        {
-          text: <span>Martin A, et al. <em>Adv Ther.</em> 2022,39(9):3933-3956.</span>
-        },
-        {
-          text: <span>Desai R, et al. <em>J Manag Care Spec Pharm.</em> 2019;25(1):37-46.</span>
-        },
-      ]}
-      distance={'35px'}
-      safetyInfo={[
-        {
-          text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE.'
-        }
-      ]} />
+      footnotes={{
+        data: [
+          {
+            supLeft: '*',
+            innerText:
+              'Thirty-three studies assessed patient adherence to oral antipsychotic medications.',
+          },
+        ],
+      }}
+      references={{
+        custom: 'mt-6',
+        data: [
+          {
+            text: (
+              <span>
+                Ascher-Svanum H, et al. <em>BMC Psychiatry.</em> 2010:10:2.
+              </span>
+            ),
+          },
+          {
+            text: (
+              <span>
+                Martin A, et al. <em>Adv Ther.</em> 2022,39(9):3933-3956.
+              </span>
+            ),
+          },
+          {
+            text: (
+              <span>
+                Desai R, et al. <em>J Manag Care Spec Pharm.</em>{' '}
+                2019;25(1):37-46.
+              </span>
+            ),
+          },
+        ],
+      }}
+      safetyInfo={{
+        custom: 'mt-30',
+        data: [
+          {
+            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE.',
+          },
+        ],
+      }}
+    />
   </div>
 );
 
