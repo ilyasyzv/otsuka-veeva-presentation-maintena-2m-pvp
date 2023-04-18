@@ -18,9 +18,9 @@ const PageContent = () => (<div className={styles.page}>
         data: [
           {
             supLeft: '*',
-            innerText: 'These studies do not differentiate between bipolar disorders.',
+            innerText: (<><span>These studies do not differentiate between bipolar disorders.</span><br/></>),
           }, {
-            innerText: 'FDA=US Food and Drug Administration; LAI=long-acting injectable.',
+            innerText: (<span>FDA=US Food and Drug Administration; LAI=long-acting injectable.</span>),
           },
         ],
       }}
@@ -36,80 +36,80 @@ const PageContent = () => (<div className={styles.page}>
           {
             text: (
               <span>
-                 Ascher-Svanum H, et al. BMC Psychiatry. 2010;10:2.
+                Ascher-Svanum H, et al. <em>BMC Psychiatry.</em> 2010;10:2.
               </span>
             ),
           },
           {
             text: (
               <span>
-                Berk L, et al. Hum Psychopharmacol. 2010;25(1):1-16.
+                Berk L, et al. <em>Hum Psychopharmacol</em>. 2010;25(1):1-16.
               </span>
             ),
           },
           {
             text: (
               <span>
-                 Martin A, et al. Adv Ther. 2022;39(9):3933-3956.
+                Martin A, et al. <em>Adv Ther</em>. 2022;39(9):3933-3956.
               </span>
             ),
           },
           {
             text: (
               <span>
-                  Broder MS, et al. J Med Econ. 2019;22(1):63-70.
+                Broder MS, et al. <em>J Med Econ</em>. 2019;22(1):63-70.
               </span>
             ),
           },
           {
             text: (
               <span>
-                   Goldstone LW. Am J Manag Care. 2020;26(3 suppl):S48-S54.
+                Goldstone LW. <em>Am J Manag Care</em>. 2020;26(3 suppl):S48-S54.
               </span>
             ),
           },
           {
             text: (
               <span>
-                    Kadakia A, et al. J Clin Psychiatry. 2022;83(6):22m14458.
+                Kadakia A, et al. <em>J Clin Psychiatry</em>. 2022;83(6):22m14458.
               </span>
             ),
           },
           {
             text: (
-              <span>Bessonova L, et al. Clinicoecon Outcomes Res. 2020;12:481-497.</span>
+              <span>Bessonova L, et al. <em>Clinicoecon Outcomes Res</em>. 2020;12:481-497.</span>
             ),
           },
           {
             text: (
               <span>
-                   Cloutier M, et al. J Affect Disord. 2018;226:45-51.
+                <em>Cloutier M, et al. J Affect Disord</em>. 2018;226:45-51.
               </span>
             ),
           },
           {
             text: (
-              <span>Zolezzi M, et al. Neuropsychiatr Dis Treat. 2021;17:1917-1926.</span>
+              <span>Zolezzi M, et al. <em>Neuropsychiatr Dis Treat</em>. 2021;17:1917-1926.</span>
             ),
           },
           {
             text: (
-              <span>Greene M, et al. J Med Econ. 2018;21(2):127-134.</span>
+              <span>Greene M, et al. <em>J<br/> Med Econ</em>. 2018;21(2):127-134.</span>
             ),
           },
           {
             text: (
-              <span>Lafeuille M-H, et al. BMC Psychiatry. 2013;13:221.</span>
+              <span>Lafeuille M-H, et al. <em>BMC Psychiatry</em>. 2013;13:221.</span>
             ),
           },
           
           {
             text: (
-              <span>Pietrini F, et al. Neuropsychiatr Dis Treat. 2019;15:1045-1060.</span>
+              <span>Pietrini F, et al. <em>Neuropsychiatr Dis Treat</em>. 2019;15:1045-1060.</span>
             ),
           }, {
             text: (
-              <span>American Psychiatric Association. Practice Guidelines for the Treatment of Patients With Schizophrenia. 3rd ed. Washington, DC; 2021.</span>
+              <span>American Psychiatric Association. <em>Practice Guidelines for the Treatment of Patients With Schizophrenia</em>. 3rd ed. Washington, DC; 2021.</span>
             ),
           },
         ],

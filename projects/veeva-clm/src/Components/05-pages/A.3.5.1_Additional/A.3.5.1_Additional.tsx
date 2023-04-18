@@ -43,7 +43,7 @@ const PageContent = () => (
     </div>
     <div className={'buttons-group-row-center'}>
       <Link
-        to={''}
+        to={'A.6.3.X_Appendix_Safety'}
         custom={'button button__type-c button__type-c-large button__type-c-large-dark'}
       >
         <div className={'button__text'}>
