@@ -1,13 +1,42 @@
 .page {
-  background-image: url('imgs/back-1.png');
+  .logo {
+    //background-image: url('imgs/Abilify_Asimtufii_Logo_Lockup_R_RGB.png');
+    position: absolute;
+    bottom: 168px;
+    right: 31px;
+    width: 250px;
+    height: auto;
+  }
+
 
   :global {
+    .button {
+
+      justify-content: center;
+      text-decoration: none;
+
+      .button__text {
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+
+        sup {
+          font-size: 10px;
+        }
+      }
+    }
+
     h1 {
       font-size: 40px;
       margin: 71px 10px 10px;
       margin-left: 49px;
       line-height: 41px;
       letter-spacing: -0.5px;
+
+      sup {
+        font-size: 21px;
+        line-height: normal;
+      }
     }
 
     .buttons-group {
@@ -21,7 +50,7 @@
         flex-direction: row;
         justify-content: flex-start;
         margin-bottom: 20px;
-        gap: 19px;
+        gap: 20px;
       }
     }
   }
