@@ -2,13 +2,14 @@ import React, { useContext } from 'react';
 
 import { PageContext } from '@/context/PageContext';
 import UpperSubNavBar from '@atoms/UpperSubNavBar/UpperSubNavBar';
+import { findPathInMenu, flapMenu, mainMenu } from '@/utils/processNavigation';
 
 import Link from '../Link/Link';
 import './LinkGroup.scss';
 
 const classNames = require('classnames');
 
-export const LinkGroup = ({ linkGroup }) => {
+export const LinkGroup = ({ linkGroup, parentNav = false }) => {
   const { currentPage } = useContext(PageContext);
 
   const linksGroup = () => {
@@ -22,7 +23,13 @@ export const LinkGroup = ({ linkGroup }) => {
     return urls;
   };
 
-  const isActive = () => linksGroup().includes(currentPage);
+  const isActive = () => {
+    if (parentNav) {
+      const { parent } = findPathInMenu(currentPage, mainMenu.data);
+      return linkGroup.url.includes(parent);
+    }
+    return linksGroup().includes(currentPage);
+  };
 
   const { addClass } = linkGroup;
 

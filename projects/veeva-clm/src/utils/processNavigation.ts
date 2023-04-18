@@ -1,4 +1,3 @@
-
 interface Link {
   name: string;
   url: string;
@@ -227,11 +226,16 @@ export const bottomMenu: Menu = {
   ],
 };
 
+interface parentMenu {
+  parent: string | false;
+  subMenu: Link[] | false;
+}
+
 // Search path in menu tree.
 export const findPathInMenu = (
   currentPage: string,
   menu: Link[],
-): Link[] | false => {
+): parentMenu => {
   const filterLink = (link: Link): boolean => {
     if (link?.url?.includes(currentPage) || false) {
       return true;
@@ -244,7 +248,7 @@ export const findPathInMenu = (
   };
 
   const subMenu = menu.find(filterLink);
-  return subMenu?.children || false;
+  return { parent: subMenu?.url || false, subMenu: subMenu?.children || false };
 };
 
 // Filter appropriate layer of menu for the current path.
@@ -253,7 +257,7 @@ export const findSubMenu = (
   menu: Link[],
   layer: number,
 ): Link[] | false => {
-  const subMenu = findPathInMenu(currentPage, menu);
+  const { subMenu } = findPathInMenu(currentPage, menu);
   if (subMenu === false || layer <= 0) {
     return subMenu;
   }

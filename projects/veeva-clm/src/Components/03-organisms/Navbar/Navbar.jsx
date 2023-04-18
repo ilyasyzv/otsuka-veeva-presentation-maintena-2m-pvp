@@ -22,7 +22,7 @@ export const Navbar = () => {
       </div>
       <ul className='main-nav'>
         {links.map((link, i) => (
-          <LinkGroup linkGroup={link} key={link.url} />
+          <LinkGroup linkGroup={link} key={link.url} parentNav={true} />
         ))}
       </ul>
       <ul className='main-bottom-nav'>
