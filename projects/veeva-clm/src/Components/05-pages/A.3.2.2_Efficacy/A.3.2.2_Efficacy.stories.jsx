@@ -5,7 +5,7 @@ import Header from '@/Components/01-atoms/Content/Header/Header';
 import TableImg from '@/Components/05-pages/A.3.2.2_Efficacy/img/Table.png?format=webp';
 import TableBannerImg from '@/Components/05-pages/A.3.2.2_Efficacy/img/TableBanner.png?format=webp';
 
-import './A.3.2.1_Efficacy.scss';
+import './A.3.2.2_Efficacy.scss';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
 export default {
