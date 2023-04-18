@@ -14,7 +14,7 @@ export const References = ({ custom, references }) => {
 
         return (
           <span key={index}>
-            <strong>{index + 1}. </strong>
+            <strong>{index + 1}.</strong>&nbsp;
             <span className={classNames(fileClass)}>{ref.text}</span>{' '}
           </span>
         );
