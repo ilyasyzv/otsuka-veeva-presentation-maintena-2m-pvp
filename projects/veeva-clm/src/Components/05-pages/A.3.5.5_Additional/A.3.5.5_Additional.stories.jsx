@@ -29,7 +29,7 @@ const content = () => (
         PIVOTAL 52-WEEK BIPOLAR I DISORDER STUDY
       </Header>
       <Header custom={`${baseClass}-header-2 mb-25`}>
-          ABILIFY MAINTENA<sup>®</sup> (aripiprazole) significantly reduced the<br/> risk of recurrence<sup>*</sup> of any mood episode over 1 year vs placebo
+          ABILIFY MAINTENA<sup>®</sup> (aripiprazole) significantly reduced the<br/> risk of recurrence<sup>*</sup> of any mood episode over 1 year vs placebo<sup>1</sup>
       </Header>
       <img src={Primary_graphic} alt='graphic' className='graphic' />
       <img src={Placebo_image} alt='placebo' className='placebo ml-25 mb-57' />

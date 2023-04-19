@@ -132,7 +132,7 @@ export const StudyDesign1Args = {
       <Text
         title={
           <>
-            52-Week, Multiphase Maintenance Study<sup>1</sup>
+            52-Week, Multiphase Maintenance Study
           </>
         }
         innerText='A 52-week, placebo-controlled maintenance study evaluated the time to relapse for adult patients
@@ -141,7 +141,7 @@ export const StudyDesign1Args = {
       <Text
         title={
           <>
-            Patient Population<sup>1</sup>
+            Patient Population
           </>
         }
         innerText='Patients living with schizophrenia diagnosed ≥3 years with a history of symptom exacerbation or
@@ -150,7 +150,7 @@ export const StudyDesign1Args = {
       <Text
         title={
           <>
-            4 Phases of Study<sup>1,2</sup>
+            4 Phases of Study
           </>
         }
         list={{

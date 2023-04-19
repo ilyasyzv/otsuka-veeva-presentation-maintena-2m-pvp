@@ -82,8 +82,7 @@ UnderstandPANSS.args = {
       <Header type='h3' custom='mb-20'>
         The PANSS is a 30-item scale that is commonly split into positive,
         negative, and general
-        <br /> psychopathology subcategories that measure
-        <sup>1</sup>:
+        <br /> psychopathology subcategories that measure:
       </Header>
       <img
         className={`${blockName}_understanding-panss-image-1 mb-43`}
@@ -96,8 +95,7 @@ UnderstandPANSS.args = {
         alt=''
       />
       <Header type='h3' custom='mb-20'>
-        Each subcategory is rated on a scale of 1 (absent) to 7 (extreme)
-        <sup>1</sup>:
+        Each subcategory is rated on a scale of 1 (absent) to 7 (extreme):
       </Header>
       <img
         className={`${blockName}_understanding-panss-image-3`}
