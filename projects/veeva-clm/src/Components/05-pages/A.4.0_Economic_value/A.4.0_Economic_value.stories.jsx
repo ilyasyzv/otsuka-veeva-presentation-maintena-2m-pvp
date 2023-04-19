@@ -4,7 +4,6 @@ import Header from '@/Components/01-atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import AsimtufiiLogo from '@assets/asimtufii-logo.png';
-import className from 'classnames';
 import oneMonthImg from '@/Components/05-pages/A.4.0_Economic_value/img/1-month-wac.png?format=webp';
 import twoMonthImg from '@/Components/05-pages/A.4.0_Economic_value/img/2-month-wac.png?format=webp';
 import masterCalloutImg from '@/Components/05-pages/A.4.0_Economic_value/img/info.png?format=webp';
@@ -22,8 +21,8 @@ export default {
 const content = () => {
   return (
     <div className={styles[`content-wrapper`]}>
-      <Header custom='mb-100'>
-        Economic value of ABILIFY MAINTENA<sup>®</sup>(aripiprazole) in
+      <Header custom='mb-70'>
+        Economic value of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) in
         schizophrenia and bipolar I disorder<sup>1,2</sup>
       </Header>
       <div className={styles['content-container']}>
