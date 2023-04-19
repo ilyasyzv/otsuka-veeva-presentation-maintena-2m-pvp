@@ -9,6 +9,7 @@ import './A.3.3.2_Safety.scss';
 import List from '@/Components/01-atoms/Content/List/List';
 import MaintenaLogo from '@/assets/maintena-logo.png';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 
 export default {
   title: 'CLM/Pages',
@@ -74,6 +75,7 @@ const content = () => (
       )}
     />
     <Footer
+      custom='mb-5'
       footnotes={{
         data: [
           {
@@ -114,15 +116,15 @@ const content = () => (
         ],
       }}
       safetyInfo={{
-        custom: 'mt-15',
+        custom: 'mt-10',
         data: [
           {
             text: (
               <span>
                 Please see{' '}
-                <a href='/' className='blue-500'>
+                <Link to='A.7.0_ISI' custom='blue-500'>
                   IMPORTANT SAFETY INFORMATION
-                </a>{' '}
+                </Link>{' '}
                 in this presentation.
               </span>
             ),

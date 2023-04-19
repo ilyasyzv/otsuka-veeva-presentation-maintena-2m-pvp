@@ -5,6 +5,7 @@ import { Paragraph } from '@atoms/Content/Paragraph/Paragraph';
 
 import React from 'react';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import MaintenaLogo from '@/Components/05-pages/A.5.1_Patients_support_providers/img/Abilify_Asimtufii_Logo_Lockup_R_RGB1.png';
 import './style.scss';
 
@@ -59,9 +60,9 @@ const content = () => (
             text: (
               <span>
                 Please see{' '}
-                <a href='/' className='blue-500'>
+                <Link to='A.7.0_ISI' custom='blue-500'>
                   IMPORTANT SAFETY INFORMATION
-                </a>{' '}
+                </Link>{' '}
                 in this presentation.
               </span>
             ),
