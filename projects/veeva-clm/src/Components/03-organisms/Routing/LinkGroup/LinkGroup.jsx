@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { PageContext } from '@/context/PageContext';
 import UpperSubNavBar from '@atoms/UpperSubNavBar/UpperSubNavBar';
 import { findPathInMenu, flapMenu, mainMenu } from '@/utils/processNavigation';
+import SlideMenu from '@/Components/03-organisms/SlideMenu/SlideMenu';
 
 import Link from '../Link/Link';
 import './LinkGroup.scss';
@@ -41,8 +42,14 @@ export const LinkGroup = ({ linkGroup, parentNav = false }) => {
   return (
     <li className={`${mainLinkClass} ${addClass || ''}`}>
       <div className='main-nav__link__wrapper'>
-        <Link to={linkGroup.url}>{linkGroup.name}</Link>
-        <UpperSubNavBar link={linkGroup.url} />
+        {linkGroup.slide ? (
+          <SlideMenu data={linkGroup} />
+        ) : (
+          <>
+            <Link to={linkGroup.url}>{linkGroup.name}</Link>
+            <UpperSubNavBar link={linkGroup.url} />
+          </>
+        )}
       </div>
     </li>
   );
