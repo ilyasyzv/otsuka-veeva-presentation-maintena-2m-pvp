@@ -1,7 +1,8 @@
 import React from 'react';
-import { Footer } from './Footer';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import AsimtufiiLogo from '@assets/asimtufii-logo.png';
 import MaintenaLogo from '@assets/maintena-logo.png';
+import { Footer } from './Footer';
 
 export default {
   title: 'CLM/Organisms/Footer',
@@ -72,9 +73,9 @@ DefaultWithLogoA.args = {
         text: (
           <span>
             Please see{' '}
-            <a href='/' className='blue-500'>
+            <Link to='A.7.0_ISI' custom='blue-500'>
               IMPORTANT SAFETY INFORMATION
-            </a>{' '}
+            </Link>{' '}
             in this presentation.
           </span>
         ),
@@ -133,9 +134,9 @@ DefaultWithLogoB.args = {
         text: (
           <span>
             Please see{' '}
-            <a href='/' className='blue-500'>
+            <Link to='A.7.0_ISI' custom='blue-500'>
               IMPORTANT SAFETY INFORMATION
-            </a>{' '}
+            </Link>{' '}
             in this presentation.
           </span>
         ),
@@ -165,9 +166,9 @@ WithoutReferenceWithLogoA.args = {
         text: (
           <span>
             Please see{' '}
-            <a href='/' className='blue-500'>
+            <Link to='A.7.0_ISI' custom='blue-500'>
               IMPORTANT SAFETY INFORMATION
-            </a>{' '}
+            </Link>{' '}
             in this presentation.
           </span>
         ),
@@ -187,9 +188,9 @@ SafetyOnlyWithLogoA.args = {
         text: (
           <span>
             Please see{' '}
-            <a href='/' className='blue-500'>
+            <Link to='A.7.0_ISI' custom='blue-500'>
               IMPORTANT SAFETY INFORMATION
-            </a>{' '}
+            </Link>{' '}
             in this presentation.
           </span>
         ),
@@ -267,9 +268,9 @@ WithoutFootNoteWithLogoB.args = {
         text: (
           <span>
             Please see{' '}
-            <a href='/' className='blue-500'>
+            <Link to='A.7.0_ISI' custom='blue-500'>
               IMPORTANT SAFETY INFORMATION
-            </a>{' '}
+            </Link>{' '}
             in this presentation.
           </span>
         ),
