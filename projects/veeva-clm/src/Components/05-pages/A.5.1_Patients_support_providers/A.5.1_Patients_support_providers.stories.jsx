@@ -22,18 +22,35 @@ const baseClass = 'page--A_5_1_Patient_support';
 const content = () => (
   <>
     <Header custom={`${baseClass}-header-2 mb-23`}>
-      Otsuka Patient Support<sup>™</sup> (OPS) is committed to providing
-      personalized support for patients and their care partners
+      Otsuka Patient Support<sup>™</sup> is committed to providing personalized
+      support for patients and their care partners
     </Header>
     <img src={SupportLogo} alt='support logo' className='support' />
-    <div className='background-grey mt-27'>
-      <Paragraph position='center' custom='mt-32 mr-10 mb-6'>
-        Otsuka Patient Support is committed to providing personalized support
-        for patients and their partners. <br />
-        Visit otsukapatientsupport.com to learn more about tools, resources and
-        dedicated support team that are <br />
-        available.
-      </Paragraph>
+    <div className='background-grey-blue mt-27 ml-80'>
+      <div className='support-text'>
+        <Paragraph position='center'>
+          <strong>
+            <em>
+              Otsuka Patient Support is committed to providing personalized
+              support for
+              <br /> patients and their partners.
+            </em>
+          </strong>
+        </Paragraph>
+        <hr />
+        <Paragraph position='center'>
+          <strong>
+            <em>
+              Visit{' '}
+              <a href='https://www.otsukapatientsupport.com/'>
+                OtsukaPatientSupport.com
+              </a>{' '}
+              to learn more about tools, resources and
+              <br /> dedicated support team that are available.
+            </em>
+          </strong>
+        </Paragraph>
+      </div>
     </div>
     <Footer
       safetyInfo={{
