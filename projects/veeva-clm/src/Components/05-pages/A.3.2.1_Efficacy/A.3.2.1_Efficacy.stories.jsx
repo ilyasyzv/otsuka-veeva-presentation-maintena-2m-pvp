@@ -1,11 +1,12 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 import Header from '@/Components/01-atoms/Content/Header/Header';
-import EfficacyDiagramImg from './img/efficacyDiagram.png?format=webp';
 import AsimtufiiLogo from '@assets/asimtufii-logo.png';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 
 import './A.3.2.1_Efficacy.scss';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import EfficacyDiagramImg from './img/efficacyDiagram.png?format=webp';
 
 export default {
   title: 'CLM/Pages',
@@ -28,7 +29,7 @@ const content = () => (
     </Header>
     <Header type='h3' custom='mb-13'>
       Open-label, multiple-dose, randomized, parallel-arm, multicenter,
-      pharmacokinetic bridging study <sup>1</sup>
+      pharmacokinetic bridging study
     </Header>
     <img
       src={EfficacyDiagramImg}
@@ -41,6 +42,7 @@ const content = () => (
           {
             innerText:
               'One of the primary objectives of the trial was to establish similarity of aripiprazole concentrations between ABILIFY ASIMTFUll and ABILIFY MAINTENA® (aripiprazole).',
+            supRight: '1',
           },
           {
             supLeft: '*',
@@ -91,9 +93,9 @@ const content = () => (
             text: (
               <span>
                 Please see{' '}
-                <a href='/' className='blue-500'>
+                <Link to='A.7.0_ISI' custom='blue-500'>
                   IMPORTANT SAFETY INFORMATION
-                </a>{' '}
+                </Link>{' '}
                 in this presentation.
               </span>
             ),
