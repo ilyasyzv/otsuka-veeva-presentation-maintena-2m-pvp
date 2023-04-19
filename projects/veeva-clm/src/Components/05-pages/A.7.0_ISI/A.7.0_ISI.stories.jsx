@@ -1,3 +1,4 @@
+import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 import { Header } from '@atoms/Content/Header/Header';
 import { Paragraph } from '@atoms/Content/Paragraph/Paragraph';
