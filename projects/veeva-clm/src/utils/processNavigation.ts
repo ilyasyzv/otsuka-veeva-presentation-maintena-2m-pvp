@@ -1,15 +1,16 @@
-interface Link {
+export interface ILink {
   name: string;
   url: string;
-  children?: Link[];
+  slide?: boolean;
+  children?: ILink[];
 }
 
-interface Menu {
+interface IMenu {
   type?: string;
-  data: Link[];
+  data: ILink[];
 }
 
-export const mainMenu: Menu = {
+export const mainMenu: IMenu = {
   type: 'main',
   data: [
     {
@@ -164,22 +165,22 @@ export const mainMenu: Menu = {
     {
       name: 'Otsuka Patient Support™',
       url: '/A.5.1_Patients_support_providers',
-    //   children: [
-    //     {
-    //       name: '',
-    //       url: '/A.5.1_Patients_support_providers',
-    //       children: [
-    //         {
-    //           name: '',
-    //           url: '/A.5.1_Patients_support_providers',
-    //         },
-    //         {
-    //           name: '',
-    //           url: '/A.5.2_Patients_support_providers',
-    //         },
-    //       ],
-    //     },
-    //   ],
+      //   children: [
+      //     {
+      //       name: '',
+      //       url: '/A.5.1_Patients_support_providers',
+      //       children: [
+      //         {
+      //           name: '',
+      //           url: '/A.5.1_Patients_support_providers',
+      //         },
+      //         {
+      //           name: '',
+      //           url: '/A.5.2_Patients_support_providers',
+      //         },
+      //       ],
+      //     },
+      //   ],
     },
     // {
     //   name: 'Appendix',
@@ -212,7 +213,7 @@ export const mainMenu: Menu = {
   ],
 };
 
-export const bottomMenu: Menu = {
+export const bottomMenu: IMenu = {
   data: [
     {
       name: 'ISI',
@@ -220,23 +221,33 @@ export const bottomMenu: Menu = {
     },
     {
       name: 'PI',
-      url: '/A.7.0_ISI',
-      children: [],
+      url: '#',
+      slide: true,
+      children: [
+        {
+          name: 'ABILIFY ASIMTUFII® (aripiprazole) Prescribing Information',
+          url: '#',
+        },
+        {
+          name: 'ABILIFY MAINTENA® (aripiprazole) Prescribing Information',
+          url: '#',
+        },
+      ],
     },
   ],
 };
 
 interface parentMenu {
   parent: string | false;
-  subMenu: Link[] | false;
+  subMenu: ILink[] | false;
 }
 
 // Search path in menu tree.
 export const findPathInMenu = (
   currentPage: string,
-  menu: Link[],
+  menu: ILink[],
 ): parentMenu => {
-  const filterLink = (link: Link): boolean => {
+  const filterLink = (link: ILink): boolean => {
     if (link?.url?.includes(currentPage) || false) {
       return true;
     }
@@ -254,9 +265,9 @@ export const findPathInMenu = (
 // Filter appropriate layer of menu for the current path.
 export const findSubMenu = (
   currentPage: string,
-  menu: Link[],
+  menu: ILink[],
   layer: number,
-): Link[] | false => {
+): ILink[] | false => {
   const { subMenu } = findPathInMenu(currentPage, menu);
   if (subMenu === false || layer <= 0) {
     return subMenu;
@@ -265,11 +276,11 @@ export const findSubMenu = (
 };
 
 // Transform menu to single layer.
-export const flapMenu = (links: Link[], layer: number): Link[] => {
-  return links.flatMap((elem: Link): Link[] => {
+export const flapMenu = (links: ILink[], layer: number): ILink[] => {
+  return links.flatMap((elem: ILink): ILink[] => {
     if ((elem?.children?.length > 0 || false) && layer > 0) {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      const subLinks: Link[] = [
+      const subLinks: ILink[] = [
         { name: elem.name, url: elem.url },
         ...elem.children,
       ];
@@ -283,11 +294,11 @@ export const flapMenu = (links: Link[], layer: number): Link[] => {
 };
 
 // Rebuild menu tree into flat array. In-order traversal of the tree.
-export const flatLinksList = (links: Menu, currentPage: string) => {
+export const flatLinksList = (links: IMenu, currentPage: string) => {
   // Flat links Object to single layer structure.
-  let paths: Link[] = flapMenu(links.data, 2);
+  let paths: ILink[] = flapMenu(links.data, 2);
   // Remove duplicates from different layers.
-  paths = paths.reduce((accumulator: Link[], current: Link) => {
+  paths = paths.reduce((accumulator: ILink[], current: ILink) => {
     if (!accumulator.find((item) => item.url === current.url)) {
       accumulator.push(current);
     }
