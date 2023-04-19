@@ -3,6 +3,7 @@ import Header from '@/Components/01-atoms/Content/Header/Header.jsx';
 import imageTable from './imgs/A.3.1_Clinical_overview.png';
 import style from './A.3.1_Clinical_overview.module.scss';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import AsimtufiiLogo from '@/assets/asimtufii-logo.png';
 
 export const PageContent = () => (
@@ -68,9 +69,10 @@ export const PageContent = () => (
             text: (
               <span>
                 Please see{' '}
-                <a href="/" className="blue-500">
+                <Link to='A.7.0_ISI' custom='blue-500'>
                   IMPORTANT SAFETY INFORMATION
-                </a>{' '}, in this presentation
+                </Link>
+                {' '}, in this presentation
               </span>
             ),
           },

@@ -7,6 +7,7 @@ import TableBannerImg from '@/Components/05-pages/A.3.2.2_Efficacy/img/TableBann
 
 import './A.3.2.2_Efficacy.scss';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 
 export default {
   title: 'CLM/Pages',
@@ -98,9 +99,9 @@ const content = () => (
             text: (
               <span>
                 Please see{' '}
-                <a href='/' className='blue-500'>
+                <Link to='A.7.0_ISI' custom='blue-500'>
                   IMPORTANT SAFETY INFORMATION
-                </a>{' '}
+                </Link>{' '}
                 in this presentation.
               </span>
             ),

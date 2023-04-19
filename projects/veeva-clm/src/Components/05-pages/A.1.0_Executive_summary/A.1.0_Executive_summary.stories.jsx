@@ -2,8 +2,9 @@ import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 import { Header } from '@atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
-import PageImage from "./img/page-image.png";
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import AsimtufiiLogo from '@/assets/asimtufii-logo.png';
+import PageImage from './img/page-image.png';
 import './style.scss';
 
 export default {
@@ -19,9 +20,10 @@ const baseClass = 'page--A_1_0_Executive_summary';
 const content = () => (
   <>
     <Header custom={`${baseClass}-header-1 mb-20`}>
-      ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) offers comparable safety and tolerability to ABILIFY
-      MAINTENA<sup>®</sup> (aripiprazole) with 2&nbsp;months of sustained efficacy in patients with schizophrenia or bipolar
-      I disorder (BP-I)<sup>1,2</sup>
+      ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) offers comparable safety and
+      tolerability to ABILIFY MAINTENA<sup>®</sup> (aripiprazole) with
+      2&nbsp;months of sustained efficacy in patients with schizophrenia or
+      bipolar I disorder (BP-I)<sup>1,2</sup>
     </Header>
     <img className={`${baseClass}-img-1`} src={PageImage} alt='' width='852' />
     <Footer
@@ -31,7 +33,16 @@ const content = () => (
         data: [
           {
             supLeft: '*',
-            innerText: <span>In a pharmacokinetic bridging study, the mean plasma concentration of ABILIFY ASIMTUFII remained within a therapeutic and efficacious concentration<br /> between 200 ng/mL and 320 ng/mL during the 56-day dosing interval.<sup>6</sup><br /> AE=adverse event; FDA=US Food and Drug Administration.</span>
+            innerText: (
+              <span>
+                In a pharmacokinetic bridging study, the mean plasma
+                concentration of ABILIFY ASIMTUFII remained within a therapeutic
+                and efficacious concentration
+                <br /> between 200 ng/mL and 320 ng/mL during the 56-day dosing
+                interval.<sup>6</sup>
+                <br /> AE=adverse event; FDA=US Food and Drug Administration.
+              </span>
+            ),
           },
         ],
       }}
@@ -39,21 +50,25 @@ const content = () => (
         custom: 'mb-35',
         data: [
           {
-            text: 'Merative Micromedex. Accessed March 22, 2023. https://www.micromedexsolutions.com/'
+            text: 'Merative Micromedex. Accessed March 22, 2023. https://www.micromedexsolutions.com/',
           },
           {
-            text: 'Harlin M, et al. CNS Drugs. 2023;10.1007/s40263-023-00996-8.'
+            text: 'Harlin M, et al. CNS Drugs. 2023;10.1007/s40263-023-00996-8.',
           },
         ],
       }}
-      distance={'18px'}
+      distance='18px'
       safetyInfo={{
         custom: 'mt-9',
         data: [
           {
             text: (
               <span>
-                Please see <a href='/' className='blue-500'>IMPORTANT SAFETY INFORMATION</a> in this presentation.
+                Please see{' '}
+                <Link to='A.7.0_ISI' custom='blue-500'>
+                  IMPORTANT SAFETY INFORMATION
+                </Link>{' '}
+                in this presentation.
               </span>
             ),
           },
@@ -62,14 +77,13 @@ const content = () => (
           },
         ],
       }}
-
-      image={<img src={ AsimtufiiLogo } alt='asimtufii-logo' width='142.5' />}
+      image={<img src={AsimtufiiLogo} alt='asimtufii-logo' width='142.5' />}
     />
   </>
 );
 
 const Template = () => {
-  return <AppStorybook path='A.1.0_Executive_summary' components={content}/>;
+  return <AppStorybook path='A.1.0_Executive_summary' components={content} />;
 };
 
 export const A_1_0_Executive_summary = Template.bind({});

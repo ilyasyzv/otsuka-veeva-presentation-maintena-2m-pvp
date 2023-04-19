@@ -9,6 +9,7 @@ import {
 import { DefaultOne } from '@organisms/CollapsibleGroup/CollapsibleGroup.stories';
 import './style.scss';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import MaintenaLogo from '@/assets/maintena-logo.png';
 
 export default {
@@ -76,9 +77,9 @@ const content = () => (
             text: (
               <span>
                 Please see{' '}
-                <a href='/' className='blue-500'>
+                <Link to='A.7.0_ISI' custom='blue-500'>
                   IMPORTANT SAFETY INFORMATION
-                </a>{' '}
+                </Link>{' '}
                 in this presentation.
               </span>
             ),
