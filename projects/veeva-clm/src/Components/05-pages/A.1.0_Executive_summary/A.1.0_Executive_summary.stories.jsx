@@ -2,7 +2,6 @@ import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 import { Header } from '@atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
-import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import AsimtufiiLogo from '@/assets/asimtufii-logo.png';
 import PageImage from './img/page-image.png';
 import './style.scss';
@@ -19,11 +18,11 @@ export default {
 const baseClass = 'page--A_1_0_Executive_summary';
 const content = () => (
   <>
-    <Header custom={`${baseClass}-header-1 mb-20`}>
+    <Header custom={`${baseClass}-header-1 mb-15 mt-5`}>
       ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) offers comparable safety and
-      tolerability to ABILIFY MAINTENA<sup>®</sup> (aripiprazole) with
-      2&nbsp;months of sustained efficacy in patients with schizophrenia or
-      bipolar I disorder (BP-I)<sup>1,2</sup>
+      tolerability to ABILIFY MAINTENA<sup>®</sup> (aripiprazole) with <br />2
+      months of sustained efficacy in patients with schizophrenia or bipolar I
+      disorder (BP-I)<sup>1</sup>
     </Header>
     <img className={`${baseClass}-img-1`} src={PageImage} alt='' width='852' />
     <Footer
@@ -32,7 +31,7 @@ const content = () => (
         custom: 'mb-3',
         data: [
           {
-            supLeft: '*',
+            supLeftBig: '*',
             innerText: (
               <span>
                 In a pharmacokinetic bridging study, the mean plasma
@@ -40,20 +39,23 @@ const content = () => (
                 and efficacious concentration
                 <br /> between 200 ng/mL and 320 ng/mL during the 56-day dosing
                 interval.<sup>6</sup>
-                <br /> AE=adverse event; FDA=US Food and Drug Administration.
+                <br /> AR=adverse reaction; FDA=US Food and Drug Administration.
               </span>
             ),
           },
         ],
       }}
       references={{
-        custom: 'mb-35',
+        custom: 'mb-38 pr-20',
         data: [
+          {
+            text: 'Harlin M, et al. CNS Drugs. 2023;10.1007/s40263-023-00996-8',
+          },
           {
             text: 'Merative Micromedex. Accessed March 22, 2023. https://www.micromedexsolutions.com/',
           },
           {
-            text: 'Harlin M, et al. CNS Drugs. 2023;10.1007/s40263-023-00996-8.',
+            text: 'Data on file. Otsuka.',
           },
         ],
       }}
@@ -65,9 +67,9 @@ const content = () => (
             text: (
               <span>
                 Please see{' '}
-                <Link to='A.7.0_ISI' custom='blue-500'>
+                <a href='/' className='blue-500'>
                   IMPORTANT SAFETY INFORMATION
-                </Link>{' '}
+                </a>{' '}
                 in this presentation.
               </span>
             ),
