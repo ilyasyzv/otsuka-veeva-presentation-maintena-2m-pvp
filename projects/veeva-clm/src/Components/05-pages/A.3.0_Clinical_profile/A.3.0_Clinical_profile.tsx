@@ -17,20 +17,20 @@ const PageContent = () => {
       <div className={'buttons-group'}>
         <div className={'buttons-group-row'}>
           <Link
-            to={'A.3.0_Clinical_profile'}
+            to={'A.3.1.1_Overview'}
             custom={'button button__type-c button__type-c-large button__type-c-large-blue'}
             text={'Overview'}>
             <div className="button__text">Overview</div>
           </Link>
           <Link
-            to={'A.3.1_Clinical_overview'}
+            to={'A.3.2.1_Efficacy'}
             custom={'button button__type-c button__type-c-large button__type-c-large-blue'}
             text={'PK Study'}
           >
             <div className={'button__text'}>PK Study</div>
           </Link>
           <Link
-            to={'A.3.2.1_Efficacy'}
+            to={'A.3.5.1_Additional'}
             custom={'button button__type-c button__type-c-large button__type-c-large-blue'}
             text={'ABILIFY MAINTENA® Pivotal Studies'}
           >
@@ -49,7 +49,7 @@ const PageContent = () => {
             <div className={'button__text'}>Dosing &<br/>Administration</div>
           </Link>
           <Link
-            to={'A.3.5.1_Additional'}
+            to={'A.6.1.1_Appendix_Safety'}
             custom={'button button__type-c button__type-c-large button__type-c-large-blue'}
             text={'ABILIFY MAINTENA RWE'}
           >
@@ -74,14 +74,11 @@ const PageContent = () => {
           custom: 'mt-5',
           data: [
             {
-              text: (
-                <span>
-                Please see{' '}
-                  <a href='/' className='blue-500'>
-                  IMPORTANT SAFETY INFORMATION
-                </a>{' '}, including BOXED WARNING available in this presentation.
-              </span>
-              ),
+              text:
+                (<span>
+                Please see <a href="/" className={'blue-500'}>FULL PRESCRIBING INFORMATION</a>{' '}
+                  including BOXED WARNING available in this presentation.
+              </span>),
             },
             {
               text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',

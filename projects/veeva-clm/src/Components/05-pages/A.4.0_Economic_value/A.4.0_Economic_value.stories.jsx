@@ -2,6 +2,7 @@ import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import AsimtufiiLogo from '@assets/asimtufii-logo.png';
 import oneMonthImg from '@/Components/05-pages/A.4.0_Economic_value/img/1-month-wac.png?format=webp';
 import twoMonthImg from '@/Components/05-pages/A.4.0_Economic_value/img/2-month-wac.png?format=webp';
@@ -68,9 +69,9 @@ const content = () => {
               text: (
                 <span>
                   Please see{' '}
-                  <a href='/' className='blue-500'>
+                  <Link to='A.7.0_ISI' custom='blue-500'>
                     IMPORTANT SAFETY INFORMATION
-                  </a>{' '}
+                  </Link>{' '}
                   in this presentation.
                 </span>
               ),
