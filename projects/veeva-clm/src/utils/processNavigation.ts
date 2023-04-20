@@ -225,12 +225,12 @@ export const bottomMenu: IMenu = {
       slide: true,
       children: [
         {
-          name: 'ABILIFY ASIMTUFII® (aripiprazole) Prescribing Information',
-          url: '#',
+          name: 'ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) Prescribing Information',
+          url: '#1',
         },
         {
-          name: 'ABILIFY MAINTENA® (aripiprazole) Prescribing Information',
-          url: '#',
+          name: 'ABILIFY MAINTENA<sup>®</sup> (aripiprazole) Prescribing Information',
+          url: '#2',
         },
       ],
     },

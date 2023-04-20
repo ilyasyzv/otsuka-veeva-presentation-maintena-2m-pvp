@@ -73,9 +73,7 @@ const PageContent = () => {
         footnotes={{
           data: [
             {
-              innerText: (
-                <span>PK=pharmacokinetic; RWE=real-world evidence.</span>
-              ),
+              innerText: <span>PK=pharmacokinetic.</span>,
             },
           ],
         }}
