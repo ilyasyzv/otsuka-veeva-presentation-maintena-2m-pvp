@@ -53,7 +53,9 @@ const content = () => (
         data: [
           {
             text: (
-              <span>Cloutier M, et al. J Affect Disord. 2018;226:45-51.</span>
+              <span>
+                Cloutier M, et <em>J Affect Disord.</em> 2018;226:45-51.
+              </span>
             ),
           },
         ],

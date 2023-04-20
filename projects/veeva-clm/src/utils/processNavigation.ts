@@ -226,11 +226,11 @@ export const bottomMenu: IMenu = {
       children: [
         {
           name: 'ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) Prescribing Information',
-          url: '#',
+          url: '#1',
         },
         {
           name: 'ABILIFY MAINTENA<sup>®</sup> (aripiprazole) Prescribing Information',
-          url: '#',
+          url: '#2',
         },
       ],
     },

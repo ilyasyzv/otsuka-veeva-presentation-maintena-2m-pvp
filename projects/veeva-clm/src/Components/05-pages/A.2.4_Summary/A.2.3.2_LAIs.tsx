@@ -24,13 +24,11 @@ const PageContent = () => (
           {
             supLeft: '*',
             innerText: (
-              <>
-                <span>
-                  These studies do not differentiate between bipolar disorders.
-                </span>
-                <br />
-              </>
+              <span>
+                These studies do not differentiate between bipolar disorders.
+              </span>
             ),
+            supRight: '3.15',
           },
           {
             innerText: (
@@ -122,11 +120,7 @@ const PageContent = () => (
           {
             text: (
               <span>
-                Greene M, et al.{' '}
-                <em>
-                  J<br /> Med Econ
-                </em>
-                . 2018;21(2):127-134.
+                Greene M, et al. <em>J Med Econ</em>. 2018;21(2):127-134.
               </span>
             ),
           },
@@ -155,6 +149,14 @@ const PageContent = () => (
                   Schizophrenia
                 </em>
                 . 3rd ed. Washington, DC; 2021.
+              </span>
+            ),
+          },
+          {
+            text: (
+              <span>
+                Simhandl C, et al. <em>J Clin Psychiatry</em>.
+                2014;75(3):254-263
               </span>
             ),
           },

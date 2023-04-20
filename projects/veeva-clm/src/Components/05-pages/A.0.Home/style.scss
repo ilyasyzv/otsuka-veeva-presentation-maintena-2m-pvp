@@ -4,15 +4,18 @@
 
   &_wrapper {
     width: 807px;
+    margin-top: 28px;
+    margin-left: 30px;
   }
 
   &-header{
-    font-size:42px !important;
-    letter-spacing: -2px;
+    font-size:39px !important;
+    letter-spacing: -0.65px;
     line-height: 39px !important;
   }
   &-sup {
     font-size: 22px !important;
+    letter-spacing: 4px;
   }
   &-underline {
     width:610px ;
@@ -21,6 +24,7 @@
   &-secondary-header {
     width: 634px;
     font-weight: normal !important;
+    line-height: 27px !important;
   }
   &-underline{
     width: 607px
@@ -41,9 +45,26 @@
     justify-content: flex-end;
     align-items: center;
   }
-  .footer-txt {
-    font-weight: bold;
+
+  &-footer{
+
+    margin-left: -30px;
+
+    .safetyInfo   {
+      p {
+        letter-spacing: -0.6px;
+        line-height: 18.3px ;
+      }
+      a {
+        letter-spacing: -0.75px;
+      }
+
+    }
+
   }
+  //.footer-txt {
+  //  font-weight: bold;
+  //}
 }
 
 .page--A_0_Home {
