@@ -21,7 +21,7 @@ const content = () => (
   <div className={`${blockName}_wrapper`}>
     <Header custom='mb-75'>
       Schizophrenia is associated with a considerable, disproportionate economic
-      burden1<sup>1</sup>
+      burden<sup>1</sup>
     </Header>
     <img
       src={SchizophreniaCostImg}
