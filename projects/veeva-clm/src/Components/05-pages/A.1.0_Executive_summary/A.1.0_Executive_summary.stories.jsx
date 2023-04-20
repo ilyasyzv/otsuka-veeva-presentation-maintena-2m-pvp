@@ -38,7 +38,7 @@ const content = () => (
                 concentration of ABILIFY ASIMTUFII remained within a therapeutic
                 and efficacious concentration
                 <br /> between 200 ng/mL and 320 ng/mL during the 56-day dosing
-                interval.<sup>6</sup>
+                interval.<sup>1</sup>
                 <br /> AR=adverse reaction; FDA=US Food and Drug Administration.
               </span>
             ),
