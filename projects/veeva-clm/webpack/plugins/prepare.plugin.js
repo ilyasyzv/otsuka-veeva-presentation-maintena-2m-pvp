@@ -26,10 +26,10 @@ const preparePlugins = (pagesList, rootFolder, pagesFolder, isProduction) => {
       replacement: `./${page}.js`,
     });
 
-    // copySettings.push({
-    //   from: path.resolve(rootFolder, `src/content/pages/${page}`, 'thumb.png'),
-    //   to: path.resolve(rootFolder, `dist/${page}`, 'thumb.png'),
-    // });
+    copySettings.push({
+      from: path.resolve(rootFolder, `src/content/pages/${page}`, 'thumb.png'),
+      to: path.resolve(rootFolder, `dist/${page}`, 'thumb.png'),
+    });
 
     copySettings.push({
       from: path.resolve(rootFolder, 'src', 'veeva-library.js'),

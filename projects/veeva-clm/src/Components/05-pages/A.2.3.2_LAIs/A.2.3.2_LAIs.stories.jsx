@@ -2,8 +2,8 @@ import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 
 import { Header } from '@atoms/Content/Header/Header';
-import Chart1 from './img/LAIs1.png?format=webp';
-import Chart2 from './img/LAIs2.png?format=webp';
+import Chart1 from './img/LAIs1.png';
+import Chart2 from './img/LAIs2.png';
 import './style.scss';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
@@ -22,7 +22,7 @@ const content = () => (
   <>
     <Header custom={`${baseClass}-header-1 mb-27`}>
       Longer-acting LAIs may provide an additional option to help optimize
-      patient outcomes<sup>1-3</sup>
+      patient outcomes<sup>1</sup>
     </Header>
     <img className={`${baseClass}-chart-1 mb-46`} src={Chart1} alt='' />
     <img className={`${baseClass}-chart-2`} src={Chart2} alt='' />
@@ -48,8 +48,8 @@ const content = () => (
           {
             text: (
               <span>
-                Pietrini F, et al. <em>Neuropsychiatr Dis Treat.</em>{' '}
-                2019;15:1045-1060.
+                Lafeuille M-H, et al. <em>BMC Psychiatry.</em>{' '}
+                2013;13:221.
               </span>
             ),
           },
@@ -62,6 +62,14 @@ const content = () => (
                   Schizophrenia.
                 </em>{' '}
                 3rd ed. Washington, DC; 2021.
+              </span>
+            ),
+          },
+          {
+            text: (
+              <span>
+                Pietrini F, et al. <em>Neuropsychiatr Dis Treat.</em>{' '}
+                2019;15:1045-1060.
               </span>
             ),
           },

@@ -10,7 +10,7 @@
     & .main-nav__link__wrapper a {
       display: flex;
       flex-direction: column;
-      padding: 20px 0 20px 5px;
+      padding: 25px 0 25px 5px;
       align-items: center;
       text-decoration: none;
       border-right: 8px solid transparent;
@@ -33,7 +33,7 @@
     &.active {
       .main-nav__link__wrapper a {
         font-weight: bold;
-        padding: 20px 0 0 5px;
+        padding: 25px 0 0 5px;
 
         &:after {
           content: "";

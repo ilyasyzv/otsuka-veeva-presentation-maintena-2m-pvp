@@ -1,17 +1,20 @@
 import { AppStorybook } from '@pages/AppStorybook';
-import React from "react";
+import React from 'react';
 import { Header } from '@atoms/Content/Header/Header';
 import {
-    StudyDesign1,
-    Relapse,
-    FullRecurrenceDefinition, BaselineCharacteristics,
+  StudyDesign1,
+  Relapse,
+  FullRecurrenceDefinition,
+  BaselineCharacteristics,
 } from '@templates/Layouts/Modal/Modal.stories';
 
 import { List } from '@atoms/Content/List/List';
-import Placebo_image from '@/Components/05-pages/A.3.5.5_Additional/img/Placebo_image.png';
-import Primary_graphic from '@/Components/05-pages/A.3.5.5_Additional/img/Primary_graphic.png';
+import PlaceboImage from '@/Components/05-pages/A.3.5.5_Additional/img/Placebo_image.png';
+import PrimaryGraphic from '@/Components/05-pages/A.3.5.5_Additional/img/Primary_graphic.png';
 import { Paragraph } from '@atoms/Content/Paragraph/Paragraph';
 import './style.scss';
+import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import AsimtufiiLogo from '@/assets/asimtufii-logo.png';
 
 export default {
   title: 'CLM/Pages',
