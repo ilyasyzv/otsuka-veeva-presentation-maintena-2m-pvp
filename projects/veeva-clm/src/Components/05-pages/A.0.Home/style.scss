@@ -45,3 +45,9 @@
     font-weight: bold;
   }
 }
+
+.page--A_0_Home {
+  .main-nav__link:first-of-type .main-nav__link__wrapper a {
+    padding-top: 0;
+  }
+}
