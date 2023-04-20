@@ -78,7 +78,7 @@ export const mainMenu: IMenu = {
       ],
     },
     {
-      name: 'Clinical Profile for ABILIFY ASIMTUFII®',
+      name: 'Clinical Profile for ABILIFY ASIMTUFII<sup>®</sup>',
       url: '/A.3.0_Clinical_profile',
       children: [
         {
@@ -130,7 +130,7 @@ export const mainMenu: IMenu = {
           url: '/A.3.4_Dosing',
         },
         {
-          name: 'ABILIFY MAINTENA® Pivotal Studies',
+          name: 'ABILIFY MAINTENA<sup>®</sup> Pivotal Studies',
           url: '/A.3.5.1_Additional',
           children: [
             {
@@ -158,7 +158,7 @@ export const mainMenu: IMenu = {
       ],
     },
     {
-      name: 'Economic Value of ABILIFY ASIMTUFII®',
+      name: 'Economic Value of ABILIFY ASIMTUFII<sup>®</sup>',
       url: '/A.4.0_Economic_value',
       children: [],
     },

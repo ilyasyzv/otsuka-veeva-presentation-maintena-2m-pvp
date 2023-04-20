@@ -46,7 +46,7 @@ export const LinkGroup = ({ linkGroup, parentNav = false }) => {
           <SlideMenu data={linkGroup} />
         ) : (
           <>
-            <Link to={linkGroup.url}>{linkGroup.name}</Link>
+            <Link to={linkGroup.url}>{<span dangerouslySetInnerHTML={{ __html: linkGroup.name }}/>}</Link>
             <UpperSubNavBar link={linkGroup.url} />
           </>
         )}
