@@ -79,11 +79,11 @@ export const mainMenu: IMenu = {
     },
     {
       name: 'Clinical Profile for ABILIFY ASIMTUFII®',
-      url: '/A.3.1.1_Overview',
+      url: '/A.3.0_Clinical_profile',
       children: [
         {
           name: 'Overview',
-          url: '/A.3.1.1_Overview',
+          url: '/A.3.1_Clinical_overview',
         },
         {
           name: 'PK Study',

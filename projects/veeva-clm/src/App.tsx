@@ -18,7 +18,6 @@ import A_2_3_1_LAIs from '@/content/pages/A.2.3.1_LAIs/index.mdx';
 import A_2_3_2_LAIs from '@/content/pages/A.2.3.2_LAIs/index.mdx';
 import A_2_4_Summary from '@/content/pages/A.2.4_Summary/index.mdx';
 import A_3_0_Clinical_profile from '@/content/pages/A.3.0_Clinical_profile/index.mdx';
-import A_3_1_1_Overview from '@/content/pages/A.3.0_Clinical_profile/index.mdx';
 import A_3_1_Clinical_overview from '@/content/pages/A.3.1_Clinical_overview/index.mdx';
 import A_3_2_1_Efficacy from '@/content/pages/A.3.2.1_Efficacy/index.mdx';
 import A_3_2_2_Efficacy from '@/content/pages/A.3.2.2_Efficacy/index.mdx';
@@ -105,12 +104,6 @@ function App({ tab }: AppProps) {
                 path='/A.3.0_Clinical_profile'
                 component={() => (
                   <Page background='a' component={A_3_0_Clinical_profile} />
-                )}
-              />
-              <Route
-                path='/A.3.1.1_Overview'
-                component={() => (
-                  <Page background='a' component={A_3_1_1_Overview} />
                 )}
               />
               <Route
