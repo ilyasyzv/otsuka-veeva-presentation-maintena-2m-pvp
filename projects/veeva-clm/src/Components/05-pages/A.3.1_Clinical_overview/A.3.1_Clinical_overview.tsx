@@ -12,7 +12,7 @@ export const PageContent = () => (
       2<br/> maintenance studies of ABILIFY MAINTENA<sup>®</sup>
       (aripiprazole),<br/> ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) offers
       comparable<br/>safety, tolerability, and efficacy in adult patients
-      with<br/>schizophrenia or bipolar I disorder
+      with<br/>schizophrenia or bipolar I disorder<sup>1-4</sup>
     </Header>
     <img src={imageTable} alt={'Table'} className={'pageImg'}/>
     <Footer

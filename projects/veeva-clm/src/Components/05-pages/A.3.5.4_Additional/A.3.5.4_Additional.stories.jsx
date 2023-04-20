@@ -23,14 +23,13 @@ export default {
 const baseClass = 'page--A_3_5_4_Additional';
 const content = () => (
   <>
-    <Header type='h3' custom={`${baseClass}-header-1 heading-alter`}>
-      PIVOTAL 52-WEEK SCHIZOPHRENIA MAINTENANCE STUDY
-    </Header>
-    <Header custom={`${baseClass}-header-2 mb-25`}>
-      ABILIFY MAINTENA<sup>®</sup> (aripiprazole) significantly reduced the risk
-      of relapse by 80% vs placebo
-      <sup>1</sup>
-    </Header>
+   <Header type='h3' custom={`${baseClass}-header-1 heading-alter`}>
+    PIVOTAL 52-WEEK SCHIZOPHRENIA MAINTENANCE STUDY
+   </Header>
+   <Header custom={`${baseClass}-header-2 mb-25`}>
+    ABILIFY MAINTENA<sup>®</sup> (aripiprazole) significantly reduced the risk of relapse by 80% vs placebo
+    <sup>1,2</sup>
+   </Header>
     <img src={Primary_graphic} alt='graphic' className='graphic' />
     <img src={Placebo_image} alt='placebo' className='placebo ml-15 mb-57' />
     <Paragraph position='center' custom='mt-3'>
