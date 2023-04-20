@@ -24,7 +24,7 @@ const classNames = require('classnames');
 
 const content = () => (
   <div className={`${blockName}_wrapper`}>
-    <Header type='h1' custom={classNames('mb-21', `${blockName}-header`)}>
+    <Header type='h1' custom={classNames('mb-22', `${blockName}-header`)}>
       ABILIFY ASIMTUFII<sup className={`${blockName}-sup`}>®</sup>
       (aripiprazole) Extended-
       <br />
@@ -38,7 +38,7 @@ const content = () => (
     />
     <Header
       type='h2'
-      custom={classNames(`${blockName}-secondary-header`, 'mb-35')}
+      custom={classNames(`${blockName}-secondary-header`, 'mb-40')}
     >
       The First and Only Once-Every-2-Months Long-Acting Injectable Suspension
       Indicated for Treatment of Both Schizophrenia and Bipolar I Disorder in
@@ -55,31 +55,14 @@ const content = () => (
     <div className={classNames(`${blockName}-logo__wrapper`, ' mb-35')}>
       <img src={LogoAdilify} alt='logo' width='246' />
     </div>
-    {/* <div> */}
-    {/*  <p className='footer-txt'> */}
-    {/*    Please see FULL PRESCRIBING INFORMATION including BOXED WARNING */}
-    {/*    available in this presentation. */}
-    {/*  </p> */}
-    {/*  <p className='footer-txt'> */}
-    {/*    WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH DEMENTIA-RELATED */}
-    {/*    PSYCHOSIS Elderly patients with dementia-related psychosis treated with */}
-    {/*    antipsychotic drugs are at increased risk of death (1.6 to 1.7 times) */}
-    {/*    compared to placebo-treated patients. ABILIFY MAINTENA is not approved */}
-    {/*    for the treatment of patients with dementia-related psychosis. */}
-    {/*  </p> */}
-    {/*  <p className='footer-txt'> */}
-    {/*    FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR */}
-    {/*    DISTRIBUTE. */}
-    {/*  </p> */}
-    {/* </div> */}
     <Footer
-      custom='bottom-20'
+      custom={classNames(`${blockName}-footer`, 'bottom-35')}
       safetyInfo={{
         data: [
           {
             text: (
               <span>
-                Please see <a href='/'>FULL PRESCRIBING INFORMATION</a>{' '}
+                Please see <a href='/'>FULL PRESCRIBING INFORMATION</a>,
                 including BOXED WARNING available in this presentation.
               </span>
             ),
@@ -88,10 +71,19 @@ const content = () => (
             text: 'WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH DEMENTIA-RELATED PSYCHOSIS',
           },
           {
-            text: 'Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at increased risk of death (1.6 to 1.7 times) compared to placebo-treated patients. ABILIFY MAINTENA is not approved for the treatment of patients with dementia-related psychosis.',
+            text: (
+              <span>
+                Elderly patients with dementia-related psychosis treated with
+                antipsychotic drugs are at increased risk of death (1.6 to
+                <br /> 1.7 times) compared to placebo-treated patients. ABILIFY
+                MAINTENA is not approved for the treatment of patients with
+                <br />
+                dementia-related psychosis.
+              </span>
+            ),
           },
           {
-            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE',
           },
         ],
       }}
