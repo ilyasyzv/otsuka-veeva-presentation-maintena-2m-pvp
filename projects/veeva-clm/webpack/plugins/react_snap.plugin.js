@@ -90,12 +90,16 @@ class ReactSnapPlugin {
   }
 
   async createScreenShots() {
+    const executeSequentially = (pagesList) => {
+      return this.takeScreenshotWithResize(pagesList.shift())
+        .then(result => pagesList.length == 0 ? result : executeSequentially(pagesList));
+    }
+
     try {
       let pagesList = getDirectories('./src/content/pages');
       pagesList = pagesList
         .filter((page) => page !== 'shared')
-        .map((page) => this.takeScreenshotWithResize(page));
-      return Promise.all(pagesList);
+      return executeSequentially(pagesList);
     } catch (error) {
       this.logger.error('Error occurred: ', error);
     }
