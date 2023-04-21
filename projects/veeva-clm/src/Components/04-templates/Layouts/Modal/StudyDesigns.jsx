@@ -17,11 +17,15 @@ export const StudyDesignSupArgs = {
       </Header>
       <Text
         title='12-week, multiphase maintenance study'
-        innerText='A randomized, double-blind,
-        placebo-controlled clinical
-        study of 340 acutely relapsed patients living with schizophrenia to determine the efficacy and safety of
-        ABILIFY MAINTENA® (aripiprazole) 400 mg (n=168) vs placebo (n=172). All patients had a diagnosis of
-        schizophrenia at study entry.'
+        innerText={
+          <>
+            A randomized, double-blind, placebo-controlled clinical study of 340
+            acutely relapsed patients living with schizophrenia to determine the
+            efficacy and safety of ABILIFY MAINTENA<sup>®</sup> (aripiprazole)
+            400 mg 400 mg (n=168) vs placebo (n=172). All patients had a
+            diagnosis of schizophrenia at study entry.
+          </>
+        }
       />
       <Text
         title='Patient population'
@@ -43,7 +47,7 @@ export const StudyDesignSupArgs = {
                 <>
                   Patients with prior aripiprazole use had to undergo a 7-day
                   washout period from prior antipsychotics and other <br />
-                  prohibited medications at study entry,
+                  prohibited medications at study entry
                 </>
               ),
             },
@@ -111,7 +115,8 @@ export const StudyDesignSupArgs = {
           {
             text: (
               <span>
-                Kane JM, et al. J Clin Psychiatry. 2014;75(11):1254-1260.
+                Kane JM, et al.<em> J Clin Psychiatry.</em>{' '}
+                2014;75(11):1254-1260.
               </span>
             ),
           },
