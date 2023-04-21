@@ -2,9 +2,9 @@ import React from 'react';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
-import imageTable from './imgs/A.2.3.2_LAIs.png';
+import imageTable from './imgs/A.2.4_LAIs.png';
 
-import styles from './A.2.3.2_LAIs.module.scss';
+import styles from './A.2.4_LAIs.module.scss';
 
 const PageContent = () => (
   <div className={styles.page}>

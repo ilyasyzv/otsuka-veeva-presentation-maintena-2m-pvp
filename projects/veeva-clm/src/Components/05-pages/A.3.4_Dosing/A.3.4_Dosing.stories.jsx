@@ -21,7 +21,7 @@ const baseClass = 'page--A_3_4_Dosing';
 const content = () => (
   <>
     <Header custom={`${baseClass}-header-1 mb-27`}>
-      Dosage and administration<sup>1</sup>
+      Dosage and administration
     </Header>
     <img
       className={`${baseClass}-img-1 mt-43`}
