@@ -1,9 +1,13 @@
 import React from 'react';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 import Link from '@/Components/03-organisms/Routing/Link/Link';
+import Button from '@/Components/01-atoms/Content/Button/button';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import { StudyDesignSup } from '@templates/Layouts/Modal/Modal.stories';
 import AsimtufiiLogo from '@/assets/asimtufii-logo.png';
 import styles from './A.3.5.1_Additional.module.scss';
+
+StudyDesignSup.args.link =  <Button text='Long-term Study: <br/>Bipolar I Disorder' custom='button button__type-c button__type-c-large button__type-c-large-gray' />;
 
 const PageContent = () => (
   <div className={styles.page}>
@@ -23,7 +27,7 @@ const PageContent = () => (
       <div className='buttons-group'>
         <div className='buttons-group-row'>
           <Link
-            to='A.3.5.2_Additional'
+            to='A.3.3.1_Safety'
             custom='button button__type-c button__type-c-large'
           >
             <div className='button__text'>
@@ -42,16 +46,7 @@ const PageContent = () => (
               Schizophrenia
             </div>
           </Link>
-          <Link
-            to='A.3.5.5_Additional'
-            custom='button button__type-c button__type-c-large button__type-c-large-gray'
-          >
-            <div className='button__text'>
-              Long-term Study:
-              <br />
-              Bipolar I Disorder
-            </div>
-          </Link>
+          <StudyDesignSup {...StudyDesignSup.args} />
         </div>
       </div>
     </div>

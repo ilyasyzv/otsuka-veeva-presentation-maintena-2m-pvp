@@ -8,7 +8,7 @@ export const Button = ({ text, callback, custom }) => {
   return (
     <div className={btnClass} onClick={callback}>
       <div className={"button__text"}>
-        {text}
+        {<span dangerouslySetInnerHTML={{ __html: text }}/>}
       </div>
     </div>
   );
