@@ -36,7 +36,7 @@ export const Link = ({ custom, to, children }) => {
 
   const preventReload = (event) => {
     event.preventDefault();
-
+    event.stopPropagation();
     showISIModal();
 
     // Remove first and last slash
@@ -53,7 +53,7 @@ export const Link = ({ custom, to, children }) => {
   };
 
   return (
-    <a className={custom} href={to} onClick={preventReload}>
+    <a onClick={preventReload} className={custom} href={to}>
       {children}
     </a>
   );
