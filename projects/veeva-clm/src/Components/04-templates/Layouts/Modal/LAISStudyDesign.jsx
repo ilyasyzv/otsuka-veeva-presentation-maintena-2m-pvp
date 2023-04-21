@@ -299,7 +299,7 @@ export const StudyDesignLAIs1Args = {
             innerText: (
               <span>
                 LAI=long-acting injectable <br />
-                ID=idcntification LAI=long-acting injectable.
+                ID=idcntification; LAI=long-acting injectable.
               </span>
             ),
           },

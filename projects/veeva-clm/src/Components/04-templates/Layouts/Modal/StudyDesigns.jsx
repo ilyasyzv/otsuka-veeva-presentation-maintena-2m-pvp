@@ -130,29 +130,17 @@ export const StudyDesign1Args = {
         Study design<sup>1</sup>
       </Header>
       <Text
-        title={
-          <>
-            52-Week, Multiphase Maintenance Study
-          </>
-        }
+        title={<>52-Week, Multiphase Maintenance Study</>}
         innerText='A 52-week, placebo-controlled maintenance study evaluated the time to relapse for adult patients
          living with schizophrenia.'
       />
       <Text
-        title={
-          <>
-            Patient Population
-          </>
-        }
+        title={<>Patient Population</>}
         innerText='Patients living with schizophrenia diagnosed ≥3 years with a history of symptom exacerbation or
          relapse when not receiving antipsychotic treatment.*'
       />
       <Text
-        title={
-          <>
-            4 Phases of Study
-          </>
-        }
+        title={<>4 Phases of Study</>}
         list={{
           columns: 'columns-1',
           type: 'circle',

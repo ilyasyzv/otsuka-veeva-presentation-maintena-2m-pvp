@@ -1,10 +1,8 @@
 import React from 'react';
 import { Button } from '@atoms/Content/Button/button';
 import { Header } from '@atoms/Content/Header/Header';
-import { FootNote } from '@atoms/Content/FootNote/FootNote';
 import { Modal } from '@templates/Layouts/Modal/Modal';
 import { Text } from '@/Components/01-atoms/Content/Text/Text';
-import List from '@/Components/01-atoms/Content/List/List';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import {
   StudyDesignLAIs1Args,
@@ -274,10 +272,12 @@ BaselineCharacteristics.args = {
       footnotes={{
         data: [
           {
+            supLeft: '*',
+            innerText: <span>Per DSM-IV-TR criteria.</span>,
+          },
+          {
             innerText: (
               <span>
-                <sup>*</sup>Per DSM-IV-TR criteria.
-                <br />
                 DSM-IV-TR=Diagnostic and Statistical Manual of Mental Disorders,
                 Fourth Edition, Text Revision; YMRS=Young Mania Rating Scale.
               </span>
@@ -304,7 +304,6 @@ BaselineCharacteristics.args = {
 export const Relapse = Template.bind({});
 Relapse.args = {
   ...Default.args,
-  // customClass: `${blockName}_study-design`,
   link: <Button text='Relapse&nbsp; Definition' custom='button__type-b' />,
   children: (
     <>
@@ -394,7 +393,8 @@ SeparateAnalysis.args = {
       <p className='mb-2'>
         The population pharmacokinetic and exposure-response analysis reported
         below were funded by Otsuka Pharmaceutical Development &
-        Commercialization, Inc.<sup>1</sup>
+        Commercialization, Inc.
+        <sup className={`${blockName}_separate-analysis-sup`}>1</sup>
       </p>
       <p className='mb-20'>
         <strong>Limitations:</strong> At high predicted concentrations, there is
