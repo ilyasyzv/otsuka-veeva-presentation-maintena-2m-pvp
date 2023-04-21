@@ -173,7 +173,7 @@ UnderstandCGIS.args = {
           {
             text: (
               <span>
-                Busner J, et al. Psychiatry (Edgmont). 2007;4(7):28-37.
+                Busner J, et al. <em>Psychiatry (Edgmont).</em> 2007;4(7):28-37.
               </span>
             ),
           },
