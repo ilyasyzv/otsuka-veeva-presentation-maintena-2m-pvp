@@ -23,7 +23,7 @@ const SlideMenu = ({ data }: TSlideMenu) => {
           <div className='slide-menu-inner'>
             {data.children.map((link) => (
               <Link key={link.url} to={link.url} custom=''>
-                {link.name}
+                  {<span dangerouslySetInnerHTML={{ __html: link.name }}/>}
               </Link>
             ))}
           </div>

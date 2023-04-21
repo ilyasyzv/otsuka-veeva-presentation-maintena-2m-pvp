@@ -24,9 +24,9 @@ export const PageContent = () => (
             innerText: (<span>Baseline characteristics: PANSS total score ≥80 and a PANSS score >4 on each of 4 specific psychotic symptoms (conceptual disorganization, hallucinatory behavior, suspiciousness/<br /></span>),
           },
           {
-            innerText: (<span>persecution, and unusual thought content) at screening and baseline; diagnosis of schizophrenia ≥1 year.</span>),
+              innerText: (<span>persecution, and unusual thought content) at screening and baseline; diagnosis of schizophrenia ≥1 year.<sup>2</sup></span>),
           }, {
-            innerText: (<><br/><span>CGI-S=Clinical Global Impression-Severity of Illness Scale; PANSS=Positive and Negative Syndrome Scale; PK=pharmacokinetic.</span></>),
+            innerText: (<><span>CGI-S=Clinical Global Impression-Severity of Illness Scale; PANSS=Positive and Negative Syndrome Scale; PK=pharmacokinetic.</span></>),
           },
         ],
       }}
@@ -35,28 +35,28 @@ export const PageContent = () => (
           {
             text: (
               <span>
-                 Harlin M, et al CNS Drugs. 2023;10.1007/s40263-023-00996-8.
+                  Harlin M, et al <i>CNS Drugs.</i> 2023;10.1007/s40263-023-00996-8.
               </span>
             ),
           },
           {
             text: (
               <span>
-                Kane JM, et al. J Clin Psychiatry. 2014;75(11):1254-1260
+                  Kane JM, et al. <i>J Clin Psychiatry.</i><br/> 2014;75(11):1254-1260
               </span>
             ),
           },
           {
             text: (
               <span>
-                Kane JM, et al. J Clin Psychiatry. 2012;73(5):617-624.
+                  Kane JM, et al. <i>J Clin Psychiatry.</i> 2012;73(5):617-624.
               </span>
             ),
           },
           {
             text: (
               <span>
-                 Calabrese JR, et al. J Clin Psychiatry.<br/>2017;78(3):324-331.
+                  Calabrese JR, et al. <i>J Clin Psychiatry.</i><br/>2017;78(3):324-331.
               </span>
             ),
           },
