@@ -25,7 +25,7 @@ const classNames = require('classnames');
 const content = () => (
   <div className={`${blockName}_wrapper`}>
     <Header custom='mb-22'>
-      ABILIFY MAINTENA<sup>®</sup>(aripiprazole) has been evaluated for
+      ABILIFY MAINTENA<sup>®</sup> (aripiprazole) has been evaluated for
       metabolic safety in adult patients with bipolar I disorder
       <br />
     </Header>
@@ -58,7 +58,7 @@ const content = () => (
             ),
           },
           {
-            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE.',
           },
         ],
       }}

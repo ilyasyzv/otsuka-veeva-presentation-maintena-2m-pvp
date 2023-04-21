@@ -40,37 +40,73 @@ const content = () => (
       footnotes={{
         data: [
           {
-            innerText:
-              'One of the primary objectives of the trial was to establish similarity of aripiprazole concentrations between ABILIFY ASIMTFUll and ABILIFY MAINTENA® (aripiprazole).',
+            innerText: (
+              <>
+                One of the primary objectives of the trial was to establish
+                similarity of aripiprazole concentrations between ABILIFY
+                ASIMTFUll and ABILIFY MAINTENA<sup>®</sup> (aripiprazole).
+              </>
+            ),
+
             supRight: '1',
           },
           {
             supLeft: '*',
-            innerText:
-              'Patients with no history of tolerating Ari received 3 single oral doses of Ari of 10 mg on 3 consecutive days (total of 30 mg) in addition to their current medication prior to Day 15 to establish tolerability.',
+            innerText: (
+              <>
+                Patients with no history of tolerating Ari received 3 single
+                oral doses of Ari of 10 mg on 3 consecutive days (total of 30
+                mg) in addition to their current medication prior to Day 15 to
+                establish tolerability.
+              </>
+            ),
             supRight: '2',
           },
           {
             supLeft: '†',
-            innerText:
-              'Administered as a single injection in the gluteal muscle. A onetime dose reduction was allowed, for Ari 2MRTU 960, the dose was reduced to 660 mg (a onetime increase back to 960 mg was then allowed); for AOM 400, the dose was reduced to 300 mg (a onetime increase back to 400 mg was then allowed).',
+            innerText: (
+              <>
+                Administered as a single injection in the gluteal muscle. A
+                onetime dose reduction was allowed, for Ari 2MRTU 960, the dose
+                was reduced to 660 mg (a onetime increase back to 960 mg was
+                then allowed); for AOM 400, the dose was reduced to 300 mg (a
+                onetime increase back to 400 mg was then allowed).
+              </>
+            ),
             supRight: '2',
           },
           {
             supLeft: '‡',
-            innerText:
-              'Randomization stratification factors included sampling schedule (robust or sparse) and disease type (schizophrenia or BP-1).',
-            supRight: '2',
+            innerText: (
+              <>
+                Randomization stratification factors included sampling schedule
+                (robust or sparse) and disease type (schizophrenia or BP-1).
+              </>
+            ),
+            supRight: '1',
           },
           {
             supLeft: '§',
-            innerText:
-              'Blood samples for pharmacokinetic analyses were drawn throughout the study according to a robust (n=84) or a sparse (n=182) sampling schedule, with the robust sampling schedule providing more frequent sampling data.',
-            supRight: '2',
+            innerText: (
+              <>
+                Blood samples for pharmacokinetic analyses were drawn throughout
+                the study according to a robust (n=84) or a sparse (n=182)
+                sampling schedule, with the robust sampling schedule providing
+                more frequent sampling data.
+              </>
+            ),
+            supRight: '1',
           },
           {
-            innerText:
-              '2MRTU=2-month ready-to-use; AOM-ABILIFY MAINTENA once monthly; AP=antipsychotic; Ari=aripiprazole; BP-|=bipolar I; DSM-5-Diagnostic and Statistical Manual of Mental Disorders, 5th edition; ET=early termination.',
+            innerText: (
+              <>
+                2MRTU=2-month ready-to-use; AOM-ABILIFY MAINTENA once monthly;
+                AP=antipsychotic; Ari=aripiprazole; BP-I=bipolar I;
+                DSM-5-Diagnostic and{' '}
+                <em>Statistical Manual of Mental Disorders, 5th edition;</em>{' '}
+                ET=early termination.
+              </>
+            ),
           },
         ],
       }}
@@ -101,7 +137,7 @@ const content = () => (
             ),
           },
           {
-            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE.',
           },
         ],
       }}

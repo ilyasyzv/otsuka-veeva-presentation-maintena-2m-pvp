@@ -8,15 +8,17 @@ import styles from './A.3.5.1_Additional.module.scss';
 const PageContent = () => (
   <div className={styles.page}>
     <Header type='h1'>
-      The clinical profile of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) in
-      <br /> the treatment of schizophrenia and bipolar I disorder is
-      <br /> supported in part by the established efficacy and safety of
-      <br /> ABILIFY MAINTENA® (aripiprazole)
+      <>
+        The clinical profile of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) in
+        <br /> the treatment of schizophrenia and bipolar I disorder is
+        <br /> supported in part by the established efficacy and safety of
+        <br /> ABILIFY MAINTENA<sup>®</sup> (aripiprazole)
+      </>
     </Header>
 
     <div className='additional-card'>
       <Header type='h2'>
-        ABILIFY MAINTENA Efficacy in Schizophrenia and Bipolar I Disorder
+        <>ABILIFY MAINTENA Efficacy in Schizophrenia and Bipolar I Disorder</>
       </Header>
       <div className='buttons-group'>
         <div className='buttons-group-row'>
