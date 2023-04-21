@@ -12,15 +12,17 @@ StudyDesignSup.args.link =  <Button text='Long-term Study: <br/>Bipolar I Disord
 const PageContent = () => (
   <div className={styles.page}>
     <Header type='h1'>
-      The clinical profile of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) in
-      <br /> the treatment of schizophrenia and bipolar I disorder is
-      <br /> supported in part by the established efficacy and safety of
-      <br /> ABILIFY MAINTENA<sup>®</sup> (aripiprazole)
+      <>
+        The clinical profile of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) in
+        <br /> the treatment of schizophrenia and bipolar I disorder is
+        <br /> supported in part by the established efficacy and safety of
+        <br /> ABILIFY MAINTENA<sup>®</sup> (aripiprazole)
+      </>
     </Header>
 
     <div className='additional-card'>
       <Header type='h2'>
-        ABILIFY MAINTENA Efficacy in Schizophrenia and Bipolar I Disorder
+        <>ABILIFY MAINTENA Efficacy in Schizophrenia and Bipolar I Disorder</>
       </Header>
       <div className='buttons-group'>
         <div className='buttons-group-row'>
@@ -50,7 +52,7 @@ const PageContent = () => (
     </div>
     <div className='buttons-group-row-center'>
       <Link
-        to='A.6.3.X_Appendix_Safety'
+        to='A.3.3.1_Safety'
         custom='button button__type-c button__type-c-large button__type-c-large-dark'
       >
         <div className='button__text'>

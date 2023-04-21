@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
-import PageContent from './A.2.3.2_LAIs';
+import PageContent from './A.2.4_LAIs';
 
 export default {
   title: 'CLM/Pages',
@@ -12,7 +12,7 @@ export default {
 };
 
 const Template = () => {
-  return <AppStorybook path="A.2.4_Summary" components={PageContent}/>;
+  return <AppStorybook path='A.2.4_Summary' components={PageContent} />;
 };
 
 export const A_2_4_Summary = Template.bind({});

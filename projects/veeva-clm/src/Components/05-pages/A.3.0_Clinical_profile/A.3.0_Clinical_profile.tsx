@@ -25,7 +25,7 @@ const PageContent = () => {
       <div className='buttons-group'>
         <div className='buttons-group-row'>
           <Link
-            to='A.3.1.1_Overview'
+            to='A.3.1_Clinical_overview'
             custom='button button__type-c button__type-c-large button__type-c-large-blue'
             text='Overview'
           >
@@ -39,7 +39,7 @@ const PageContent = () => {
             <div className='button__text'>PK Study</div>
           </Link>
           <Link
-            to='A.3.5.1_Additional'
+            to='A.3.3.1_Safety'
             custom='button button__type-c button__type-c-large button__type-c-large-blue'
             text='Safety Data'
           >
@@ -58,7 +58,7 @@ const PageContent = () => {
             </div>
           </Link>
           <Link
-            to='A.6.1.1_Appendix_Safety'
+            to='A.3.5.1_Additional'
             custom='button button__type-c button__type-c-large button__type-c-large-blue'
           >
             <div className='button__text'>
