@@ -27,9 +27,14 @@
       bottom: 126px;
     }
   }
+
+  .modal-with-footer .modal-wrapper .modal-body {
+    overflow: visible;
+  }
+
   .placebo {
     position: absolute;
-    right:-9px;
+    right: -10px;
     top: 177px;
     width: 255px;
   }
