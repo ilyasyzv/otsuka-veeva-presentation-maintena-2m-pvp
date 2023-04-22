@@ -71,7 +71,7 @@ const content = () => (
                 <Link to='A.7.0_ISI' custom='blue-500'>
                 IMPORTANT SAFETY INFORMATION
                 </Link>
-                {' '}, in this presentation
+                {' '}, in this presentation.
               </span>
             ),
           },
