@@ -211,12 +211,10 @@ export const StudyDesign1Args = {
       footnotes={{
         data: [
           {
+            supLeft: '*',
             innerText: (
               <span>
-                <em>
-                  <sup>*</sup>Diagnostic and Statistical Manual of Mental
-                  Disorders, Fourth Edition, Text Revision (DSM-IV-TR)
-                </em>
+                <em>Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition, Text Revision (DSM-IV-TR).</em>
               </span>
             ),
           },

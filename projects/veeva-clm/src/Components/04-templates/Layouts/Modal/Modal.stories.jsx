@@ -351,6 +351,7 @@ Relapse.args = {
       footnotes={{
         data: [
           {
+            supLeft: '*',
             innerText: (
               <span>
                 PANSS items were conceptual disorganization, hallucinatory
@@ -368,7 +369,7 @@ Relapse.args = {
           {
             text: (
               <span>
-                Kane JM, et al. J Clin Psychiatry. 2012;73(5):617-624.
+                Kane JM, et al. <em>J Clin Psychiatry</em>. 2012;73(5):617-624.
               </span>
             ),
           },
