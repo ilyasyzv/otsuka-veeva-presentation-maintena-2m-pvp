@@ -3,10 +3,10 @@ const validate = require('schema-utils');
 const fse = require('fs-extra');
 const { run } = require('react-snap');
 const replace = require('replace-in-file');
-const optionsSchema = require('./options-schema.js');
 const puppeteer = require('puppeteer');
 const url = require('url');
 const sharp = require('sharp');
+const optionsSchema = require('./options-schema.js');
 
 const getDirectories = require('../scripts');
 
@@ -49,11 +49,6 @@ const defaultOptions = {
     '/A.3.5.5_Additional/index.html',
     '/A.4.0_Economic_value/index.html',
     '/A.5.1_Patients_support_providers/index.html',
-    '/A.5.2_Patients_support_providers/index.html',
-    '/A.6.1.1_Appendix_Safety/index.html',
-    '/A.6.1.2_Appendix_Safety/index.html',
-    '/A.6.2_Apendix_MOA/index.html',
-    '/A.6.3.X_Apendix_Safety/index.html',
     '/A.7.0_ISI/index.html',
   ],
   viewport: {
@@ -91,14 +86,14 @@ class ReactSnapPlugin {
 
   async createScreenShots() {
     const executeSequentially = (pagesList) => {
-      return this.takeScreenshotWithResize(pagesList.shift())
-        .then(result => pagesList.length == 0 ? result : executeSequentially(pagesList));
-    }
+      return this.takeScreenshotWithResize(pagesList.shift()).then((result) =>
+        pagesList.length == 0 ? result : executeSequentially(pagesList),
+      );
+    };
 
     try {
       let pagesList = getDirectories('./src/content/pages');
-      pagesList = pagesList
-        .filter((page) => page !== 'shared')
+      pagesList = pagesList.filter((page) => page !== 'shared');
       return executeSequentially(pagesList);
     } catch (error) {
       this.logger.error('Error occurred: ', error);

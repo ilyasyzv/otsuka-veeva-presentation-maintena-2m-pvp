@@ -165,51 +165,7 @@ export const mainMenu: IMenu = {
     {
       name: 'Otsuka Patient Support™',
       url: '/A.5.1_Patients_support_providers',
-      //   children: [
-      //     {
-      //       name: '',
-      //       url: '/A.5.1_Patients_support_providers',
-      //       children: [
-      //         {
-      //           name: '',
-      //           url: '/A.5.1_Patients_support_providers',
-      //         },
-      //         {
-      //           name: '',
-      //           url: '/A.5.2_Patients_support_providers',
-      //         },
-      //       ],
-      //     },
-      //   ],
     },
-    // {
-    //   name: 'Appendix',
-    //   url: '/A.6.1.1_Appendix_Safety',
-    //   children: [
-    //     {
-    //       name: 'ABILIFY MAINTENA Real-world Evidence',
-    //       url: '/A.6.1.1_Appendix_Safety',
-    //       children: [
-    //         {
-    //           name: '',
-    //           url: '/A.6.1.1_Appendix_Safety',
-    //         },
-    //         {
-    //           name: '',
-    //           url: '/A.6.1.2_Appendix_Safety',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       name: 'MOA',
-    //       url: '/A.6.2_Apendix_MOA',
-    //     },
-    //     {
-    //       name: 'ABILIFY MAINTENA Safety Profile',
-    //       url: '/A.6.3.X_Appendix_Safety',
-    //     },
-    //   ],
-    // },
   ],
 };
 
