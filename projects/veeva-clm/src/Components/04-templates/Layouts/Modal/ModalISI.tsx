@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Scrollbar } from 'react-scrollbars-custom';
+
 import ButtonContinue from '@/Components/01-atoms/Content/ButtonContinue/ButtonContinue';
 import Header from '@/Components/01-atoms/Content/Header/Header';
-import { Scrollbars } from 'react-custom-scrollbars-2';
 
 import './Modal.scss';
 import './ModalISI.scss';
@@ -27,6 +28,7 @@ const ModalISI = ({ openByDefault }: TModalISI) => {
   const [activePage, setActivePage] = useState(0);
 
   const updateHandler = (event: TUpdateEvent) => {
+    console.log(event);
     const { clientHeight, scrollHeight, scrollTop } = event;
 
     if (clientHeight + scrollTop > scrollHeight - 350) {
@@ -86,17 +88,17 @@ const ModalISI = ({ openByDefault }: TModalISI) => {
                       ABILIFY MAINTENA<sup>®</sup> (aripiprazole)
                     </span>
                   </Header>
-                  <Scrollbars
-                    className='custom-scrollbar'
-                    thumbMinSize={30}
-                    onUpdate={updateHandler}
-                    thumbSize={43}
+                  <Scrollbar
+                    minimalThumbSize={43}
+                    maximalThumbSize={43}
+                    noScrollX
+                    onScroll={updateHandler}
                     style={{ height: '510px' }}
                   >
                     <div className='modal-isi'>
                       <ISIContent />
                     </div>
-                  </Scrollbars>
+                  </Scrollbar>
                 </div>
                 <div className='modal-actions'>
                   <p>

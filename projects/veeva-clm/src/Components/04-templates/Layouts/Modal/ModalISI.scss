@@ -44,23 +44,19 @@
         }
       }
 
-      .custom-scrollbar {
-        & > div {
-          &:first-child {
-            padding-right: 50px;
-            padding-bottom: 0;
-            margin-bottom: -10px !important;
+      .ScrollbarsCustom {
+        .ScrollbarsCustom-Scroller {
+          .ScrollbarsCustom-Content {
+            padding-right: 42px !important;
           }
+        }
 
-          &:last-child {
-            width: 8px !important;
-            background: $gray-300;
-            border-radius: 4px !important;
+        .ScrollbarsCustom-TrackY {
+          width: 8px !important;
+          background: $gray-300 !important;
 
-            div {
-              background: $blue-500 !important;
-              border-radius: 4px !important;
-            }
+          .ScrollbarsCustom-Thumb {
+            background: $blue-500 !important;
           }
         }
       }
