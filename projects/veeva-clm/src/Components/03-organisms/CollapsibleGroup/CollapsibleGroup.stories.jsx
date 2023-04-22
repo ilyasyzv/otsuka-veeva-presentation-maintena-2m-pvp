@@ -14,7 +14,7 @@ const items = [
       primary: 'Primary endpoint:',
       secondary: 'Mean change in PANSS total score from baseline* to Week 10',
     },
-    image: <img src={DiagramPrimary} alt='DiagramPrimary' width='760' />,
+    image: <img src={DiagramPrimary} alt='DiagramPrimary' width='800' />,
   },
   {
     title: {
@@ -22,7 +22,7 @@ const items = [
       secondary:
         'Mean change in CGI-S score from baseline to endpoint at Week 12',
     },
-    image: <img src={DiagramSecondary} alt='DiagramSecondary' width='760' />,
+    image: <img src={DiagramSecondary} alt='DiagramSecondary' width='806' />,
   },
 ];
 

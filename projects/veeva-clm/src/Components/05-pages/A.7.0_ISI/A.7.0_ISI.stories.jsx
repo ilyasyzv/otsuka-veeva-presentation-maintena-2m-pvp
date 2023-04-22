@@ -4,6 +4,7 @@ import { Header } from '@atoms/Content/Header/Header';
 import { Paragraph } from '@atoms/Content/Paragraph/Paragraph';
 import { List } from '@atoms/Content/List/List';
 import { Footer } from '@organisms/Footer/Footer';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import './style.scss';
 import AsimtufiiLogo from '@assets/asimtufii-logo.png';
 
@@ -238,7 +239,7 @@ const content = () => (
       <Paragraph>
         To report SUSPECTED ADVERSE REACTIONS, contact Otsuka America
         Pharmaceutical, Inc. at 1-800-438-9927 or FDA at 1-800-FDA-1088
-        (www.fda.gov/medwatch).
+        (<a  target="_blank" href='https://www.fda.gov/medwatch'>www.fda.gov/medwatch</a>).
       </Paragraph>
     </div>
     <Footer
@@ -249,10 +250,10 @@ const content = () => (
             text: (
               <span>
                 Please see{' '}
-                <a href='/' className='blue-500'>
-                  IMPORTANT SAFETY INFORMATION
-                </a>{' '}
-                in this presentation.
+                <Link to='A.7.0_ISI' custom='blue-500'>
+                IMPORTANT SAFETY INFORMATION
+                </Link>
+                {' '}, in this presentation.
               </span>
             ),
           },

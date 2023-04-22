@@ -7,7 +7,9 @@ import { StudyDesignSup } from '@templates/Layouts/Modal/Modal.stories';
 import AsimtufiiLogo from '@/assets/asimtufii-logo.png';
 import styles from './A.3.5.1_Additional.module.scss';
 
-StudyDesignSup.args.link =  <Button text='Long-term Study: <br/>Bipolar I Disorder' custom='button button__type-c button__type-c-large button__type-c-large-gray' />;
+const StudyDesignSupButton = () => (
+  <Button text='Long-term Study: <br/>Bipolar I Disorder' custom='button button__type-c button__type-c-large button__type-c-large-gray' />
+);
 
 const PageContent = () => (
   <div className={styles.page}>
@@ -46,7 +48,7 @@ const PageContent = () => (
               Schizophrenia
             </div>
           </Link>
-          <StudyDesignSup {...StudyDesignSup.args} />
+          <StudyDesignSup {...StudyDesignSup.args} link={<StudyDesignSupButton />} />
         </div>
       </div>
     </div>

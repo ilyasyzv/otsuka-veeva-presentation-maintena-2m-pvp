@@ -7,7 +7,7 @@
   .modal-link-wrapper {
     &:first-of-type {
       position: absolute;
-      right: 45px;
+      right: 29px;
       top: 57px;
     }
     &:last-of-type {
@@ -20,6 +20,12 @@
   .footnote__list {
     li:first-child {
       max-width: 630px;
+    }
+  }
+
+  .CollapsibleElement {
+    img {
+      width: 800px;
     }
   }
 }
