@@ -29,8 +29,8 @@ const content = () => (
       PIVOTAL 12-WEEK SCHIZOPHRENIA SHORT-TERM STUDY
     </Header>
     <Header custom={`${baseClass}-header-2 mb-19`}>
-      ABILIFY MAINTENA<sup>®</sup> (aripiprazole) demonstrated early
-      <br /> and continued symptom improvement<sup>1</sup>
+      ABILIFY MAINTENA<sup>®</sup> (aripiprazole) demonstrated
+      <br /> early and continued symptom improvement<sup>1</sup>
     </Header>
     <StudyDesignSup {...StudyDesignSup.args} />
     <DefaultOne {...DefaultOne.args} />
