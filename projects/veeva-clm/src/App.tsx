@@ -34,10 +34,6 @@ import A_3_5_4_Additional from '@/content/pages/A.3.5.4_Additional/index.mdx';
 import A_3_5_5_Additional from '@/content/pages/A.3.5.5_Additional/index.mdx';
 import A_4_0_Economic_value from '@/content/pages/A.4.0_Economic_value/index.mdx';
 import A_5_1_Patients_support_providers from '@/content/pages/A.5.1_Patients_support_providers/index.mdx';
-import A_5_2_Patients_support_providers from '@/content/pages/A.5.2_Patients_support_providers/index.mdx';
-import A_6_1_1_Appendix_Safety from '@/content/pages/A.6.1.1_Appendix_Safety/index.mdx';
-import A_6_2_Apendix_MOA from '@/content/pages/A.6.2_Apendix_MOA/index.mdx';
-import A_6_3_X_Apendix_Safety from '@/content/pages/A.6.3.X_Apendix_Safety/index.mdx';
 import A_7_0_ISI from '@/content/pages/A.7.0_ISI/index.mdx';
 
 type AppProps = {
@@ -171,26 +167,6 @@ function App({ tab }: AppProps) {
                 component={() => (
                   <Page component={A_5_1_Patients_support_providers} />
                 )}
-              />
-              <Route
-                path='/A.5.2_Patients_support_providers'
-                component={() => (
-                  <Page component={A_5_2_Patients_support_providers} />
-                )}
-              />
-              <Route
-                path='/A.6.1.1_Appendix_Safety'
-                component={() => (
-                  <Page background='a' component={A_6_1_1_Appendix_Safety} />
-                )}
-              />
-              <Route
-                path='/A.6.2_Apendix_MOA'
-                component={() => <Page component={A_6_2_Apendix_MOA} />}
-              />
-              <Route
-                path='/A.6.3.X_Apendix_Safety'
-                component={() => <Page component={A_6_3_X_Apendix_Safety} />}
               />
               <Route
                 path='/A.7.0_ISI'

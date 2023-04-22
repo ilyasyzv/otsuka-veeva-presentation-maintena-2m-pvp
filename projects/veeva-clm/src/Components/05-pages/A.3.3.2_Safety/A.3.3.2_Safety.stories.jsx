@@ -63,11 +63,7 @@ const content = () => (
       className={classNames(`${blockName}-img`, 'mb-5')}
     />
     <Button
-      text={
-        <>
-          ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) Safety
-        </>
-      }
+      text='ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) Safety'
       custom={classNames(
         `${blockName}-btn`,
         'button__type-c',
