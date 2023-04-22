@@ -1,5 +1,6 @@
 import React from 'react';
 import { SafetyInfo } from './SafetyInfo';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 
 export default {
   title: 'CLM/Atoms/SafetyInfo',
@@ -17,10 +18,10 @@ Default.args = {
       text: (
         <span>
           Please see{' '}
-          <a href='/' className='blue-500'>
-            IMPORTANT SAFETY INFORMATION
-          </a>{' '}
-          in this presentation.
+          <Link to='A.7.0_ISI' custom='blue-500'>
+          IMPORTANT SAFETY INFORMATION
+          </Link>
+          {' '}, in this presentation
         </span>
       ),
     },

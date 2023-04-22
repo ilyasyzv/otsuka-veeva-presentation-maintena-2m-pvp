@@ -10,12 +10,12 @@
     align-items: center;
     text-align: center;
     position: relative;
-    width: 832px;
+    width: 839px;
     height: 45px;
     padding: 15px 15px 13px 66px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
-    letter-spacing: 0.4px;
+    letter-spacing: .09px;
     color: $gray-800;
     background-color: $white;
     border: 1px solid $gray-700;
@@ -67,11 +67,25 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    width: 832px;
+    width: 839px;
     height: 378px;
     border-radius: 4px ;
     padding-bottom: 5px;
-    margin-top: -24px;
+    margin-top: -20px;
     background: rgba(51, 51, 51, 10%);
+
+  }
+
+
+  &:first-of-type {
+    .element-content img {
+      margin-left: 25px;
+    }
+  }
+
+  &:nth-of-type(2) {
+    .element-content img {
+      margin-left: 15px;
+    }
   }
 }
