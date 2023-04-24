@@ -52,8 +52,8 @@ const defaultOptions = {
     '/A.7.0_ISI/index.html',
   ],
   viewport: {
-    width: 1080,
-    height: 810,
+    width: 1024,
+    height: 768,
   },
   minifyHtml: {
     collapseWhitespace: true,
