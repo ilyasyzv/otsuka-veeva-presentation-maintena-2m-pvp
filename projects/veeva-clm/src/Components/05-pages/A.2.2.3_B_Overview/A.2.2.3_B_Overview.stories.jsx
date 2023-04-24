@@ -54,7 +54,7 @@ const content = () => (
           {
             text: (
               <span>
-                Cloutier M, et <em>J Affect Disord.</em> 2018;226:45-51.
+                Cloutier M, et al. <em>J Affect Disord.</em> 2018;226:45-51.
               </span>
             ),
           },
