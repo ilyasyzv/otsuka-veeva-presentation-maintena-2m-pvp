@@ -227,7 +227,8 @@ FullRecurrenceDefinition.args = {
           {
             text: (
               <span>
-                Calabrese JR, et al. J Clin Psychiatry. 2017;78(3):324-331.
+                Calabrese JR, et al. <em>J Clin Psychiatry. </em>
+                2017;78(3):324-331.
               </span>
             ),
           },
@@ -254,7 +255,7 @@ BaselineCharacteristics.args = {
       >
         Patients living with bipolar I disorder in the maintenance
         <br /> study had a history of manic or mixed episodes that required
-        hospitalization or medication treatment<sup>1</sup>:
+        hospitalization or medication treatment<sup>1</sup>
       </Header>
       <div className={`${blockName}_baseline-characteristics-image-wrap`}>
         <img
@@ -291,7 +292,8 @@ BaselineCharacteristics.args = {
           {
             text: (
               <span>
-                alabrese JR, et al. J Clin Psychiatry. 2017;78(3):324-331.
+                Calabrese JR, et al. <em>J Clin Psychiatry. </em>
+                2017;78(3):324-331.
               </span>
             ),
           },

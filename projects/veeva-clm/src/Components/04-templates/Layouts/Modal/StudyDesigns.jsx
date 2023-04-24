@@ -219,7 +219,10 @@ export const StudyDesign1Args = {
             supLeft: '*',
             innerText: (
               <span>
-                <em>Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition, Text Revision (DSM-IV-TR).</em>
+                <em>
+                  Diagnostic and Statistical Manual of Mental Disorders, Fourth
+                  Edition, Text Revision (DSM-IV-TR).
+                </em>
               </span>
             ),
           },
@@ -404,7 +407,7 @@ export const StudyDesign2Args = {
             text: (
               <span>
                 Calabrese JR, et al.
-                <em>JJ Clin Psychiatry.</em>2017;78(3):324-331.
+                <em>J Clin Psychiatry.</em>2017;78(3):324-331.
               </span>
             ),
           },
