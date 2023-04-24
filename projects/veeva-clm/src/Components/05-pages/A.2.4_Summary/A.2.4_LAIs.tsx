@@ -28,7 +28,7 @@ const PageContent = () => (
                 These studies do not differentiate between bipolar disorders.
               </span>
             ),
-            supRight: '3.15',
+            supRight: '3,15',
           },
           {
             innerText: (
