@@ -41,7 +41,7 @@ const content = () => (
     <List
       content={{
         type: 'circle',
-        custom: 'list',
+        custom: `${baseClass}-list`,
         data: [
           {
             text: (

@@ -41,11 +41,11 @@
   .graphic {
     width: 68.5%;
   }
-  .list {
+  &-list {
     width: 56%;
-    font-size: 14px;
+    font-size: 14px !important;
     word-spacing: 1px;
-    line-height: 1;
+    line-height: 1 !important;
     margin-top: 4px;
     li:nth-child(1n) {
       margin-top: -4px;
