@@ -56,19 +56,37 @@ const content = () => (
       <img src={LogoAdilify} alt='logo' width='246' />
     </div>
     <Footer
-      custom={classNames(`${blockName}-footer`, 'bottom-35')}
+      custom={classNames(`${blockName}-footer`, 'bottom-29')}
       safetyInfo={{
         data: [
           {
             text: (
-              <span>
-                Please see <a href='/'>FULL PRESCRIBING INFORMATION</a>,
-                including BOXED WARNING available in this presentation.
-              </span>
+              <>
+                Please see{' '}
+                <a href='/'>
+                  <span className={`${blockName}-footer_uppercase`}>
+                    FULL PRESCRIBING INFORMATION
+                  </span>
+                </a>
+                , including{' '}
+                <span className={`${blockName}-footer_uppercase`}>
+                  BOXED WARNING available in this presentation.
+                </span>
+              </>
             ),
           },
           {
-            text: 'WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH DEMENTIA-RELATED PSYCHOSIS',
+            text: (
+              <span
+                className={classNames(
+                  `${blockName}-footer_uppercase`,
+                  'height',
+                )}
+              >
+                WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH
+                DEMENTIA-RELATED PSYCHOSIS
+              </span>
+            ),
           },
           {
             text: (
@@ -83,7 +101,15 @@ const content = () => (
             ),
           },
           {
-            text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE',
+            text: (
+              <span
+                className={classNames(`${blockName}-footer_uppercase, height`)}
+                style={{ letterSpacing: 0 }}
+              >
+                FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR
+                DISTRIBUTE
+              </span>
+            ),
           },
         ],
       }}

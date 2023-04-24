@@ -48,28 +48,38 @@
 
   &-footer{
 
-    margin-left: -30px;
+    margin-left: -31px;
 
     .safetyInfo   {
       p {
-        letter-spacing: -0.6px;
-        line-height: 18.3px ;
+        letter-spacing: -0.65px;
       }
       a {
         letter-spacing: -0.75px;
       }
-
     }
 
+    &_uppercase {
+      letter-spacing: -0.8px;
+    }
+
+    .height {
+      display: block;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
   }
-  //.footer-txt {
-  //  font-weight: bold;
-  //}
 }
 
 .page--A_0_Home,
 .page--01_Launch_screen {
   .main-nav__link:first-of-type .main-nav__link__wrapper a {
     padding-top: 0;
+  }
+
+  .arrows-nav {
+    button.arrows-nav__next:before {
+      background: $white;
+    }
   }
 }
