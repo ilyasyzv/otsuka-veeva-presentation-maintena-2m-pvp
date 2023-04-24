@@ -3,9 +3,11 @@ import './NavArrows.scss';
 import { PageContext } from '@/context/PageContext';
 import { navigateLocal } from '@organisms/Routing/Link/Link';
 import { mainMenu, flatLinksList } from '@/utils/processNavigation';
+import useShowModalISI from '@/hooks/useShowModalISI';
 
 export const NavArrows = () => {
   const { currentPage, changePage } = useContext(PageContext);
+  const setIsShowISIModal = useShowModalISI();
 
   const { currentPosition, paths } = flatLinksList(
     { ...mainMenu },
@@ -21,6 +23,8 @@ export const NavArrows = () => {
       const preparedPageName = paths[nextPosition].url.replace('/', '');
       navigateLocal(changePage, preparedPageName);
     }
+
+    setIsShowISIModal(true);
   };
 
   const moveToPrev = () => {
@@ -32,6 +36,8 @@ export const NavArrows = () => {
       const preparedPageName = paths[prevPosition].url.replace('/', '');
       navigateLocal(changePage, preparedPageName);
     }
+
+    setIsShowISIModal(true);
   };
 
   return (
