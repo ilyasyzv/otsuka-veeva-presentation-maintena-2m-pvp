@@ -1,8 +1,9 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import { useLongPress } from 'use-long-press';
 import './Modal.scss';
 import { SwitchContent } from '@molecules/SwitchContent/SwitchContent';
 import { useBetween } from 'use-between';
+import { Scrollbar } from 'react-scrollbars-custom';
 
 const useModalManager = () => {
   const [modals, setModals] = useState([]);
@@ -54,9 +55,17 @@ export const Modal = ({
       <div className='modal-header' onClick={(e) => e.stopPropagation()}>
         {header}
       </div>
-      <div className='modal-body' onClick={(e) => e.stopPropagation()}>
-        {children}
-      </div>
+      <Scrollbar
+        minimalThumbSize={43}
+        maximalThumbSize={43}
+        noScrollX
+        style={{ height: '510px' }}
+      >
+        <div className='modal-body' onClick={(e) => e.stopPropagation()}>
+          {children}
+        </div>
+      </Scrollbar>
+
       <div className='modal-footer' onClick={(e) => e.stopPropagation()}>
         {footer}
       </div>
