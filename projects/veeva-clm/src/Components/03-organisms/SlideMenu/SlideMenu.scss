@@ -2,12 +2,13 @@
 
 .slide-menu {
   width: 0;
-  height: 110px;
+  height: 105px;
   position: fixed;
   left: 102px;
-  top: 645px;
+  top: 655px;
   overflow: hidden;
   transition: .5s;
+  z-index: 5;
 
   &.open {
     width: 200px;
