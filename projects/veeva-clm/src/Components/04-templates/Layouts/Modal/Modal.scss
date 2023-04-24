@@ -106,23 +106,26 @@
     .modal-body {
       width: 100%;
       overflow-y: auto;
+      overflow-x: hidden;
       scroll-margin-left: 20px;
+    }
 
-      &::-webkit-scrollbar {
-        width: 8px;
-        position: absolute !important;
-        left: 10px;
+    .ScrollbarsCustom {
+
+      .ScrollbarsCustom-Scroller {
+
+        .ScrollbarsCustom-Content {
+          padding-right: 42px !important;
+        }
       }
 
-      &::-webkit-scrollbar-track {
-        background: $gray-300;
-        box-shadow: none;
-        border-radius: 4px;
-      }
+      .ScrollbarsCustom-TrackY {
+        width: 8px !important;
+        background: $gray-300 !important;
 
-      &::-webkit-scrollbar-thumb {
-        background-color: $blue-500;
-        border-radius: 4px;
+        .ScrollbarsCustom-Thumb {
+          background: $blue-500 !important;
+        }
       }
     }
   }
@@ -239,5 +242,4 @@
   .modal-wrapper {
     padding-top: 70px;
   }
-
 }
