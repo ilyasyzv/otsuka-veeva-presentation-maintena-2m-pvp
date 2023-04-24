@@ -62,14 +62,18 @@ const content = () => (
       alt='prolactin table'
       className={classNames(`${blockName}-img`, 'mb-5')}
     />
-    <Button
-      text='ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) Safety'
+    <Link
+      to='A.3.3.1_Safety'
       custom={classNames(
         `${blockName}-btn`,
-        'button__type-c',
+        'button button__type-c',
         ' button__type-c-large',
       )}
-    />
+    >
+      <div className='button__text'>
+        ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) Safety
+      </div>
+    </Link>
     <Footer
       custom='mb-5'
       footnotes={{
