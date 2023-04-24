@@ -18,7 +18,7 @@ export const mainMenu: IMenu = {
       url: '/A.1.0_Executive_summary',
     },
     {
-      name: 'Schizophrenia & Bipolar I Disorder Overview',
+      name: 'Schizophrenia &&nbsp;Bipolar I Disorder Overview',
       url: '/A.2.1.1_S_Overview',
       children: [
         {
@@ -163,7 +163,7 @@ export const mainMenu: IMenu = {
       children: [],
     },
     {
-      name: 'Otsuka Patient Support™',
+      name: 'Otsuka Patient Support<sup>™</sup>',
       url: '/A.5.1_Patients_support_providers',
     },
   ],
