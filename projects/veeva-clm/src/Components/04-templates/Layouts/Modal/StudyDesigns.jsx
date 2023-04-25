@@ -253,11 +253,7 @@ export const StudyDesign2Args = {
         Study design<sup>1</sup>
       </Header>
       <Text
-        title={
-          <>
-            52-Week, Multiphase Maintenance Study<sup>1</sup>
-          </>
-        }
+        title='52-Week, Multiphase Maintenance Study'
         innerText={
           <>
             A 52-week, placebo-controlled maintenance study that evaluated the
@@ -267,11 +263,7 @@ export const StudyDesign2Args = {
         }
       />
       <Text
-        title={
-          <>
-            Patient Population<sup>1</sup>
-          </>
-        }
+        title='Patient Population'
         list={{
           columns: 'columns-1',
           type: 'circle',
@@ -305,11 +297,7 @@ export const StudyDesign2Args = {
         }}
       />
       <Text
-        title={
-          <>
-            4 Phases of Study<sup>1</sup>
-          </>
-        }
+        title='4 Phases of Study'
         list={{
           columns: 'columns-1',
           type: 'circle',
@@ -407,7 +395,7 @@ export const StudyDesign2Args = {
             text: (
               <span>
                 Calabrese JR, et al.
-                <em>J Clin Psychiatry.</em>2017;78(3):324-331.
+                <em> J Clin Psychiatry.</em>2017;78(3):324-331.
               </span>
             ),
           },

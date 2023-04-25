@@ -55,12 +55,7 @@ export const Modal = ({
       <div className='modal-header' onClick={(e) => e.stopPropagation()}>
         {header}
       </div>
-      <Scrollbar
-        minimalThumbSize={43}
-        maximalThumbSize={43}
-        noScrollX
-        style={{ height: '510px' }}
-      >
+      <Scrollbar minimalThumbSize={43} maximalThumbSize={43} noScrollX>
         <div className='modal-body' onClick={(e) => e.stopPropagation()}>
           {children}
         </div>
