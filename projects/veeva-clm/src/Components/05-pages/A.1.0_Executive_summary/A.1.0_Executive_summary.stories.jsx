@@ -50,7 +50,12 @@ const content = () => (
         custom: 'mb-38 pr-20',
         data: [
           {
-            text: 'Harlin M, et al. CNS Drugs. 2023;10.1007/s40263-023-00996-8.',
+            text: (
+              <>
+                Harlin M, et al. <i>CNS Drugs</i>.
+                2023;10.1007/s40263-023-00996-8.
+              </>
+            ),
           },
           {
             text: 'Merative Micromedex. Accessed March 22, 2023. https://www.micromedexsolutions.com/',
