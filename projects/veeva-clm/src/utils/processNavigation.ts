@@ -22,7 +22,7 @@ export const mainMenu: IMenu = {
       url: '/A.2.1.1_S_Overview',
       children: [
         {
-          name: 'Schizophrenia Overview',
+          name: 'Schizophrenia <br /> Overview',
           url: '/A.2.1.1_S_Overview',
           children: [
             {
@@ -40,7 +40,7 @@ export const mainMenu: IMenu = {
           ],
         },
         {
-          name: 'Bipolar I Overview',
+          name: 'Bipolar I <br /> Overview',
           url: '/A.2.2.1_B_Overview',
           children: [
             {
