@@ -63,7 +63,7 @@ const content = () => (
       className={classNames(`${blockName}-img`, 'mb-5')}
     />
     <Link
-      to='A.3.3.1_Safety'
+      to='A.3.2.2_Efficacy'
       custom={classNames(
         `${blockName}-btn`,
         'button button__type-c',
