@@ -9,6 +9,8 @@
   overflow: hidden;
   transition: .5s;
   z-index: 5;
+  // IOS 16 z-index fix https://stackoverflow.com/questions/74082236/z-index-not-working-in-safari-iphone-with-ios16
+  -webkit-transform: translate3d(0,0,0);
 
   &.open {
     width: 200px;
