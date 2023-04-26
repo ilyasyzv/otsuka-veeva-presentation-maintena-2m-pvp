@@ -10,10 +10,6 @@ import './ModalISI.scss';
 import HCEIContent from '@/content/hcei/hcei.mdx';
 import ISIContent from '@/content/isi/index.mdx';
 
-type TModalISI = {
-  openByDefault: boolean;
-};
-
 type TUpdateEvent = {
   clientHeight: number;
   scrollHeight: number;
@@ -26,6 +22,8 @@ const ModalISI = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
   const [isButtonCloseDisabled, setIsButtonCloseDisabled] = useState(true);
   const [activePage, setActivePage] = useState(0);
+
+  console.log('isModalOpen', isModalOpen);
 
   const updateHandler = (event: TUpdateEvent) => {
     const { clientHeight, scrollHeight, scrollTop } = event;
