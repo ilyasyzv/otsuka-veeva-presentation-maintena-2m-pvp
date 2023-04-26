@@ -23,8 +23,6 @@ const ModalISI = () => {
   const [isButtonCloseDisabled, setIsButtonCloseDisabled] = useState(true);
   const [activePage, setActivePage] = useState(0);
 
-  console.log('isModalOpen', isModalOpen);
-
   const updateHandler = (event: TUpdateEvent) => {
     const { clientHeight, scrollHeight, scrollTop } = event;
 
