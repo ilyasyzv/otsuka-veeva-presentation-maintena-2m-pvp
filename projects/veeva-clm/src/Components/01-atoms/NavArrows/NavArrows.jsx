@@ -3,11 +3,20 @@ import './NavArrows.scss';
 import { PageContext } from '@/context/PageContext';
 import { navigateLocal } from '@organisms/Routing/Link/Link';
 import { mainMenu, flatLinksList } from '@/utils/processNavigation';
-import useShowModalISI from '@/hooks/useShowModalISI';
+import { ISIModalContext } from '@/context/ISIModalContext';
+
+const lsISIModalKey = 'isi_modal';
 
 export const NavArrows = () => {
   const { currentPage, changePage } = useContext(PageContext);
-  const setIsShowISIModal = useShowModalISI();
+  const { showModalHandler } = useContext(ISIModalContext);
+
+  const showISIModal = () => {
+    const lsISIModal = sessionStorage.getItem(lsISIModalKey);
+    if (!lsISIModal) {
+      showModalHandler(true);
+    }
+  };
 
   const { currentPosition, paths } = flatLinksList(
     { ...mainMenu },
@@ -24,7 +33,7 @@ export const NavArrows = () => {
       navigateLocal(changePage, preparedPageName);
     }
 
-    setIsShowISIModal(true);
+    showISIModal();
   };
 
   const moveToPrev = () => {
