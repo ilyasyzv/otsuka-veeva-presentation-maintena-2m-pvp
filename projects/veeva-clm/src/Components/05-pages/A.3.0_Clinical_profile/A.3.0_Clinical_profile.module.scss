@@ -1,3 +1,11 @@
+:global {
+  .page--A_3_0_Clinical_profile {
+    .upper_nav_bar {
+      display: none;
+    }
+  }
+}
+
 .page {
   height: 625px;
   position: relative;
