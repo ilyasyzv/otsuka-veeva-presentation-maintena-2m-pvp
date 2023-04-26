@@ -22,13 +22,12 @@ type TUpdateEvent = {
 
 const lsISIModalKey = 'isi_modal';
 
-const ModalISI = ({ openByDefault }: TModalISI) => {
-  const [isModalOpen, setIsModalOpen] = useState(openByDefault);
+const ModalISI = () => {
+  const [isModalOpen, setIsModalOpen] = useState(true);
   const [isButtonCloseDisabled, setIsButtonCloseDisabled] = useState(true);
   const [activePage, setActivePage] = useState(0);
 
   const updateHandler = (event: TUpdateEvent) => {
-    console.log(event);
     const { clientHeight, scrollHeight, scrollTop } = event;
 
     if (clientHeight + scrollTop > scrollHeight - 350) {

@@ -18,6 +18,8 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
   const { isShowISIModal } = useContext(ISIModalContext);
   const subMenu = findSubMenu(currentPage, mainMenu.data, 0);
 
+  console.log('isShowISIModal', isShowISIModal);
+
   return (
     <>
       <div
@@ -34,7 +36,7 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
           <NavArrows />
         </div>
       </div>
-      {isShowISIModal && <ModalISI openByDefault />}
+      {isShowISIModal && <ModalISI />}
     </>
   );
 };
