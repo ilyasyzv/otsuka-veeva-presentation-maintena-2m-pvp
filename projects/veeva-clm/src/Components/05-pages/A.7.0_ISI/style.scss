@@ -9,6 +9,12 @@
     padding-bottom: 365px;
     padding-left: 2px;
 
+    .ScrollbarsCustom,
+    .ScrollbarsCustom-Wrapper,
+    .ScrollbarsCustom-Scroller {
+      z-index: 1;
+    }
+
     .ScrollbarsCustom {
 
       .ScrollbarsCustom-Scroller {
@@ -27,6 +33,14 @@
         .ScrollbarsCustom-Thumb {
           background: $blue-500 !important;
         }
+      }
+    }
+
+    .list.circle {
+      li:before {
+        left: -10px;
+        width: 4.5px;
+        height: 4.5px;
       }
     }
   }
