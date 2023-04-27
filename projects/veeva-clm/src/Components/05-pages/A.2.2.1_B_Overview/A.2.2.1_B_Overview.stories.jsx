@@ -1,8 +1,7 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
-
 import { Header } from '@atoms/Content/Header/Header';
-import B_Overview from './img/B_Overview.png?format=webp';
+import AnimationBipolar from '@/Components/02-molecules/AnimationBipolar/AnimationBipolar';
 import './style.scss';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
@@ -24,7 +23,7 @@ const content = () => (
       <br />
       disorder affecting ~2.3% of US adults<sup>1-3</sup>
     </Header>
-    <img className={`${baseClass}-chart-1`} src={B_Overview} alt='' />
+    <AnimationBipolar />
     <Footer
       custom='bottom-7'
       references={{
