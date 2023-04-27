@@ -1,15 +1,6 @@
 @import '@base/variables';
 
 .modal-isi {
-  &.modal-background {
-    opacity: 0;
-    transition: 0.5s;
-
-    &.open {
-      opacity: 1 !important;
-    }
-  }
-
   .modal-wrapper {
     position: relative;
     overflow: hidden;

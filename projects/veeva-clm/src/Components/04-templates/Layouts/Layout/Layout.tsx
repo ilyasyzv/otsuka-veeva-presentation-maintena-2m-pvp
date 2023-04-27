@@ -4,9 +4,10 @@ import Navbar from '@/Components/03-organisms/Navbar/Navbar';
 import NavArrows from '@/Components/01-atoms/NavArrows/NavArrows';
 import UpperNavBar from '@/Components/03-organisms/UpperNavBar/UpperNavBar';
 import { findSubMenu, mainMenu } from '@/utils/processNavigation';
-// import { ISIModalContext } from '@/context/ISIModalContext';
+import { ISIModalContext } from '@/context/ISIModalContext';
 import ModalISI from '@/Components/04-templates/Layouts/Modal/ModalISI';
 import { PageContext } from '@/context/PageContext';
+import { navigateLocal, navigateVeeva } from '@organisms';
 
 type LayoutProps = {
   pageid?: string;
@@ -14,27 +15,29 @@ type LayoutProps = {
 };
 
 const lsISIModalKey = 'isi_modal';
-const noISIModalPages = ['01_Launch_screen', 'A.0.Home'];
 
 export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
-  const { currentPage } = useContext<string>(PageContext);
-  // const { isShowISIModal } = useContext(ISIModalContext);
+  const { currentPage, changePage } = useContext<string>(PageContext);
+  const { isiModalParams } = useContext(ISIModalContext);
   const [isShowISIModal, setIsShowISIModal] = useState(false);
   const subMenu = findSubMenu(currentPage, mainMenu.data, 0);
 
   useEffect(() => {
-    const lsISIModal = sessionStorage.getItem(lsISIModalKey);
-    console.log('lsISIModal', lsISIModal);
-    console.log('currentPage', currentPage);
-    if (!lsISIModal && !noISIModalPages.includes(currentPage)) {
+    console.log('isiModalParams', isiModalParams);
+    if (isiModalParams.isShowISIModal) {
       setIsShowISIModal(true);
       console.log('setIsShowISIModal true');
     }
-  }, [currentPage]);
+  }, [isiModalParams.isShowISIModal]);
 
   const closePopUpHandler = () => {
     setIsShowISIModal(false);
     sessionStorage.setItem(lsISIModalKey, '1');
+    if (process.env.NODE_ENV === 'production') {
+      navigateVeeva(isiModalParams.preparedPageName);
+    } else {
+      navigateLocal(changePage, isiModalParams.preparedPageName);
+    }
   };
 
   return (

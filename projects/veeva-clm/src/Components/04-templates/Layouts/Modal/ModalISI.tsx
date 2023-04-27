@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Scrollbar } from 'react-scrollbars-custom';
 
 import ButtonContinue from '@/Components/01-atoms/Content/ButtonContinue/ButtonContinue';
@@ -22,18 +22,8 @@ type TUpdateEvent = {
 };
 
 const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
-  const [isShow, setShow] = useState(false);
   const [isButtonCloseDisabled, setIsButtonCloseDisabled] = useState(true);
   const [activePage, setActivePage] = useState(0);
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (isOpen) {
-        setShow(true);
-        console.log('setIsModalOpen true');
-      }
-    }, 500);
-  }, [isOpen]);
 
   const updateHandler = (event: TUpdateEvent) => {
     const { clientHeight, scrollHeight, scrollTop } = event;
@@ -43,15 +33,16 @@ const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
     }
   };
 
+  const continueHandler = () => {
+    onClose();
+  };
+
   console.log('isModalOpen', isOpen);
 
   return (
     <div>
       {isOpen && (
-        <div
-          style={{ opacity: '0' }}
-          className={`modal modal-background modal-isi ${isShow ? 'open' : ''}`}
-        >
+        <div className='modal modal-background modal-isi'>
           <div className='modal-wrapper'>
             {activePage === 0 && (
               <div className='modal-page page-0'>
@@ -116,7 +107,7 @@ const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
                     .
                   </p>
                   <ButtonContinue
-                    onClick={() => onClose()}
+                    onClick={continueHandler}
                     disabled={isButtonCloseDisabled}
                   >
                     Continue
