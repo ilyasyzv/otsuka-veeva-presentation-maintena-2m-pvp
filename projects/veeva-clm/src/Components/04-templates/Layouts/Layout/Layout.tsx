@@ -4,9 +4,10 @@ import Navbar from '@/Components/03-organisms/Navbar/Navbar';
 import NavArrows from '@/Components/01-atoms/NavArrows/NavArrows';
 import UpperNavBar from '@/Components/03-organisms/UpperNavBar/UpperNavBar';
 import { findSubMenu, mainMenu } from '@/utils/processNavigation';
-// import { ISIModalContext } from '@/context/ISIModalContext';
+import { ISIModalContext, TISIModalValue } from '@/context/ISIModalContext';
 import ModalISI from '@/Components/04-templates/Layouts/Modal/ModalISI';
 import { PageContext } from '@/context/PageContext';
+import { navigateLocal, navigateVeeva } from '@organisms';
 
 type LayoutProps = {
   pageid?: string;
@@ -16,21 +17,26 @@ type LayoutProps = {
 const lsISIModalKey = 'isi_modal';
 
 export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
-  const { currentPage } = useContext<string>(PageContext);
-  // const { isShowISIModal } = useContext(ISIModalContext);
+  const { currentPage, changePage } = useContext<string>(PageContext);
+  const { isiModalParams }: TISIModalValue = useContext(ISIModalContext);
   const [isShowISIModal, setIsShowISIModal] = useState(false);
   const subMenu = findSubMenu(currentPage, mainMenu.data, 0);
 
   useEffect(() => {
-    const lsISIModal = sessionStorage.getItem(lsISIModalKey);
-    if (
-      !lsISIModal &&
-      currentPage !== '01_Launch_screen' &&
-      currentPage !== 'A.0.Home'
-    ) {
+    if (isiModalParams.show) {
       setIsShowISIModal(true);
     }
-  });
+  }, [isiModalParams.show]);
+
+  const closePopUpHandler = () => {
+    setIsShowISIModal(false);
+    sessionStorage.setItem(lsISIModalKey, '1');
+    if (process.env.NODE_ENV === 'production') {
+      navigateVeeva(isiModalParams.pageName);
+    } else {
+      navigateLocal(changePage, isiModalParams.pageName);
+    }
+  };
 
   return (
     <>
@@ -48,7 +54,7 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
           <NavArrows />
         </div>
       </div>
-      {isShowISIModal && <ModalISI />}
+      <ModalISI isOpen={isShowISIModal} onClose={closePopUpHandler} />
     </>
   );
 };

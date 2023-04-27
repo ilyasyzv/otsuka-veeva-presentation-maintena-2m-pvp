@@ -25,24 +25,16 @@ export const navigateVeeva = (preparedPageName) => {
 
 export const Link = ({ custom, to, children }) => {
   const { changePage } = useContext(PageContext);
-  const { showModalHandler } = useContext(ISIModalContext);
+  const { setIsiModalParams } = useContext(ISIModalContext);
 
-  const showISIModal = () => {
+  const showISIModal = (preparedPageName) => {
     const lsISIModal = sessionStorage.getItem(lsISIModalKey);
     if (!lsISIModal) {
-      showModalHandler(true);
-    }
-  };
-
-  const preventReload = (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-    showISIModal();
-
-    // Remove first and last slash
-    const preparedPageName = to.replace(/^\/|\/$/g, '');
-
-    if (process.env.NODE_ENV === 'production') {
+      setIsiModalParams({
+        show: true,
+        pageName: preparedPageName,
+      });
+    } else if (process.env.NODE_ENV === 'production') {
       navigateVeeva(preparedPageName);
     } else {
       navigateLocal(changePage, preparedPageName);
@@ -50,6 +42,16 @@ export const Link = ({ custom, to, children }) => {
       // showing page.
       // window.location.replace(`veeva-vision/${preparedPageName}/index.html`);
     }
+  };
+
+  const preventReload = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    // Remove first and last slash
+    const preparedPageName = to.replace(/^\/|\/$/g, '');
+
+    showISIModal(preparedPageName);
   };
 
   return (
