@@ -23,15 +23,13 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
   const subMenu = findSubMenu(currentPage, mainMenu.data, 0);
 
   useEffect(() => {
-    setTimeout(() => {
-      const lsISIModal = sessionStorage.getItem(lsISIModalKey);
-      console.log('lsISIModal', lsISIModal);
-      console.log('currentPage', currentPage);
-      if (!lsISIModal && !noISIModalPages.includes(currentPage)) {
-        setIsShowISIModal(true);
-        console.log('setIsShowISIModal true');
-      }
-    }, 1000);
+    const lsISIModal = sessionStorage.getItem(lsISIModalKey);
+    console.log('lsISIModal', lsISIModal);
+    console.log('currentPage', currentPage);
+    if (!lsISIModal && !noISIModalPages.includes(currentPage)) {
+      setIsShowISIModal(true);
+      console.log('setIsShowISIModal true');
+    }
   }, [currentPage]);
 
   const closePopUpHandler = () => {

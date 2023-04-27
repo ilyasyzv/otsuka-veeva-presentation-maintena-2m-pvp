@@ -1,6 +1,14 @@
 @import '@base/variables';
 
 .modal-isi {
+  &.modal-background {
+    display: none;
+
+    &.open {
+      display: flex;
+    }
+  }
+
   .modal-wrapper {
     position: relative;
     overflow: hidden;
