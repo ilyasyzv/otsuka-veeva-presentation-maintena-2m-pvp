@@ -21,8 +21,6 @@ type TUpdateEvent = {
   scrollTop: number;
 };
 
-const lsISIModalKey = 'isi_modal';
-
 const ModalISI = ({ isOpen, onClose }: TModalISI) => {
   const [isButtonCloseDisabled, setIsButtonCloseDisabled] = useState(true);
   const [activePage, setActivePage] = useState(0);
@@ -33,11 +31,6 @@ const ModalISI = ({ isOpen, onClose }: TModalISI) => {
     if (clientHeight + scrollTop > scrollHeight - 350) {
       setIsButtonCloseDisabled(false);
     }
-  };
-
-  const closePopUpHandler = () => {
-    onClose();
-    sessionStorage.setItem(lsISIModalKey, '1');
   };
 
   console.log('isModalOpen', isOpen);
@@ -110,7 +103,7 @@ const ModalISI = ({ isOpen, onClose }: TModalISI) => {
                     .
                   </p>
                   <ButtonContinue
-                    onClick={closePopUpHandler}
+                    onClick={() => onClose()}
                     disabled={isButtonCloseDisabled}
                   >
                     Continue

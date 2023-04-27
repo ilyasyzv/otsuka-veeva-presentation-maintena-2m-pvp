@@ -32,6 +32,11 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
     }
   }, [currentPage]);
 
+  const closePopUpHandler = () => {
+    setIsShowISIModal(false);
+    sessionStorage.setItem(lsISIModalKey, '1');
+  };
+
   return (
     <>
       <div
@@ -48,10 +53,7 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
           <NavArrows />
         </div>
       </div>
-      <ModalISI
-        isOpen={isShowISIModal}
-        onClose={() => setIsShowISIModal(false)}
-      />
+      <ModalISI isOpen={isShowISIModal} onClose={closePopUpHandler} />
     </>
   );
 };
