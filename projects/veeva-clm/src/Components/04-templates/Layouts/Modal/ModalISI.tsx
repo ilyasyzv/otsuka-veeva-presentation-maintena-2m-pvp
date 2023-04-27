@@ -47,6 +47,7 @@ const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
     <div>
       {isOpen && isInternalOpen && (
         <div
+          style={{ display: 'none' }}
           className={`modal modal-background modal-isi ${
             isOpen && isInternalOpen ? 'open' : ''
           }`}

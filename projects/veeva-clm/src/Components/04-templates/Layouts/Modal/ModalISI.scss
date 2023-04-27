@@ -2,10 +2,8 @@
 
 .modal-isi {
   &.modal-background {
-    display: none;
-
     &.open {
-      display: flex;
+      display: flex !important;
     }
   }
 
