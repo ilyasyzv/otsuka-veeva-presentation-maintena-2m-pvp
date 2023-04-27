@@ -14,6 +14,7 @@ type LayoutProps = {
 };
 
 const lsISIModalKey = 'isi_modal';
+const noISIModalPages = ['01_Launch_screen', 'A.0.Home'];
 
 export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
   const { currentPage } = useContext<string>(PageContext);
@@ -23,14 +24,13 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
 
   useEffect(() => {
     const lsISIModal = sessionStorage.getItem(lsISIModalKey);
-    if (
-      !lsISIModal &&
-      currentPage !== '01_Launch_screen' &&
-      currentPage !== 'A.0.Home'
-    ) {
+    console.log('lsISIModal', lsISIModal);
+    console.log('currentPage', currentPage);
+    if (!lsISIModal && !noISIModalPages.includes(currentPage)) {
       setIsShowISIModal(true);
+      console.log('setIsShowISIModal true');
     }
-  });
+  }, [currentPage]);
 
   return (
     <>
@@ -48,7 +48,10 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
           <NavArrows />
         </div>
       </div>
-      {isShowISIModal && <ModalISI />}
+      <ModalISI
+        isOpen={isShowISIModal}
+        onClose={() => setIsShowISIModal(false)}
+      />
     </>
   );
 };

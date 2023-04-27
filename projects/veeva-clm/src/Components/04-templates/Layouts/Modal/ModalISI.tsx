@@ -10,6 +10,11 @@ import './ModalISI.scss';
 import HCEIContent from '@/content/hcei/hcei.mdx';
 import ISIContent from '@/content/isi/index.mdx';
 
+type TModalISI = {
+  isOpen: boolean;
+  onClose: () => void;
+};
+
 type TUpdateEvent = {
   clientHeight: number;
   scrollHeight: number;
@@ -18,8 +23,7 @@ type TUpdateEvent = {
 
 const lsISIModalKey = 'isi_modal';
 
-const ModalISI = () => {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+const ModalISI = ({ isOpen, onClose }: TModalISI) => {
   const [isButtonCloseDisabled, setIsButtonCloseDisabled] = useState(true);
   const [activePage, setActivePage] = useState(0);
 
@@ -32,13 +36,15 @@ const ModalISI = () => {
   };
 
   const closePopUpHandler = () => {
-    setIsModalOpen(false);
+    onClose();
     sessionStorage.setItem(lsISIModalKey, '1');
   };
 
+  console.log('isModalOpen', isOpen);
+
   return (
-    <div>
-      {isModalOpen && (
+    <div style={{ display: isOpen ? 'block' : 'none' }}>
+      {isOpen && (
         <div className='modal modal-background modal-isi'>
           <div className='modal-wrapper'>
             {activePage === 0 && (
