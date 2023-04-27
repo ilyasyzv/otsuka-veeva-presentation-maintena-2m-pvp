@@ -22,16 +22,18 @@ type TUpdateEvent = {
 };
 
 const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
-  const [isInternalOpen, setIsInternalOpen] = useState(false);
+  const [isShow, setShow] = useState(false);
   const [isButtonCloseDisabled, setIsButtonCloseDisabled] = useState(true);
   const [activePage, setActivePage] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
-      setIsInternalOpen(true);
-      console.log('setIsModalOpen true');
-    }, 1000);
-  }, []);
+      if (isOpen) {
+        setShow(true);
+        console.log('setIsModalOpen true');
+      }
+    }, 500);
+  }, [isOpen]);
 
   const updateHandler = (event: TUpdateEvent) => {
     const { clientHeight, scrollHeight, scrollTop } = event;
@@ -45,12 +47,10 @@ const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
 
   return (
     <div>
-      {isOpen && isInternalOpen && (
+      {isOpen && (
         <div
-          style={{ display: 'none' }}
-          className={`modal modal-background modal-isi ${
-            isOpen && isInternalOpen ? 'open' : ''
-          }`}
+          style={{ opacity: '0' }}
+          className={`modal modal-background modal-isi ${isShow ? 'open' : ''}`}
         >
           <div className='modal-wrapper'>
             {activePage === 0 && (

@@ -38,20 +38,23 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
   };
 
   return (
-    <div
-      className={`page page--${currentPage.replace(/\./g, '_')}`}
-      data-currentpage={currentPage}
-    >
-      <div className='page__wrapper'>
-        <div className='left-pane'>
-          <span className='left-pane__pager' />
-          <Navbar />
+    <>
+      <div
+        className={`page page--${currentPage.replace(/\./g, '_')}`}
+        data-currentpage={currentPage}
+      >
+        <div className='page__wrapper'>
+          <div className='left-pane'>
+            <span className='left-pane__pager' />
+            <Navbar />
+          </div>
+          <div className='right-pane'>{children}</div>
+          {subMenu && <UpperNavBar tabs={subMenu} />}
+          <NavArrows />
         </div>
-        <div className='right-pane'>{children}</div>
-        {subMenu && <UpperNavBar tabs={subMenu} />}
-        <NavArrows />
       </div>
-    </div>
+      <ModalISI isOpen={isShowISIModal} onClose={closePopUpHandler} />
+    </>
   );
 };
 

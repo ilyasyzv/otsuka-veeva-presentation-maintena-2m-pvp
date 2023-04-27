@@ -2,8 +2,11 @@
 
 .modal-isi {
   &.modal-background {
+    opacity: 0;
+    transition: 0.5s;
+
     &.open {
-      display: flex !important;
+      opacity: 1 !important;
     }
   }
 
