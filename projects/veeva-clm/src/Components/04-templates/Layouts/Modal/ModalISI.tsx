@@ -33,10 +33,6 @@ const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
     }
   };
 
-  const continueHandler = () => {
-    onClose();
-  };
-
   return (
     <div>
       {isOpen && (
@@ -105,7 +101,7 @@ const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
                     .
                   </p>
                   <ButtonContinue
-                    onClick={continueHandler}
+                    onClick={() => onClose()}
                     disabled={isButtonCloseDisabled}
                   >
                     Continue
