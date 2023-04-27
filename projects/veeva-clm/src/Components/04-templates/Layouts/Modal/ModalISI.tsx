@@ -21,7 +21,7 @@ type TUpdateEvent = {
   scrollTop: number;
 };
 
-const ModalISI = ({ isOpen, onClose }: TModalISI) => {
+const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
   const [isButtonCloseDisabled, setIsButtonCloseDisabled] = useState(true);
   const [activePage, setActivePage] = useState(0);
 
