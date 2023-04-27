@@ -58,7 +58,7 @@ const content = () => (
         ],
       }}
       references={{
-        custom: 'mt-5',
+        custom: 'mt-2',
         data: [
           {
             text: (
@@ -71,7 +71,7 @@ const content = () => (
         ],
       }}
       safetyInfo={{
-        custom: 'mt-5',
+        custom: 'mt-2',
         data: [
           {
             text: (

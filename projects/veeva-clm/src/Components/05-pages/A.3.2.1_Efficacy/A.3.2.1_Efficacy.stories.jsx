@@ -23,7 +23,7 @@ const classNames = require('classnames');
 const content = () => (
   <div className={`${blockName}_wrapper`}>
     <Header custom={classNames(`${blockName}-header`, 'mb-30')}>
-      The efficacy of ABILIFY ASIMTUFII <sup>®</sup> (aripiprazole) in adult
+      The efficacy of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) in adult
       patients with schizophrenia or bipolar I disorder was established in part
       on the basis of pharmacokinetic bridging study
     </Header>
