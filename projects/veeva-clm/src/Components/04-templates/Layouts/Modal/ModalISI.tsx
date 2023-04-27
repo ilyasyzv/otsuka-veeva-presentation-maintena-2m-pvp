@@ -37,8 +37,6 @@ const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
     onClose();
   };
 
-  console.log('isModalOpen', isOpen);
-
   return (
     <div>
       {isOpen && (

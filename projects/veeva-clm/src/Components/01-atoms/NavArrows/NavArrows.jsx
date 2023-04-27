@@ -9,7 +9,7 @@ const lsISIModalKey = 'isi_modal';
 
 export const NavArrows = () => {
   const { currentPage, changePage } = useContext(PageContext);
-  const { showModalHandler } = useContext(ISIModalContext);
+  const { setIsiModalParams } = useContext(ISIModalContext);
 
   const { currentPosition, paths } = flatLinksList(
     { ...mainMenu },
@@ -23,7 +23,7 @@ export const NavArrows = () => {
     const preparedPageName = paths[nextPosition].url.replace('/', '');
 
     if (!lsISIModal) {
-      showModalHandler({
+      setIsiModalParams({
         show: true,
         pageName: preparedPageName,
       });
@@ -41,7 +41,7 @@ export const NavArrows = () => {
     const preparedPageName = paths[prevPosition].url.replace('/', '');
 
     if (!lsISIModal) {
-      showModalHandler({
+      setIsiModalParams({
         show: true,
         pageName: preparedPageName,
       });

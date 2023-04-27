@@ -25,12 +25,12 @@ export const navigateVeeva = (preparedPageName) => {
 
 export const Link = ({ custom, to, children }) => {
   const { changePage } = useContext(PageContext);
-  const { showModalHandler } = useContext(ISIModalContext);
+  const { setIsiModalParams } = useContext(ISIModalContext);
 
   const showISIModal = (preparedPageName) => {
     const lsISIModal = sessionStorage.getItem(lsISIModalKey);
     if (!lsISIModal) {
-      showModalHandler({
+      setIsiModalParams({
         show: true,
         pageName: preparedPageName,
       });
