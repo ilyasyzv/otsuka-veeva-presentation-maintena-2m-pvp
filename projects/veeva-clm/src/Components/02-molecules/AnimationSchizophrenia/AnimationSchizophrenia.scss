@@ -1,65 +1,69 @@
 @import "@base/variables";
 .page--A_2_1_1_S_Overview {
   .animation-container {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    position: relative;
-    height: 350px;
+    padding-top: 30px;
     overflow: hidden;
 
-    .content-container {
+    .animation-content-container {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       position: relative;
-      z-index: 30;
-      background-image: linear-gradient(90deg, #ffffff 80%, transparent 80%);
-    }
+      height: 360px;
 
-    .descripton-container {
-      .img-container {
+      .content-container {
         position: relative;
+        z-index: 30;
+        background-image: linear-gradient(90deg, #ffffff 80%, transparent 80%);
+      }
 
-        &:nth-child(1) {
-          z-index: 10;
-          left: -30px;
-        }
+      .descripton-container {
+        .img-container {
+          position: relative;
 
-        &:nth-child(2) {
-          z-index: 9;
-          top: -18px;
-          left: -58px;
-        }
+          &:nth-child(1) {
+            z-index: 10;
+            left: -30px;
+          }
 
-        &:nth-child(3) {
-          z-index: 8;
-          top: -37px;
-          left: -90px;
-        }
-        &:nth-child(4) {
-          z-index: 7;
-          top: -136px;
-          left: 55px;
-          overflow: hidden;
+          &:nth-child(2) {
+            z-index: 9;
+            top: -18px;
+            left: -58px;
+          }
 
-          img {
-            width: 285px;
+          &:nth-child(3) {
+            z-index: 8;
+            top: -37px;
+            left: -90px;
+          }
+          &:nth-child(4) {
+            z-index: 7;
+            top: -136px;
+            left: 55px;
+            overflow: hidden;
+
+            img {
+              width: 285px;
+            }
+          }
+
+          img.flicker {
+            animation: flickerAnimation 0.2s ease-out 1.5s;
           }
         }
-
-        img.flicker {
-          animation: flickerAnimation 0.2s ease-out 1.5s;
-        }
       }
-    }
 
-    .img-angle-container {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 245px;
-      z-index: 25;
+      .img-angle-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 238px;
+        z-index: 25;
 
-      .img-angle {
-        position: relative;
-        top: -30px;
+        .img-angle {
+          position: relative;
+          top: -40px;
+        }
       }
     }
   }

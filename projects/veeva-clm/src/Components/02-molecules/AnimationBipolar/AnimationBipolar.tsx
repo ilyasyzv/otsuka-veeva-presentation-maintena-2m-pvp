@@ -58,26 +58,28 @@ const AnimationBipolar = () => {
   }, []);
 
   return (
-    <div className='animation-container' ref={containerRef}>
-      <div className='content-container'>
-        <img ref={contentImgRef} src={contentImg} alt='Bipolar disorder' />
-      </div>
-      <div className='descripton-container'>
-        <div className='img-container img-container-1'>
-          <img src={row1Img} ref={rowImg1Ref} />
+    <div className='animation-container'>
+      <div className='animation-content-container' ref={containerRef}>
+        <div className='content-container'>
+          <img ref={contentImgRef} src={contentImg} alt='Bipolar disorder' />
         </div>
-        <div className='img-container img-container-2'>
-          <img src={row2Img} ref={rowImg2Ref} />
+        <div className='descripton-container'>
+          <div className='img-container img-container-1'>
+            <img src={row1Img} ref={rowImg1Ref} />
+          </div>
+          <div className='img-container img-container-2'>
+            <img src={row2Img} ref={rowImg2Ref} />
+          </div>
+          <div className='img-container img-container-3'>
+            <img src={row3Img} ref={rowImg3Ref} />
+          </div>
+          <div className='img-container img-container-4'>
+            <img src={row4Img} ref={rowImg4Ref} />
+          </div>
         </div>
-        <div className='img-container img-container-3'>
-          <img src={row3Img} ref={rowImg3Ref} />
+        <div className='img-angle-container' ref={angleImgRef}>
+          <img src={angleImg} className='img-angle' />
         </div>
-        <div className='img-container img-container-4'>
-          <img src={row4Img} ref={rowImg4Ref} />
-        </div>
-      </div>
-      <div className='img-angle-container' ref={angleImgRef}>
-        <img src={angleImg} className='img-angle' />
       </div>
     </div>
   );
