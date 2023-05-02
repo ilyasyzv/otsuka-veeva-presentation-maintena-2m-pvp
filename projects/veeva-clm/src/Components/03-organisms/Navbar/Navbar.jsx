@@ -9,7 +9,7 @@ import { mainMenu, bottomMenu, flapMenu } from '@/utils/processNavigation';
 export const Navbar = () => {
   const { currentPage } = useContext(PageContext);
   const isHomepage =
-    currentPage === '01_Launch_screen' || currentPage === 'A.0.Home'
+    currentPage === 'A.0.Home'
       ? 'navigation__homepage--active'
       : 'navigation__homepage';
   const links = flapMenu(mainMenu.data, 0);
@@ -22,7 +22,7 @@ export const Navbar = () => {
       </div>
       <ul className='main-nav'>
         {links.map((link, i) => (
-          <LinkGroup linkGroup={link} key={link.url} parentNav={true} />
+          <LinkGroup linkGroup={link} key={link.url} parentNav />
         ))}
       </ul>
       <ul className='main-bottom-nav'>

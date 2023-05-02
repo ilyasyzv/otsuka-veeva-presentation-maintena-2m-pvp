@@ -49,10 +49,6 @@ function App({ tab }: AppProps) {
           <ISIModalProvider>
             <Layout>
               <Route
-                path='/01_Launch_screen'
-                component={() => <Page background='b' component={A_0_Home} />}
-              />
-              <Route
                 path='/A.0.Home'
                 component={() => <Page background='b' component={A_0_Home} />}
               />

@@ -32,10 +32,10 @@ export const Route = ({ path, exact = false, component, ...props }) => {
 
   // console.log('***', { preparedPath, currentPath, currentPageContext });
 
-  if (preparedPath === '' && currentPage === '01_Launch_screen') {
-    changePage('01_Launch_screen');
+  if (preparedPath === '' && currentPage === 'A.0.Home') {
+    changePage('A.0.Home');
     // Display Dynamic content.
-    return <PageLoader name='01_Launch_screen' />;
+    return <PageLoader name='A.0.Home' />;
   }
 
   // if (path === '*') {
