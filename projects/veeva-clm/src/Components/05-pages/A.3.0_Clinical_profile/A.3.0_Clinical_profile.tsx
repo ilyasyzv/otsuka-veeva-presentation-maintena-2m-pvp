@@ -17,9 +17,11 @@ const PageContent = () => {
           <br />
           Acting Injectable Suspension Indicated for
           <br />
-          Treatment of Both Schizophrenia and
+          the Treatment of Schizophrenia and
           <br />
-          Bipolar I Disorder in Adults
+          Maintenance Treatment of Bipolar I
+          <br />
+          Disorder in Adults
         </>
       </Header>
       <div className='buttons-group'>
@@ -32,12 +34,23 @@ const PageContent = () => {
             <div className='button__text'>Overview</div>
           </Link>
           <Link
+            to='A.3.5.1_Additional'
+            custom='button button__type-c button__type-c-large button__type-c-large-blue'
+          >
+            <div className='button__text'>
+              ABILIFY MAINTENA<sup>®</sup> <br />
+              Pivotal Studies
+            </div>
+          </Link>
+          <Link
             to='A.3.2.1_Efficacy'
             custom='button button__type-c button__type-c-large button__type-c-large-blue'
             text='PK Study'
           >
             <div className='button__text'>PK Study</div>
           </Link>
+        </div>
+        <div className='buttons-group-row'>
           <Link
             to='A.3.3.1_Safety'
             custom='button button__type-c button__type-c-large button__type-c-large-blue'
@@ -45,8 +58,6 @@ const PageContent = () => {
           >
             <div className='button__text'>Safety Data</div>
           </Link>
-        </div>
-        <div className='buttons-group-row'>
           <Link
             to='A.3.4_Dosing'
             custom='button button__type-c button__type-c-large button__type-c-large-blue'
@@ -55,15 +66,6 @@ const PageContent = () => {
             <div className='button__text'>
               Dosing &<br />
               Administration
-            </div>
-          </Link>
-          <Link
-            to='A.3.5.1_Additional'
-            custom='button button__type-c button__type-c-large button__type-c-large-blue'
-          >
-            <div className='button__text'>
-              ABILIFY MAINTENA<sup>®</sup> <br />
-              Pivotal Studies
             </div>
           </Link>
         </div>
