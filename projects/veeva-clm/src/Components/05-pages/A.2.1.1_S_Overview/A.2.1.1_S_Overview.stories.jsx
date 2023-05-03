@@ -28,7 +28,7 @@ const content = () => (
         custom: 'mb-25',
         data: [
           {
-            text: 'American Psychiatric Association. https://www.psychiatry.org/patients-families/schizophrenia/what-is-schizophrenia. Accessed March 21, 2023. ',
+            text: 'American Psychiatric Association. Accessed March 21, 2023. https://www.psychiatry.org/patients-families/schizophrenia/what-is-schizophrenia. ',
           },
           {
             text: 'Treatment Advocacy Center. Accessed February 15, 2023. https://www.treatmentadvocacycenter.org/evidence-and-research/fast-facts ',

@@ -313,7 +313,7 @@ Relapse.args = {
         Relapse was defined as 1 or more of the following<sup>1</sup>:
       </Header>
       <Text
-        title='Clinical worsening'
+        title='Clinical Worsening'
         innerText={
           <>
             CGI-Improvement score ≥5 and an increase on any of 4 individual
@@ -326,11 +326,11 @@ Relapse.args = {
         }
       />
       <Text
-        title='Psychiatric hospitalization'
+        title='Psychiatric Hospitalization'
         innerText='Due to worsening of psychotic symptoms.'
       />
       <Text
-        title='Risk of suicide'
+        title='Risk of Suicide'
         innerText={
           <>
             Clinical Global Impression – Severity of Suicidality (CGI-SS) score
@@ -341,7 +341,7 @@ Relapse.args = {
         }
       />
       <Text
-        title='Violent behavior'
+        title='Violent Behavior'
         innerText='Clinically significant self-injury, injury to another person, or property damage.'
       />
     </>

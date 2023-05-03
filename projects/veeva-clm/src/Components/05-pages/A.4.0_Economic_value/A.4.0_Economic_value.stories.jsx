@@ -22,8 +22,9 @@ const content = () => {
   return (
     <div className={styles[`content-wrapper`]}>
       <Header custom='mb-70'>
-        Economic value of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) in
-        schizophrenia and bipolar I disorder<sup>1,2</sup>
+        ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) parity priced to
+        <br/>
+        ABILIFY MAINTENA<sup>®</sup> (aripiprazole) based on dosing<sup>1</sup>
       </Header>
       <div className={styles['content-container']}>
         <div className={styles['wacs-container']}>
@@ -35,7 +36,7 @@ const content = () => {
           </div>
         </div>
         <div className={styles['info-container']}>
-          <img src={masterCalloutImg} alt='dosing info' />
+          {/* <img src={masterCalloutImg} alt='dosing info' /> */}
         </div>
       </div>
       <Footer

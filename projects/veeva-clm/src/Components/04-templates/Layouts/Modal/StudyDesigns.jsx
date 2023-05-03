@@ -135,7 +135,7 @@ export const StudyDesign1Args = {
         Study design<sup>1</sup>
       </Header>
       <Text
-        title={<>52-Week, Multiphase Maintenance Study</>}
+        title={<>52-Week Study</>}
         innerText='A 52-week, placebo-controlled maintenance study evaluated the time to relapse for adult patients
          living with schizophrenia.'
       />

@@ -86,6 +86,32 @@ export const mainMenu: IMenu = {
           url: '/A.3.1_Clinical_overview',
         },
         {
+          name: 'ABILIFY MAINTENA<sup>®</sup> Pivotal Studies',
+          url: '/A.3.5.1_Additional',
+          children: [
+            {
+              name: '',
+              url: '/A.3.5.1_Additional',
+            },
+            {
+              name: '',
+              url: '/A.3.5.2_Additional',
+            },
+            {
+              name: '',
+              url: '/A.3.5.3_Additional',
+            },
+            {
+              name: '',
+              url: '/A.3.5.4_Additional',
+            },
+            {
+              name: '',
+              url: '/A.3.5.5_Additional',
+            },
+          ],
+        },
+        {
           name: 'PK Study',
           url: '/A.3.2.1_Efficacy',
           children: [
@@ -128,32 +154,6 @@ export const mainMenu: IMenu = {
         {
           name: 'Dosing & Administration',
           url: '/A.3.4_Dosing',
-        },
-        {
-          name: 'ABILIFY MAINTENA<sup>®</sup> Pivotal Studies',
-          url: '/A.3.5.1_Additional',
-          children: [
-            {
-              name: '',
-              url: '/A.3.5.1_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.2_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.3_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.4_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.5_Additional',
-            },
-          ],
         },
       ],
     },
