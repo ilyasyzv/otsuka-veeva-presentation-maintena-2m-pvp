@@ -7,10 +7,14 @@
   &__link {
     box-sizing: border-box;
 
+    &:first-of-type .main-nav__link__wrapper a {
+      padding-top: 0;
+    }
+
     & .main-nav__link__wrapper a {
       display: flex;
       flex-direction: column;
-      padding: 25px 0 25px 3px;
+      padding: 30px 0 30px 3px;
       align-items: center;
       text-decoration: none;
       border-right: 3px solid transparent;
@@ -39,9 +43,11 @@
     &.active {
       .main-nav__link__wrapper a {
         font-weight: bold;
-        padding: 25px 0 0 3px;
+        position: relative;
 
         &:after {
+          position: absolute;
+          bottom: -7px;
           content: "";
           width: 75px;
           height: 29px;

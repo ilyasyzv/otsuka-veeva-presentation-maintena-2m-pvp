@@ -78,7 +78,7 @@ export const mainMenu: IMenu = {
       ],
     },
     {
-      name: 'Clinical Profile for ABILIFY ASIMTUFII<sup>®</sup>',
+      name: `Clinical<br/> Profile`,
       url: '/A.3.0_Clinical_profile',
       children: [
         {
@@ -158,7 +158,7 @@ export const mainMenu: IMenu = {
       ],
     },
     {
-      name: 'Economic Value of ABILIFY ASIMTUFII<sup>®</sup>',
+      name: 'Pricing',
       url: '/A.4.0_Economic_value',
       children: [],
     },
