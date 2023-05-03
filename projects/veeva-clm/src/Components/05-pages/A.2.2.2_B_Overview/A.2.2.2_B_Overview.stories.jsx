@@ -51,7 +51,7 @@ const content = () => (
             supLeft: '*',
             innerText: (
               <span>
-                These studies do not differentiate between bipolar disorders.
+                These studies are in general bipolar disorder.
                 <sup>1,2</sup>
               </span>
             ),
@@ -64,20 +64,23 @@ const content = () => (
           {
             text: (
               <span>
-                Simhandl C, et al. J Clin Psychiatry. 2014;75(3):254-263.
+                Simhandl C, et al.<em> J Clin Psychiatry.</em>{' '}
+                2014;75(3):254-263.
               </span>
             ),
           },
           {
             text: (
-              <span>Berk L, et al. Hum Psychopharmacol. 2010;25(1):1-16.</span>
+              <span>
+                Berk L, et al.<em> Hum Psychopharmacol.</em> 2010;25(1):1-16.
+              </span>
             ),
           },
           {
             text: (
               <span>
-                Broder MS, et al. J Med Econ.
-                <br /> 2019; 22(1):63-70.
+                Broder MS, et al.<em> J Med Econ.</em>
+                <br /> 2019;22(1):63-70.
               </span>
             ),
           },
