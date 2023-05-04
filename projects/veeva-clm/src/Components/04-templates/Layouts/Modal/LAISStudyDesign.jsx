@@ -94,8 +94,8 @@ export const StudyDesignLAIs1Args = {
               text: (
                 <>
                   Truven Health Analytics MarketScan Multi-State Medicaid and
-                  Truven MarketScan commercial and Medicaid databases (January
-                  1, 2012, through June 30, 2015)
+                  Truven MarketScan commercial databases
+                  <br /> (January 1, 2012, through June 30, 2015)
                 </>
               ),
             },
@@ -297,10 +297,7 @@ export const StudyDesignLAIs1Args = {
         data: [
           {
             innerText: (
-              <span>
-                LAI=long-acting injectable <br />
-                ID=idcntification; LAI=long-acting injectable.
-              </span>
+              <span>ID=identification; LAI=long-acting injectable.</span>
             ),
           },
         ],

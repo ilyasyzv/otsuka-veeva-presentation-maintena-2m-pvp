@@ -44,11 +44,15 @@ const content = () => (
       right={modalTwo}
     />
     <Footer
-      custom='bottom-3'
       footnotes={{
         data: [
           {
             supLeft: '*',
+            innerText: 'LAI user vs oral users.',
+            supRight: '2',
+          },
+          {
+            supLeft: '†',
             innerText:
               'Medication adherence was measured by the proportion of days covered in the 1 year immediately post-index. The adjusted mean proportion of days covered was higher in LAI users than in oral users.',
             supRight: '2',
@@ -85,7 +89,7 @@ const content = () => (
         ],
       }}
       safetyInfo={{
-        custom: 'mt-44',
+        custom: 'mt-24',
         data: [
           {
             text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
