@@ -26,7 +26,8 @@ import A_3_3_1_Safety from '@/content/pages/A.3.3.1_Safety/index.mdx';
 import A_3_3_2_Safety from '@/content/pages/A.3.3.2_Safety/index.mdx';
 import A_3_3_3_Safety from '@/content/pages/A.3.3.3_Safety/index.mdx';
 import A_3_3_4_Safety from '@/content/pages/A.3.3.4_Safety/index.mdx';
-import A_3_4_Dosing from '@/content/pages/A.3.4_Dosing/index.mdx';
+import A_3_4_1_Dosing from '@/content/pages/A.3.4.1_Dosing/index.mdx';
+import A_3_4_2_Dosing from '@/content/pages/A.3.4.2_Dosing/index.mdx';
 import A_3_5_1_Additional from '@/content/pages/A.3.5.1_Additional/index.mdx';
 import A_3_5_2_Additional from '@/content/pages/A.3.5.2_Additional/index.mdx';
 import A_3_5_3_Additional from '@/content/pages/A.3.5.3_Additional/index.mdx';
@@ -131,8 +132,12 @@ function App({ tab }: AppProps) {
                 component={() => <Page component={A_3_3_4_Safety} />}
               />
               <Route
-                path='/A.3.4_Dosing'
-                component={() => <Page component={A_3_4_Dosing} />}
+                path='/A.3.4.1_Dosing'
+                component={() => <Page component={A_3_4_1_Dosing} />}
+              />
+              <Route
+                path='/A.3.4.2_Dosing'
+                component={() => <Page component={A_3_4_2_Dosing} />}
               />
               <Route
                 path='/A.3.5.1_Additional'

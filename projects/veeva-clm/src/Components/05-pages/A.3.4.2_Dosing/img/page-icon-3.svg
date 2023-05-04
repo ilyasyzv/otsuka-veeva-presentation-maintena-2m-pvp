@@ -1,0 +1,23 @@
+<svg id="Component_42_1" data-name="Component 42 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181" height="181" viewBox="0 0 181 181">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_2967" data-name="Path 2967" d="M0,0H101.622V-116.064H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_11179" data-name="Group 11179" transform="translate(-294 -851)">
+    <circle id="Ellipse_180" data-name="Ellipse 180" cx="90.5" cy="90.5" r="90.5" transform="translate(294 851)" fill="#d8e5ea"/>
+    <g id="Group_11173" data-name="Group 11173" transform="translate(-640 168.372)">
+      <g id="Group_11172" data-name="Group 11172" transform="translate(974 826.128)">
+        <g id="Group_11169" data-name="Group 11169" clip-path="url(#clip-path)">
+          <path id="Path_2966" data-name="Path 2966" d="M20.882-1H1V-28.307H20.882ZM40.819-1H20.932V-38.148H40.819ZM60.753-1H40.869V-56.667H60.753ZM80.688-1H60.8V-70.278H80.688Zm19.934,0H80.738V-88.24h19.884Z" fill="none" stroke="#005674" stroke-width="3"/>
+        </g>
+        <g id="Group_11170" data-name="Group 11170" transform="translate(7.803 -38.563)">
+          <path id="Path_2968" data-name="Path 2968" d="M0,0,10-12.195H21L32-33H43.008L53-49H63L74-65l6-5.711" fill="none" stroke="#005674" stroke-linecap="round" stroke-width="3"/>
+        </g>
+        <g id="Group_11171" data-name="Group 11171" transform="translate(78.579 -108.922)">
+          <path id="Path_2969" data-name="Path 2969" d="M0,0,8.416,8.843,16.358-7.141Z" fill="#005674"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

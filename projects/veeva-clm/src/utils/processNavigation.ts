@@ -153,7 +153,17 @@ export const mainMenu: IMenu = {
         },
         {
           name: 'Dosing & Administration',
-          url: '/A.3.4_Dosing',
+          url: '/A.3.4.1_Dosing',
+          children: [
+            {
+              name: '',
+              url: '/A.3.4.1_Dosing',
+            },
+            {
+              name: '',
+              url: '/A.3.4.2_Dosing',
+            },
+          ],
         },
       ],
     },

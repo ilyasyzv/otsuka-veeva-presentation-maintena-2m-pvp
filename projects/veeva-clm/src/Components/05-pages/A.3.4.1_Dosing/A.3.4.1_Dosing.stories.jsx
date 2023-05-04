@@ -10,14 +10,14 @@ import './style.scss';
 
 export default {
   title: 'CLM/Pages',
-  component: 'A.3.4_Dosing',
+  component: 'A.3.4.1_Dosing',
   parameters: {
     layout: 'fullscreen',
   },
-  excludeStories: ['A_3_4_Dosing_content'],
+  excludeStories: ['A_3_4_1_Dosing_content'],
 };
 
-const baseClass = 'page--A_3_4_Dosing';
+const baseClass = 'page--A_3_4_1_Dosing';
 const content = () => (
   <>
     <Header custom={`${baseClass}-header-1 mb-27`}>
@@ -81,8 +81,8 @@ const content = () => (
 );
 
 const Template = () => {
-  return <AppStorybook path='A.3.4_Dosing' components={content} />;
+  return <AppStorybook path='A.3.4.1_Dosing' components={content} />;
 };
 
-export const A_3_4_Dosing = Template.bind({});
-export const A_3_4_Dosing_content = content.bind({});
+export const A_3_4_1_Dosing = Template.bind({});
+export const A_3_4_1_Dosing_content = content.bind({});
