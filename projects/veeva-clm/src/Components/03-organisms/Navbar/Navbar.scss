@@ -29,14 +29,23 @@
       background-size: 33px 33px;
       display: block;
     }
-  
-    .navigation__homepage--active {
+
+    .navigation__homepage {
       display: block;
+      visibility: hidden;
       width: 75px;
       height: 29px;
       margin: 5px auto;
-      border-radius: 100% 100% 0 0;
-      background: transparent linear-gradient(180deg, $blue-205 10%, $blue-200 36%, $yellow-300 50%) 0 0 no-repeat padding-box;
+
+      &--active {
+        display: block;
+        visibility: visible;
+        width: 75px;
+        height: 29px;
+        margin: 5px auto;
+        border-radius: 100% 100% 0 0;
+        background: transparent linear-gradient(180deg, $blue-205 10%, $blue-200 36%, $yellow-300 50%) 0 0 no-repeat padding-box;
+      }
     }
   }
 

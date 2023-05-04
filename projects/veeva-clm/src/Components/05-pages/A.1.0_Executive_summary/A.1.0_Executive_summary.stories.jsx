@@ -19,11 +19,11 @@ export default {
 const baseClass = 'page--A_1_0_Executive_summary';
 const content = () => (
   <>
-    <Header custom={`${baseClass}-header-1 mb-15 mt-5`}>
-      ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) offers comparable safety and
-      tolerability to ABILIFY MAINTENA<sup>®</sup> (aripiprazole) with <br />2
-      months of sustained efficacy in patients with schizophrenia or bipolar I
-      disorder (BP-I)<sup>1</sup>
+    <Header custom={`${baseClass}-header-1 mb-30 mt-5`}>
+      The efficacy and safety of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole)
+      <br /> is based on the adequate and well-controlled studies of
+      <br /> ABILIFY MAINTENA
+      <sup>®</sup> (aripiprazole)
     </Header>
     <img className={`${baseClass}-img-1`} src={PageImage} alt='' width='852' />
     <Footer
@@ -39,8 +39,8 @@ const content = () => (
                 concentration of ABILIFY ASIMTUFII remained within a therapeutic
                 and efficacious concentration
                 <br /> between 200 ng/mL and 320 ng/mL during the 56-day dosing
-                interval.<sup>1</sup>
-                <br /> AR=adverse reaction; FDA=US Food and Drug Administration.
+                interval.<sup>2</sup>
+                <br /> AR=adverse reaction.
               </span>
             ),
           },
@@ -50,18 +50,14 @@ const content = () => (
         custom: 'mb-38 pr-20',
         data: [
           {
-            text: (
-              <>
-                Harlin M, et al. <i>CNS Drugs</i>.
-                2023;10.1007/s40263-023-00996-8.
-              </>
-            ),
-          },
-          {
             text: 'Merative Micromedex. Accessed March 22, 2023. https://www.micromedexsolutions.com/',
           },
           {
-            text: 'Data on file. Otsuka.',
+            text: (
+              <>
+                Harlin M, et al. <i>CNS Drugs</i>. 2023;37(4):337-350.
+              </>
+            ),
           },
         ],
       }}

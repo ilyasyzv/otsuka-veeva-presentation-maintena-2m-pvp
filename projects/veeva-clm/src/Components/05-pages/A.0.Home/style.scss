@@ -68,6 +68,18 @@
       margin-top: 2px;
       margin-bottom: 2px;
     }
+
+    .font-blue {
+      color: $blue-330;
+    }
+
+    .isi-info {
+      letter-spacing: normal;
+    }
+
+    a.font-blue span {
+      letter-spacing: normal;
+    }
   }
 }
 

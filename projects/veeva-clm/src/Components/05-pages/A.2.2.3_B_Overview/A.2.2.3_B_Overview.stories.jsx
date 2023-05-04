@@ -32,11 +32,11 @@ const content = () => (
         custom: 'mb-3',
         data: [
           {
-            supLeft: '*',
             innerText: (
               <span>
-                The difference between costs incurred by individuals living with
-                and without BP-I (based on estimated prevalence in 2015).
+                <sup className='sup-left big'>*</sup>The difference between
+                costs incurred by individuals living with and without BP-I
+                (based on estimated prevalence in 2015).
               </span>
             ),
           },

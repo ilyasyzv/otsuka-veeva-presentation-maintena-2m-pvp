@@ -5,9 +5,10 @@ import HorizontalLine from '@/Components/01-atoms/Content/HorizontalLine/Horizon
 import '@/Components/00-base/variables.scss';
 
 import OtsukaSignature from './img/Signature.svg?format=webp';
-import LogoAdilify from './img/Ability.svg?format=webp';
+import LogoAdilify from './img/Abilify.svg?format=webp';
 
 import './style.scss';
+import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
 export default {
@@ -38,15 +39,16 @@ const content = () => (
     />
     <Header
       type='h2'
-      custom={classNames(`${blockName}-secondary-header`, 'mb-40')}
+      custom={classNames(`${blockName}-secondary-header`, 'mb-10')}
     >
-      The First and Only Once-Every-2-Months Long-Acting Injectable Suspension
-      Indicated for Treatment of Both Schizophrenia and Bipolar I Disorder in
-      Adults
+      The First and Only Once-Every-2-Months Long-Acting
+      <br /> Injectable Suspension Indicated for Treatment of
+      <br /> Schizophrenia and Maintenance Treatment of Bipolar I<br /> Disorder
+      in Adults
     </Header>
     <p className={classNames(`${blockName}-trademark`, ' mb-8')}>
       © 2023 Otsuka America Pharmaceutical, Inc. All rights reserved.
-      <br /> April 2023 23US23EBY0005 <br />
+      <br /> April 2023 23US23EXY0006 <br />
       Trademarks used are property of their respective owners.
     </p>
     <div className={classNames(`${blockName}-sign__wrapper`, ' mb-8')}>
@@ -61,26 +63,10 @@ const content = () => (
         data: [
           {
             text: (
-              <>
-                Please see{' '}
-                <a href='/'>
-                  <span className={`${blockName}-footer_uppercase`}>
-                    FULL PRESCRIBING INFORMATION
-                  </span>
-                </a>
-                , including{' '}
-                <span className={`${blockName}-footer_uppercase`}>
-                  BOXED WARNING available in this presentation.
-                </span>
-              </>
-            ),
-          },
-          {
-            text: (
               <span
                 className={classNames(
                   `${blockName}-footer_uppercase`,
-                  'height',
+                  'height font-blue',
                 )}
               >
                 WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH
@@ -94,10 +80,22 @@ const content = () => (
                 Elderly patients with dementia-related psychosis treated with
                 antipsychotic drugs are at increased risk of death (1.6 to
                 <br /> 1.7 times) compared to placebo-treated patients. ABILIFY
-                MAINTENA is not approved for the treatment of patients with
-                <br />
-                dementia-related psychosis.
+                ASIMTUFII and ABILIFY MAINTENA are not approved for the
+                <br /> treatment of patients with dementia-related psychosis.
               </span>
+            ),
+          },
+          {
+            text: (
+              <div className='isi-info'>
+                Please see{' '}
+                <Link to='A.7.0_ISI' custom='font-blue'>
+                  <span className={`${blockName}-footer_uppercase`}>
+                    IMPORTANT SAFETY INFORMATION
+                  </span>
+                </Link>{' '}
+                in this presentation.
+              </div>
             ),
           },
           {

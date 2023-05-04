@@ -36,6 +36,10 @@ const content = () => (
             innerText:
               'The difference between costs incurred by individuals living with and without schizophrenia (estimated based on prevalence in 2019).',
           },
+          {
+            supLeft: '†',
+            innerText: 'Percentages do not add up to 100% due to rounding.',
+          },
         ],
       }}
       references={{
