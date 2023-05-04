@@ -27,15 +27,15 @@ const content = () => (
       PIVOTAL 52-WEEK SCHIZOPHRENIA MAINTENANCE STUDY
     </Header>
     <Header custom={`${baseClass}-header-2 mb-25`}>
-      ABILIFY MAINTENA<sup>®</sup> (aripiprazole) significantly reduced the risk
-      of relapse by 80% vs placebo
-      <sup>1,2</sup>
+      ABILIFY MAINTENA<sup>®</sup> (aripiprazole) significantly delayed
+      <br/>
+      time to relapse* vs placebo in a 52-week study<sup>1</sup>
     </Header>
     <img src={Primary_graphic} alt='graphic' className='graphic' />
     <img src={Placebo_image} alt='placebo' className='placebo ml-15 mb-57' />
     <Paragraph position='center' custom={`${baseClass}-paragraph-1 mt-3`}>
       The HR was used to calculate the reduction in risk of relapse
-      <br /> for patient on ABILIFY MAINTENA vs placebo.<sup>1</sup>
+      <br /> for patients on ABILIFY MAINTENA vs placebo.<sup>1</sup>
     </Paragraph>
     <StudyDesign1 {...StudyDesign1.args} />
     <StudyDesign1 {...Relapse.args} />

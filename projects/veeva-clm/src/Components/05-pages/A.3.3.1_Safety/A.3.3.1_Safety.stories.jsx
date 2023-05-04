@@ -26,11 +26,11 @@ const classNames = require('classnames');
 const content = () => (
   <div className={`${blockName}_wrapper`}>
     <Header custom='mb-8'>
-      The safety profile of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) was
+      The safety of ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) is
       <br />
-      based on the 12-week study of patients living with
-      <br /> schizophrenia treated with ABILIFY MAINTENA<sup>®</sup>{' '}
-      (aripiprazole)
+      based on an adequate and well-controlled study of
+      <br /> 
+      ABILIFY MAINTENA<sup>®</sup> (aripiprazole)
     </Header>
     <Header type='h3' custom='mb-8 text-center'>
       Adverse reactions in ≥2% of ABILIFY MAINTENA–treated adult patients with
@@ -46,9 +46,8 @@ const content = () => (
       footnotes={{
         data: [
           {
-            supLeft: '*',
             innerText:
-              'Table excludes adverse reactions that had an incidence equal to or less than placebo.',
+              '*Table excludes adverse reactions that had an incidence equal to or less than placebo.',
           },
         ],
       }}

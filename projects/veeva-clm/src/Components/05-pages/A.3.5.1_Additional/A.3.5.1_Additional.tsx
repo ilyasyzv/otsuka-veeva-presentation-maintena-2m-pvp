@@ -60,9 +60,9 @@ const PageContent = () => (
         custom='button button__type-c button__type-c-large button__type-c-large-dark'
       >
         <div className='button__text'>
-          ABILIFY MAINTENA
+          <b>ABILIFY MAINTENA</b>
           <br />
-          Safety
+          <b>Safety</b>
         </div>
       </Link>
     </div>

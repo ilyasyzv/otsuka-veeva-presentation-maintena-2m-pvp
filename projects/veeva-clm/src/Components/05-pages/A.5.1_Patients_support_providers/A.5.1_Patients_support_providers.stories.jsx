@@ -32,8 +32,8 @@ const content = () => (
           <strong>
             <em>
               Otsuka Patient Support is committed to providing personalized
-              support for
-              <br /> patients and their partners.
+              support
+              <br /> for patients and their partners.
             </em>
           </strong>
         </Paragraph>
