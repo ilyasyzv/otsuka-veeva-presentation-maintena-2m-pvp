@@ -23,10 +23,10 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
   const subMenu = findSubMenu(currentPage, mainMenu.data, 0);
 
   useEffect(() => {
-    if (isiModalParams !== undefined && isiModalParams.show) {
+    if (isiModalParams.show) {
       setIsShowISIModal(true);
     }
-  }, [isiModalParams !== undefined ? isiModalParams.show : false]);
+  }, [isiModalParams.show]);
 
   const closePopUpHandler = () => {
     setIsShowISIModal(false);
