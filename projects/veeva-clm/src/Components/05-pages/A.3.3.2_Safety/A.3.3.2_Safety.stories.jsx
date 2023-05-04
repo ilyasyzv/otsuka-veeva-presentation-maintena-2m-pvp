@@ -25,57 +25,19 @@ const classNames = require('classnames');
 
 const content = () => (
   <div className={`${blockName}_wrapper`}>
-    <Header custom='mb-0'>
+    <Header custom='mb-25'>
       Prolactin and extrapyramidal symptom-related
       <br />
       events in patients with schizophrenia receiving
       <br />
       ABILIFY MAINTENA<sup>®</sup> (aripiprazole)<sup>1,2</sup>
     </Header>
-    <List
-      content={{
-        columns: 'columns-1',
-        type: 'circle',
-        custom: 'mb-5',
-        data: [
-          {
-            text: (
-              <>
-                Prolactin levels and extrapyramidal symptoms<sup>1</sup>
-              </>
-            ),
-          },
-          {
-            text: (
-              <>
-                Prolactin levels and incidence of an extrapyramidal
-                symptom–related event among patients with schizophrenia
-                receiving ABILIFY MAINTENA vs those taking placebo<sup>1</sup>
-              </>
-            ),
-          },
-        ],
-      }}
-    />
     <img
       src={ProlactinTableImg}
       alt='prolactin table'
       className={classNames(`${blockName}-img`, 'mb-5')}
     />
-    <Link
-      to='A.3.2.2_Efficacy'
-      custom={classNames(
-        `${blockName}-btn`,
-        'button button__type-c',
-        ' button__type-c-large',
-      )}
-    >
-      <div className='button__text'>
-        ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) Safety
-      </div>
-    </Link>
     <Footer
-      custom='mb-5'
       footnotes={{
         data: [
           {
@@ -111,7 +73,10 @@ const content = () => (
             ),
           },
           {
-            text: '[Data on file. Otsuka].',
+            text: 'Data on file. ABIMAI-124.',
+          },
+          {
+            text: 'Data on file. ABIASI-025.',
           },
         ],
       }}
